@@ -2947,18 +2947,19 @@
                         </datalist>
                     </p>
                 <div class="dep_mun">
-                    <select v-model="selectedDrink" @change="selectDrink">
-                    <option v-for="(drink,index) in drinks" :value="index">{{ drink.label }}</option>
+                    <label for="Ubicacion" class="Ubicacion">Ubicación de la entidad:
+                        <span class="obligatorio">*</span>
+                    </label>
+
+                    <select v-model="selectedMunicipio" @change="selectMunicipio">
+                    <option v-for="(municipio,index) in municipios" :value="index">{{ municipio.label }}</option>
                     </select>
 
-                    <select v-model="selectedOption" v-if="selectedDrink != -1">
-                        <option v-for="option in drinks[selectedDrink].options">{{ option }}</option>
+                    <select v-model="selectedOption" v-if="selectedMunicipio != -1">
+                        <option v-for="option in municipios[selectedMunicipio].options">{{ option }}</option>
                     </select>
-
-                    <p v-if="selectedOption">
-                        You selected a {{ drinks[selectedDrink].label }} and specifically {{ selectedOption }}.
-                    </p>
                 </div>
+                <br>
                 </div>
                 <div class="button">
                     <button type="submit" name="siguiente" id="siguiente"><p>Siguiente</p></button>
@@ -2977,34 +2978,301 @@ export default {
     name: "Personas",
     data: function (){
         return {
-            drinks: null,
-            selectedDrink: -1,
+            municipios: null,
+            selectedMunicipio: -1,
             selectedOption: '',
         
-            drinks:[
+            municipios:[{ label: 'Por favor selecciona una opción de la lista', value: null },
                 {
-                    label:"Beer",
-                    options:["Sam Adams","Anchor Steam","St. Arnold"]
+                    label:"AMAZONAS",
+                    options:["EL ENCANTO","LA CHORRERA","LA PEDRERA","LA VICTORIA","LETICIA","MIRITÍ - PARANÁ",
+                            "PUERTO ALEGRÍA","PUERTO ARICA","PUERTO NARIÑO","PUERTO SANTANDER","TARAPACÁ"]
                 },
                 {
-                    label:"Soda",
-                    options:["Pepsi","Coke","RC"]
+                    label:"ANTIOQUIA",
+                    options:["ABEJORRAL","ABRIAQUÍ","ALEJANDRÍA","AMAGÁ","AMALFI","ANDES","ANGELÓPOLIS",
+                            "ANGOSTURA","ANORÍ","SANTA FÉ DE ANTIOQUIA","ANZÁ","APARTADÓ","ARBOLETES","ARGELIA",
+                            "ARMENIA","BARBOSA","BELMIRA","BELLO","BETANIA","BETULIA","CIUDAD BOLÍVAR","BRICEÑO",
+                            "BURITICÁ","CÁCERES","CAICEDO","CALDAS","CAMPAMENTO","CAÑASGORDAS","CARACOLÍ",
+                            "CARAMANTA","CAREPA","EL CARMEN DE VIBORAL","CAROLINA","CAUCASIA","CHIGORODÓ",
+                            "CISNEROS","COCORNÁ","CONCEPCIÓN","CONCORDIA","COPACABANA","DABEIBA","DONMATÍAS",
+                            "EBÉJICO","EL BAGRE","ENTRERRÍOS","ENVIGADO","FREDONIA","FRONTINO","GIRALDO",
+                            "GIRARDOTA","GÓMEZ PLATA","GRANADA","GUADALUPE","GUARNE","GUATAPÉ","HELICONIA",
+                            "HISPANIA","ITAGÜÍ","ITUANGO","JARDÍN","JERICÓ","LA CEJA","LA ESTRELLA","LA PINTADA",
+                            "LA UNIÓN","LIBORINA","MACEO","MARINILLA","MEDELLÍN","MONTEBELLO","MURINDÓ","MUTATÁ","NARIÑO",
+                            "NECOCLÍ","NECHÍ","OLAYA","PEÑOL","PEQUE","PUEBLORRICO","PUERTO BERRÍO","PUERTO NARE",
+                            "PUERTO TRIUNFO","REMEDIOS","RETIRO","RIONEGRO","SABANALARGA","SABANETA","SALGAR",
+                            "SAN ANDRÉS DE CUERQUÍA","SAN CARLOS","SAN FRANCISCO","SAN JERÓNIMO",
+                            "SAN JOSÉ DE LA MONTAÑA","SAN JUAN DE URABÁ","SAN LUIS","SAN PEDRO DE LOS MILAGROS",
+                            "SAN PEDRO DE URABÁ","SAN RAFAEL","SAN ROQUE","SAN VICENTE FERRER","SANTA BÁRBARA",
+                            "SANTA ROSA DE OSOS","SANTO DOMINGO","EL SANTUARIO","SEGOVIA","SONSÓN","SOPETRÁN",
+                            "TÁMESIS","TARAZÁ","TARSO","TITIRIBÍ","TOLEDO","TURBO","URAMITA","URRAO","VALDIVIA",
+                            "VALPARAÍSO","VEGACHÍ","VENECIA","VIGÍA DEL FUERTE","YALÍ","YARUMAL","YOLOMBÓ","YONDÓ",
+                            "ZARAGOZA"]
                 },
                 {
-                    label:"Coffee",
-                    options:["Starbucks","Dunkin Donuts","Gross Hotel Room"]
+                    label:"ARAUCA",
+                    options:["ARAUCA","ARAUQUITA","CRAVO NORTE","FORTUL","PUERTO RONDÓN","SARAVENA","TAME"]
+                },
+                {
+                    label:"ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA",
+                    options:["SAN ANDRÉS","PROVIDENCIA"]
+                },
+                {
+                    label:"ATLÁNTICO",
+                    options:["BARRANQUILLA","BARANOA","CAMPO DE LA CRUZ","CANDELARIA","GALAPA","JUAN DE ACOSTA",
+                            "LURUACO","MALAMBO","MANATÍ","PALMAR DE VARELA","PIOJÓ","POLONUEVO","PONEDERA",
+                            "PUERTO COLOMBIA","REPELÓN","SABANAGRANDE","SABANALARGA","SANTA LUCÍA","SANTO TOMÁS",
+                            "SOLEDAD","SUAN","TUBARÁ","USIACURÍ"]
+                },
+                {
+                    label:"BOGOTÁ, D.C.",
+                    options:["BOGOTÁ, D.C."]
+                },
+                {
+                    label:"BOLÍVAR",
+                    options:["ACHÍ","ALTOS DEL ROSARIO","ARENAL","ARJONA","ARROYOHONDO",
+                            "BARRANCO DE LOBA","CALAMAR","CANTAGALLO","CARTAGENA DE INDIAS",
+                            "CICUCO","CÓRDOBA","CLEMENCIA",
+                            "EL CARMEN DE BOLÍVAR","EL GUAMO","EL PEÑÓN","HATILLO DE LOBA","MAGANGUÉ","MAHATES",
+                            "MARGARITA","MARÍA LA BAJA","MONTECRISTO","SANTA CRUZ DE MOMPOX","MORALES","NOROSÍ",
+                            "PINILLOS","REGIDOR","RÍO VIEJO","SAN CRISTÓBAL","SAN ESTANISLAO","SAN FERNANDO",
+                            "SAN JACINTO","SAN JACINTO DEL CAUCA","SAN JUAN NEPOMUCENO","SAN MARTÍN DE LOBA",
+                            "SAN PABLO","SANTA CATALINA","SANTA ROSA","SANTA ROSA DEL SUR","SIMITÍ","SOPLAVIENTO",
+                            "TALAIGUA NUEVO","TIQUISIO","TURBACO","TURBANÁ","VILLANUEVA","ZAMBRANO"]
+                },
+                {
+                    label:"BOYACÁ",
+                    options:["ALMEIDA","AQUITANIA","ARCABUCO","BELÉN","BERBEO","BETÉITIVA","BOAVITA",
+                            "BOYACÁ","BRICEÑO","BUENAVISTA","BUSBANZÁ","CALDAS","CAMPOHERMOSO","CERINZA",
+                            "CHINAVITA","CHIQUINQUIRÁ","CHISCAS","CHITA","CHITARAQUE","CHIVATÁ","CIÉNEGA",
+                            "CÓMBITA","COPER","CORRALES","COVARACHÍA","CUBARÁ","CUCAITA","CUÍTIVA","CHÍQUIZA",
+                            "CHIVOR","DUITAMA","EL COCUY","EL ESPINO","FIRAVITOBA","FLORESTA","GACHANTIVÁ",
+                            "GÁMEZA","GARAGOA","GUACAMAYAS","GUATEQUE","GUAYATÁ","GÜICÁN DE LA SIERRA","IZA",
+                            "JENESANO","JERICÓ","LABRANZAGRANDE","LA CAPILLA","LA VICTORIA","LA UVITA",
+                            "VILLA DE LEYVA","MACANAL","MARIPÍ","MIRAFLORES","MONGUA","MONGUÍ","MONIQUIRÁ",
+                            "MOTAVITA","MUZO","NOBSA","NUEVO COLÓN","OICATÁ","OTANCHE","PACHAVITA","PÁEZ",
+                            "PAIPA","PAJARITO","PANQUEBA","PAUNA","PAYA","PAZ DE RÍO","PESCA","PISBA",
+                            "PUERTO BOYACÁ","QUÍPAMA","RAMIRIQUÍ","RÁQUIRA","RONDÓN","SABOYÁ","SÁCHICA",
+                            "SAMACÁ","SAN EDUARDO","SAN JOSÉ DE PARE","SAN LUIS DE GACENO","SAN MATEO",
+                            "SAN MIGUEL DE SEMA","SAN PABLO DE BORBUR","SANTANA","SANTA MARÍA",
+                            "SANTA ROSA DE VITERBO","SANTA SOFÍA","SATIVANORTE","SATIVASUR","SIACHOQUE",
+                            "SOATÁ","SOCOTÁ","SOCHA","SOGAMOSO","SOMONDOCO","SORA","SOTAQUIRÁ","SORACÁ","SUSACÓN",
+                            "SUTAMARCHÁN","SUTATENZA","TASCO","TENZA","TIBANÁ","TIBASOSA","TINJACÁ","TIPACOQUE",
+                            "TOCA","TOGÜÍ","TÓPAGA","TOTA","TUNJA","TUNUNGUÁ","TURMEQUÉ","TUTA","TUTAZÁ","ÚMBITA",
+                            "VENTAQUEMADA","VIRACACHÁ","ZETAQUIRA"]
+                },
+                {
+                    label:"CALDAS",
+                    options:["AGUADAS","ANSERMA","ARANZAZU","BELALCÁZAR","CHINCHINÁ","FILADELFIA",
+                            "LA DORADA","LA MERCED","MANIZALES","MANZANARES","MARMATO","MARQUETALIA","MARULANDA","NEIRA",
+                            "NORCASIA","PÁCORA","PALESTINA","PENSILVANIA","RIOSUCIO","RISARALDA","SALAMINA",
+                            "SAMANÁ","SAN JOSÉ","SUPÍA","VICTORIA","VILLAMARÍA","VITERBO"]
+                },
+                {
+                    label:"CAQUETÁ",
+                    options:["ALBANIA","BELÉN DE LOS ANDAQUÍES","CARTAGENA DEL CHAIRÁ","CURILLO",
+                            "EL DONCELLO","EL PAUJÍL","FLORENCIA","LA MONTAÑITA","MILÁN","MORELIA","PUERTO RICO",
+                            "SAN JOSÉ DEL FRAGUA","SAN VICENTE DEL CAGUÁN","SOLANO","SOLITA","VALPARAÍSO"]
+                },
+                {
+                    label:"CASANARE",
+                    options:["AGUAZUL","CHÁMEZA","HATO COROZAL","LA SALINA","MANÍ","MONTERREY","NUNCHÍA",
+                            "OROCUÉ","PAZ DE ARIPORO","PORE","RECETOR","SABANALARGA","SÁCAMA","SAN LUIS DE PALENQUE",
+                            "TÁMARA","TAURAMENA","TRINIDAD","VILLANUEVA","YOPAL",]
+                },
+                {
+                    label:"CAUCA",
+                    options:["ALMAGUER","ARGELIA","BALBOA","BOLÍVAR","BUENOS AIRES","CAJIBÍO","CALDONO",
+                            "CALOTO","CORINTO","EL TAMBO","FLORENCIA","GUACHENÉ","GUAPI","INZÁ","JAMBALÓ",
+                            "LA SIERRA","LA VEGA","LÓPEZ DE MICAY","MERCADERES","MIRANDA","MORALES","PADILLA",
+                            "PÁEZ","PATÍA","PIAMONTE","PIENDAMÓ - TUNÍA","POPAYÁN","PUERTO TEJADA","PURACÉ","ROSAS",
+                            "SAN SEBASTIÁN","SANTANDER DE QUILICHAO","SANTA ROSA","SILVIA","SOTARÁ PAISPAMBA",
+                            "SUÁREZ","SUCRE","TIMBÍO","TIMBIQUÍ","TORIBÍO","TOTORÓ","VILLA RICA"]
+                },
+                {
+                    label:"CESAR",
+                    options:["AGUACHICA","AGUSTÍN CODAZZI","ASTREA","BECERRIL","BOSCONIA","CHIMICHAGUA",
+                            "CHIRIGUANÁ","CURUMANÍ","EL COPEY","EL PASO","GAMARRA","GONZÁLEZ","LA GLORIA",
+                            "LA JAGUA DE IBIRICO","MANAURE BALCÓN DEL CESAR","PAILITAS","PELAYA","PUEBLO BELLO",
+                            "RÍO DE ORO","LA PAZ","SAN ALBERTO","SAN DIEGO","SAN MARTÍN","TAMALAMEQUE",
+                            "VALLEDUPAR"]
+                },
+                {
+                    label:"CHOCÓ",
+                    options:["ACANDÍ","ALTO BAUDÓ","ATRATO","BAGADÓ","BAHÍA SOLANO","BAJO BAUDÓ",
+                            "BOJAYÁ","EL CANTÓN DEL SAN PABLO","CARMEN DEL DARIÉN","CÉRTEGUI","CONDOTO",
+                            "EL CARMEN DE ATRATO","EL LITORAL DEL SAN JUAN","ISTMINA","JURADÓ","LLORÓ",
+                            "MEDIO ATRATO","MEDIO BAUDÓ","MEDIO SAN JUAN","NÓVITA","NUQUÍ","QUIBDÓ",
+                            "RÍO IRÓ","RÍO QUITO",
+                            "RIOSUCIO","SAN JOSÉ DEL PALMAR","SIPÍ","TADÓ","UNGUÍA","UNIÓN PANAMERICANA"]
+                },
+                {
+                    label:"CÓRDOBA",
+                    options:["AYAPEL","BUENAVISTA","CANALETE","CERETÉ","CHIMÁ","CHINÚ","CIÉNAGA DE ORO",
+                            "COTORRA","LA APARTADA","LORICA","LOS CÓRDOBAS","MOMIL","MONTELÍBANO","MONTERÍA",
+                            "MOÑITOS","PLANETA RICA","PUEBLO NUEVO","PUERTO ESCONDIDO","PUERTO LIBERTADOR",
+                            "PURÍSIMA DE LA CONCEPCIÓN","SAHAGÚN","SAN ANDRÉS DE SOTAVENTO","SAN ANTERO",
+                            "SAN BERNARDO DEL VIENTO","SAN CARLOS","SAN JOSÉ DE URÉ","SAN PELAYO","TIERRALTA",
+                            "TUCHÍN","VALENCIA"]
+                },
+                {
+                    label:"CUNDINAMARCA",
+                    options:["AGUA DE DIOS","ALBÁN","ANAPOIMA","ANOLAIMA","APULO","ARBELÁEZ","BELTRÁN","BITUIMA","BOJACÁ",
+                            "CABRERA","CACHIPAY","CAJICÁ","CAPARRAPÍ","CÁQUEZA","CARMEN DE CARUPA","CHAGUANÍ",
+                            "CHÍA","CHIPAQUE","CHOACHÍ","CHOCONTÁ","COGUA","COTA","CUCUNUBÁ","EL COLEGIO",
+                            "EL PEÑÓN","EL ROSAL","FACATATIVÁ","FÓMEQUE","FOSCA","FUNZA","FÚQUENE","FUSAGASUGÁ",
+                            "GACHALÁ","GACHANCIPÁ","GACHETÁ","GAMA","GIRARDOT","GRANADA","GUACHETÁ","GUADUAS",
+                            "GUASCA","GUATAQUÍ","GUATAVITA","GUAYABAL DE SÍQUIMA","GUAYABETAL","GUTIÉRREZ",
+                            "JERUSALÉN","JUNÍN","LA CALERA","LA MESA","LA PALMA","LA PEÑA","LA VEGA","LENGUAZAQUE",
+                            "MACHETÁ","MADRID","MANTA","MEDINA","MOSQUERA","NARIÑO","NEMOCÓN","NILO","NIMAIMA",
+                            "NOCAIMA","PACHO","PAIME","PANDI","PARATEBUENO","PASCA","PUERTO SALGAR",
+                            "PULÍ","QUEBRADANEGRA","QUETAME","QUIPILE","RICAURTE",
+                            "SAN ANTONIO DEL TEQUENDAMA","SAN BERNARDO","SAN CAYETANO","SAN FRANCISCO",
+                            "SAN JUAN DE RIOSECO","SASAIMA","SESQUILÉ","SIBATÉ","SILVANIA","SIMIJACA","SOACHA",
+                            "SOPÓ","SUBACHOQUE","SUESCA","SUPATÁ","SUSA","SUTATAUSA","TABIO","TAUSA","TENA",
+                            "TENJO","TIBACUY","TIBIRITA","TOCAIMA","TOCANCIPÁ","TOPAIPÍ","UBALÁ","UBAQUE",
+                            "VILLA DE SAN DIEGO DE UBATÉ","UNE","ÚTICA","VENECIA","VERGARA","VIANÍ","VILLAGÓMEZ",
+                            "VILLAPINZÓN","VILLETA","VIOTÁ","YACOPÍ","ZIPACÓN","ZIPAQUIRÁ"]
+                },
+                {
+                    label:"GUAINÍA",
+                    options:["BARRANCOMINAS","CACAHUAL","INÍRIDA","LA GUADALUPE","MORICHAL","PANA PANA",
+                            "PUERTO COLOMBIA","SAN FELIPE"]
+                },
+                {
+                    label:"GUAVIARE",
+                    options:["CALAMAR","EL RETORNO","MIRAFLORES","SAN JOSÉ DEL GUAVIARE",]
+                },
+                {
+                    label:"HUILA",
+                    options:["ACEVEDO","AGRADO","AIPE","ALGECIRAS","ALTAMIRA","BARAYA","CAMPOALEGRE","COLOMBIA",
+                            "ELÍAS","GARZÓN","GIGANTE","GUADALUPE","HOBO","ÍQUIRA","ISNOS","LA ARGENTINA",
+                            "LA PLATA","NÁTAGA","NEIVA","OPORAPA","PAICOL","PALERMO","PALESTINA","PITAL",
+                            "PITALITO","RIVERA","SALADOBLANCO","SAN AGUSTÍN","SANTA MARÍA","SUAZA","TARQUI",
+                            "TELLO","TERUEL","TESALIA","TIMANÁ","VILLAVIEJA","YAGUARÁ"]
+                },
+                {
+                    label:"LA GUAJIRA",
+                    options:["ALBANIA","BARRANCAS","DIBULLA","DISTRACCIÓN","EL MOLINO","FONSECA","HATONUEVO",
+                            "LA JAGUA DEL PILAR","MAICAO","MANAURE","RIOHACHA","SAN JUAN DEL CESAR","URIBIA",
+                            "URUMITA","VILLANUEVA"]
+                },
+                {
+                    label:"MAGDALENA",
+                    options:["ALGARROBO","ARACATACA","ARIGUANÍ","CERRO DE SAN ANTONIO","CHIVOLO","CIÉNAGA",
+                            "CONCORDIA","EL BANCO","EL PIÑÓN","EL RETÉN","FUNDACIÓN","GUAMAL","NUEVA GRANADA",
+                            "PEDRAZA","PIJIÑO DEL CARMEN","PIVIJAY","PLATO","PUEBLOVIEJO","REMOLINO",
+                            "SABANAS DE SAN ÁNGEL","SALAMINA","SAN SEBASTIÁN DE BUENAVISTA","SAN ZENÓN",
+                            "SANTA ANA","SANTA BÁRBARA DE PINTO","SANTA MARTA","SITIONUEVO","TENERIFE","ZAPAYÁN",
+                            "ZONA BANANERA"]
+                },
+                {
+                    label:"META",
+                    options:["ACACÍAS","BARRANCA DE UPÍA","CABUYARO","CASTILLA LA NUEVA","CUBARRAL","CUMARAL",
+                            "EL CALVARIO","EL CASTILLO","EL DORADO","FUENTE DE ORO","GRANADA","GUAMAL",
+                            "LA MACARENA","LEJANÍAS","MAPIRIPÁN","MESETAS","PUERTO CONCORDIA","PUERTO GAITÁN",
+                            "PUERTO LLERAS","PUERTO LÓPEZ","PUERTO RICO","RESTREPO","SAN CARLOS DE GUAROA",
+                            "SAN JUAN DE ARAMA","SAN JUANITO","SAN MARTÍN","URIBE","VILLAVICENCIO","VISTAHERMOSA"]
+                },
+                {
+                    label:"NARIÑO",
+                    options:["ALBÁN","ALDANA","ANCUYA","ARBOLEDA","BARBACOAS","BELÉN","BUESACO","CHACHAGÜÍ",
+                    "COLÓN","CONSACÁ","CONTADERO","CÓRDOBA","CUASPUD CARLOSAMA","CUMBAL","CUMBITARA","EL CHARCO",
+                    "EL PEÑOL","EL ROSARIO","EL TABLÓN DE GÓMEZ","EL TAMBO","FRANCISCO PIZARRO","FUNES","GUACHUCAL",
+                    "GUAITARILLA","GUALMATÁN","ILES","IMUÉS","IPIALES","LA CRUZ","LA FLORIDA","LA LLANADA",
+                    "LA TOLA","LA UNIÓN","LEIVA","LINARES","LOS ANDES","MAGÜÍ","MALLAMA","MOSQUERA","NARIÑO",
+                    "OLAYA HERRERA","OSPINA","PASTO","POLICARPA","POTOSÍ","PROVIDENCIA","PUERRES","PUPIALES",
+                    "RICAURTE","ROBERTO PAYÁN","SAMANIEGO","SAN ANDRÉS DE TUMACO","SAN BERNARDO","SAN LORENZO",
+                    "SAN PABLO","SAN PEDRO DE CARTAGO","SANDONÁ","SANTA BÁRBARA","SANTACRUZ","SAPUYES","TAMINANGO",
+                    "TANGUA","TÚQUERRES","YACUANQUER"]
+                },
+                {
+                    label:"NORTE DE SANTANDER",
+                    options:["ÁBREGO","ARBOLEDAS","BOCHALEMA","BUCARASICA","CÁCHIRA","CÁCOTA","CHINÁCOTA","CHITAGÁ",
+                            "CONVENCIÓN","CUCUTILLA","DURANIA","EL CARMEN","EL TARRA","EL ZULIA","GRAMALOTE",
+                            "HACARÍ","HERRÁN","LA ESPERANZA","LA PLAYA","LABATECA","LOS PATIOS","LOURDES",
+                            "MUTISCUA","OCAÑA","PAMPLONA","PAMPLONITA","PUERTO SANTANDER","RAGONVALIA","SALAZAR",
+                            "SAN CALIXTO","SAN CAYETANO","SAN JOSÉ DE CÚCUTA","SANTIAGO","SARDINATA","SILOS",
+                            "TEORAMA","TIBÚ","TOLEDO","VILLA CARO","VILLA DEL ROSARIO"]
+                },
+                {
+                    label:"PUTUMAYO",
+                    options:["COLÓN","MOCOA","ORITO","PUERTO ASÍS","PUERTO CAICEDO","PUERTO GUZMÁN",
+                    "PUERTO LEGUÍZAMO","SAN FRANCISCO","SAN MIGUEL","SANTIAGO","SIBUNDOY","VALLE DEL GUAMUEZ",
+                    "VILLAGARZÓN"]
+                },
+                {
+                    label:"QUINDÍO",
+                    options:["ARMENIA","BUENAVISTA","CALARCÁ","CIRCASIA","CÓRDOBA","FILANDIA","GÉNOVA","LA TEBAIDA",
+                            "MONTENEGRO","PIJAO","QUIMBAYA","SALENTO"]
+                },
+                {
+                    label:"RISARALDA",
+                    options:["APÍA","BALBOA","BELÉN DE UMBRÍA","DOSQUEBRADAS","GUÁTICA","LA CELIA","LA VIRGINIA",
+                            "MARSELLA","MISTRATÓ","PEREIRA","PUEBLO RICO","QUINCHÍA","SANTA ROSA DE CABAL",
+                            "SANTUARIO"]
+                },
+                {
+                    label:"SANTANDER",
+                    options:["AGUADA","ALBANIA","ARATOCA","BARBOSA","BARICHARA","BARRANCABERMEJA","BETULIA",
+                            "BOLÍVAR","BUCARAMANGA","CABRERA","CALIFORNIA","CAPITANEJO","CARCASÍ","CEPITÁ",
+                            "CERRITO","CHARALÁ","CHARTA","CHIMA","CHIPATÁ","CIMITARRA","CONCEPCIÓN","CONFINES",
+                            "CONTRATACIÓN","COROMORO","CURITÍ","EL CARMEN DE CHUCURÍ","EL GUACAMAYO","EL PEÑÓN",
+                            "EL PLAYÓN","ENCINO","ENCISO","FLORIÁN","FLORIDABLANCA","GALÁN","GÁMBITA","GIRÓN",
+                            "GUACA","GUADALUPE","GUAPOTÁ","GUAVATÁ","GÜEPSA","HATO","JESÚS MARÍA","JORDÁN",
+                            "LA BELLEZA","LA PAZ","LANDÁZURI","LEBRIJA","LOS SANTOS","MACARAVITA","MÁLAGA",
+                            "MATANZA","MOGOTES","MOLAGAVITA","OCAMONTE","OIBA","ONZAGA","PALMAR",
+                            "PALMAS DEL SOCORRO","PÁRAMO","PIEDECUESTA","PINCHOTE","PUENTE NACIONAL","PUERTO PARRA",
+                            "PUERTO WILCHES","RIONEGRO","SABANA DE TORRES","SAN ANDRÉS","SAN BENITO","SAN GIL",
+                            "SAN JOAQUÍN","SAN JOSÉ DE MIRANDA","SAN MIGUEL","SAN VICENTE DE CHUCURÍ",
+                            "SANTA BÁRBARA","SANTA HELENA DEL OPÓN","SIMACOTA","SOCORRO","SUAITA","SUCRE","SURATÁ",
+                            "TONA","VALLE DE SAN JOSÉ","VÉLEZ","VETAS","VILLANUEVA","ZAPATOCA"]
+                },
+                {
+                    label:"SUCRE",
+                    options:["BUENAVISTA","CAIMITO","CHALÁN","COLOSÓ","COROZAL","COVEÑAS","EL ROBLE","GALERAS",
+                            "GUARANDA","LA UNIÓN","LOS PALMITOS","MAJAGUAL","MORROA","OVEJAS","PALMITO","SAMPUÉS",
+                            "SAN BENITO ABAD","SAN JOSÉ DE TOLUVIEJO","SAN JUAN DE BETULIA","SAN LUIS DE SINCÉ",
+                            "SAN MARCOS","SAN ONOFRE","SAN PEDRO","SANTIAGO DE TOLÚ","SINCELEJO","SUCRE"]
+                },
+                {
+                    label:"TOLIMA",
+                    options:["ALPUJARRA","ALVARADO","AMBALEMA","ANZOÁTEGUI","ARMERO","ATACO","CAJAMARCA",
+                            "CARMEN DE APICALÁ","CASABIANCA","CHAPARRAL","COELLO","COYAIMA","CUNDAY","DOLORES",
+                            "ESPINAL","FALAN","FLANDES","FRESNO","GUAMO","HERVEO","HONDA","IBAGUÉ","ICONONZO",
+                            "LÉRIDA","LÍBANO","MELGAR","MURILLO","NATAGAIMA","ORTEGA","PALOCABILDO","PIEDRAS",
+                            "PLANADAS","PRADO","PURIFICACIÓN","RIOBLANCO","RONCESVALLES","ROVIRA","SALDAÑA",
+                            "SAN ANTONIO","SAN LUIS","SAN SEBASTIÁN DE MARIQUITA","SANTA ISABEL","SUÁREZ",
+                            "VALLE DE SAN JUAN","VENADILLO","VILLAHERMOSA","VILLARRICA"]
+                },
+                {
+                    label:"VALLE DEL CAUCA",
+                    options:["ALCALÁ","ANDALUCÍA","ANSERMANUEVO","ARGELIA","BOLÍVAR","BUENAVENTURA","BUGALAGRANDE",
+                            "CAICEDONIA","CALI","CALIMA","CANDELARIA","CARTAGO","DAGUA","EL ÁGUILA","EL CAIRO",
+                            "EL CERRITO","EL DOVIO","FLORIDA","GINEBRA","GUACARÍ","GUADALAJARA DE BUGA","JAMUNDÍ",
+                            "LA CUMBRE","LA UNIÓN","LA VICTORIA","OBANDO","PALMIRA","PRADERA","RESTREPO","RIOFRÍO",
+                            "ROLDANILLO","SAN PEDRO","SEVILLA","TORO","TRUJILLO","TULUÁ","ULLOA","VERSALLES",
+                            "VIJES","YOTOCO","YUMBO","ZARZAL"]
+                },
+                {
+                    label:"VAUPÉS",
+                    options:["CARURÚ","MITÚ","PACOA","PAPUNAHUA","TARAIRA","YAVARATÉ",]
+                },
+                {
+                    label:"VICHADA",
+                    options:["CUMARIBO","LA PRIMAVERA","PUERTO CARREÑO","SANTA ROSALÍA",]
                 }
             ]
         }
     },
 
     methods:{
-    selectDrink:function() {
+    selectMunicipio:function() {
       this.selectedOption = '';
     },
   },
 }
-
 </script>
 
 <style>
@@ -3023,6 +3291,18 @@ export default {
   padding-left: 30px; 
 }
 #Personas input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #3366cc; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+#Personas .dep_mun select{
   background-color: #fbfbfb; 
   width: 408px; 
   height: 40px; 
@@ -3078,8 +3358,7 @@ export default {
 #Personas ::-webkit-textarea-placeholder {
  color: #a8a8a8;
 }
-#Personas .formulario input:focus{
-  outline:0;
-  border: 1px solid #f42f63;
+#Personas ::-webkit-select-placeholder {
+ color: #a8a8a8;
 }
 </style>
