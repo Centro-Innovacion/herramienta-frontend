@@ -45,7 +45,7 @@
 #Home img {
   width: 40%;
   height: 40%;
-  margin: 0px 47px 0px 20px;
+  margin: 0px 47px 0px 20px;/*top-right-bottom-left*/
   filter: brightness(1.1);
   mix-blend-mode: multiply;
 }

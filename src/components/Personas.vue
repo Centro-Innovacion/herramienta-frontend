@@ -6,7 +6,7 @@
                 <h3>Por favor selecciona la información de tu entidad:</h3>
                 <div class="wrap">
                     <p>
-                        <label for="Entidad" class="Selecciona el nombre de tu entidad">Nombre de la entidad:
+                        <label for="Entidad" class="nombre_entidad">Nombre de la entidad:
                             <span class="obligatorio">*</span>
                         </label>
                         <input list="publicas" name="publicas" type="text" placeholder="Selecciona a tu entidad de la lista">
@@ -3279,7 +3279,6 @@ export default {
 #Personas {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }
 #Personas .contact_form{  
   width: 460px; 
@@ -3288,7 +3287,12 @@ export default {
   padding-top: 30px;
   padding-bottom: 20px;  
   background-color: #ffffff; 
-  padding-left: 30px; 
+  padding-left: 30px;
+}
+#Personas .wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 #Personas input{
   background-color: #fbfbfb; 
