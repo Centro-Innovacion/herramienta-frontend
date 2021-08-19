@@ -222,5 +222,6 @@ color: #FFFFFF; /*color texto*/
 font-family: Montserrat;
 border-radius: 40px; /*bordes redondos*/
 text-decoration: none; /*quitar el subrayado del hipervinculo*/
+cursor: pointer;
 }
 </style>

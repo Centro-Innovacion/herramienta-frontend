@@ -3296,6 +3296,11 @@ export default {
   background-color: #ffffff; 
   padding-left: 30px;
 }
+#Personas .wrap p {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
 #Personas .wrap {
     display: flex;
     justify-content: flex-start;
@@ -3339,6 +3344,7 @@ export default {
   width: 200px;   
   cursor: pointer;
   text-decoration: none; /*quitar el subrayado del hipervinculo*/
+  color: #ffffff;
 }
 #Personas button p{
   color: #ffff;
