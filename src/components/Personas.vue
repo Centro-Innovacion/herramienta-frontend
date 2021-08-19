@@ -9,7 +9,7 @@
                         <label for="Entidad" class="nombre_entidad">Nombre de la entidad:
                             <span class="obligatorio">*</span>
                         </label>
-                        <input list="publicas" name="publicas" type="text" placeholder="Selecciona a tu entidad de la lista">
+                        <input list="publicas" name="publicas" type="text" id="nombre_ent" placeholder="Selecciona a tu entidad de la lista">
                         <datalist id="publicas">
                             <option value= "ABASTOS GUADALAJARA DE BUGA"></option>
                             <option value= "ADMINISTRACION PUBLICA COOPERATIVA DE SERVICIOS PUBLICOS AGUAS DE SAN FRANCISCO CORDOBA"></option>
@@ -2951,18 +2951,19 @@
                         <span class="obligatorio">*</span>
                     </label>
 
-                    <select v-model="selectedMunicipio" @change="selectMunicipio">
-                    <option v-for="(municipio,index) in municipios" :value="index">{{ municipio.label }}</option>
+                    <select id="dep_ent" v-model="selectedMunicipio" @change="selectMunicipio">
+                        <option v-for="(municipio,index) in municipios" :value="index">{{ municipio.label }}</option>
                     </select>
 
-                    <select v-model="selectedOption" v-if="selectedMunicipio != -1">
+                    <select id="mun_ent" v-model="selectedOption" v-if="selectedMunicipio != -1">
                         <option v-for="option in municipios[selectedMunicipio].options">{{ option }}</option>
                     </select>
+                    
                 </div>
                 <br>
                 </div>
-                <div class="button">
-                    <button type="submit" name="siguiente" id="siguiente"><p>Siguiente</p></button>
+                <div class="boton">
+                    <a class="boton" href = '/request'>Siguiente</a>
                 </div>
                 <br>
                 <p class="aviso">
@@ -2974,14 +2975,19 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
     name: "Personas",
     data: function (){
         return {
+            nombre_entidad: '',
+            departamento_entidad: '',
+            municipio_entidad: '',
             municipios: null,
             selectedMunicipio: -1,
             selectedOption: '',
-        
+            
             municipios:[{ label: 'Por favor selecciona una opción de la lista', value: null },
                 {
                     label:"AMAZONAS",
@@ -3268,10 +3274,11 @@ export default {
     },
 
     methods:{
-    selectMunicipio:function() {
-      this.selectedOption = '';
-    },
-  },
+        selectMunicipio:function() {
+        this.selectedOption = '';
+        },
+
+  }
 }
 </script>
 
@@ -3318,11 +3325,11 @@ export default {
   padding-left: 10px;
   margin-bottom: 20px; 
 }
-#Personas .button {
+#Personas .boton {
     display: flex;
     justify-content: center;
 }
-#Personas .button button{
+#Personas .boton a{
   height: 45px; 
   padding: 5px;   
   background-color: #F42F63; 
@@ -3331,6 +3338,7 @@ export default {
   border-radius: 10px;  
   width: 200px;   
   cursor: pointer;
+  text-decoration: none; /*quitar el subrayado del hipervinculo*/
 }
 #Personas button p{
   color: #ffff;

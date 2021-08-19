@@ -9,6 +9,7 @@
           <p>Escoge una categoría para consultar la información que buscas</p>
         </div>
         <div class="Contenido">
+            <a class="boton" v-on:click="contarLineamientos" id="botonLineamientos">
             <div class="Lineamientos">
                 <div class="titulo">
                     <img src="../assets/lineamientos.png">
@@ -21,7 +22,9 @@
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
-            
+            </a>
+
+            <a class="boton" v-on:click="contarSocializacion" id="botonSocializacion">
             <div class="Socializacion">
                 <div class="titulo">
                   <img src="../assets/socializacion.png">
@@ -34,7 +37,9 @@
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
+            </a>
 
+            <a class="boton" v-on:click="contarFortalecimiento" id="botonFortalecimiento">
             <div class="Fortalecimiento">
                 <div class="titulo">
                   <img src="../assets/fortalecimiento.png">
@@ -47,7 +52,9 @@
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
+            </a>
 
+            <a class="boton" v-on:click="contarAcompanamiento" id="botonAcompanamiento">
             <div class="Acompanamiento">
                 <div class="titulo">
                   <img src="../assets/acompanamiento.png">
@@ -60,7 +67,9 @@
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
+            </a>
 
+            <a class="boton" v-on:click="contarMedicion" id="botonMedicion">
             <div class="Medicion">
                 <div class="titulo">
                   <img src="../assets/medicion.png">
@@ -73,6 +82,8 @@
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
+            </a>
+
         </div>
         <br>
         <hr>
@@ -86,6 +97,7 @@
           <p>Si necesitas un acompañamiento, haz click en la opción que requieras</p>
         </div>
         <div class="Contenido">
+            <a class="boton" v-on:click="contarProyecto" id="botonProyecto">
             <div class="Lineamientos">
                 <div class="titulo">
                     <img src="../assets/lineamientos.png">
@@ -98,7 +110,9 @@
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
+            </a>
             
+            <a class="boton" v-on:click="contarCharla" id="botonCharla">
             <div class="Socializacion">
                 <div class="titulo">
                   <img src="../assets/socializacion.png">
@@ -111,7 +125,9 @@
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
+            </a>
 
+            <a class="boton" v-on:click="contarCapacitacion" id="botonCapacitacion">
             <div class="Fortalecimiento">
                 <div class="titulo">
                   <img src="../assets/fortalecimiento.png">
@@ -124,6 +140,8 @@
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
+            </a>
+
           </div>
           <br>
           <hr>
@@ -136,24 +154,321 @@
         <div class="descripcion">
           <p>Esta opción es únicamente si ya revisaste las anteriores y no se encuentra allí la información que solicitas</p>
         </div>
+
+        
         <div class="Contenidoreunion">
+          <a class="boton" v-on:click="contarReunion" id="botonReunion">
             <div class="Reunion">
                 <div class="titulo">
                     <img src="../assets/lineamientos.png">
                     <p>REUNIÓN</p>
                 </div>
-                <div class="Lnea-4"></div>
+                <div class="Lnea-4">
+                </div>
                 <div class="texto">
                     <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
                     zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
                     dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
                 </div>
             </div>
-          </div>
+          </a>
+        </div>
     </div>
 </template>
 
 <script>
+import axios from "axios";
+
+export default {
+  name: "Request",
+  data: function () {
+      return {
+          id_rol:"",
+          botonLineamientos: 0,
+          botonSocializacion: 0,
+          botonAcompanamiento: 0,
+          botonFortalecimiento:0,
+          botonMedicion: 0,
+          botonProyecto: 0,
+          botonCapacitacion: 0,
+          botonCharla: 0,
+          botonReunion: 0,
+      }
+  },
+
+  methods: {
+
+        contarLineamientos: function() {
+            this.botonLineamientos = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonLineamientos);
+
+            this.newLineamientos = {
+                "id_rol": id,
+                "lineamientos": this.botonLineamientos + 1,
+                "socializacion": 0,
+                "acompanamiento": 0,
+                "fortalecimiento": 0,
+                "medicion": 0,
+                "proyecto": 0,
+                "charla": 0,
+                "capacitacion": 0,
+                "reunion": 0,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newLineamientos)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonLineamientos);
+                    window.location.href = '/lineamientos';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+
+        contarSocializacion: function() {
+            this.botonSocializacion = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonSocializacion);
+
+            this.newSocializacion = {
+                "id_rol": id,
+                "lineamientos": 0,
+                "socializacion": this.botonSocializacion + 1,
+                "acompanamiento": 0,
+                "fortalecimiento": 0,
+                "medicion": 0,
+                "proyecto": 0,
+                "charla": 0,
+                "capacitacion": 0,
+                "reunion": 0,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newSocializacion)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonSocializacion);
+                    window.location.href = '/socializacion';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+
+        contarAcompanamiento: function() {
+            this.botonAcompanamiento = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonAcompanamiento);
+
+            this.newAcompanamiento = {
+                "id_rol": id,
+                "lineamientos": 0,
+                "socializacion": 0,
+                "acompanamiento": this.botonAcompanamiento + 1,
+                "fortalecimiento": 0,
+                "medicion": 0,
+                "proyecto": 0,
+                "charla": 0,
+                "capacitacion": 0,
+                "reunion": 0,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newAcompanamiento)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonAcompanamiento);
+                    window.location.href = '/acompanamiento';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+
+        contarFortalecimiento: function() {
+            this.botonFortalecimiento = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonFortalecimiento);
+
+            this.newFortalecimiento = {
+                "id_rol": id,
+                "lineamientos": 0,
+                "socializacion": 0,
+                "acompanamiento": 0,
+                "fortalecimiento": this.botonFortalecimiento + 1,
+                "medicion": 0,
+                "proyecto": 0,
+                "charla": 0,
+                "capacitacion": 0,
+                "reunion": 0,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newFortalecimiento)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonFortalecimiento);
+                    window.location.href = '/fortalecimiento';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+
+        contarMedicion: function() {
+            this.botonMedicion = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonMedicion);
+
+            this.newMedicion = {
+                "id_rol": id,
+                "lineamientos": 0,
+                "socializacion": 0,
+                "acompanamiento": 0,
+                "fortalecimiento": 0,
+                "medicion": this.botonMedicion + 1,
+                "proyecto": 0,
+                "charla": 0,
+                "capacitacion": 0,
+                "reunion": 0,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newMedicion)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonMedicion);
+                    window.location.href = '/medicion';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+
+        contarProyecto: function() {
+            this.botonProyecto = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonProyecto);
+
+            this.newProyecto = {
+                "id_rol": id,
+                "lineamientos": 0,
+                "socializacion": 0,
+                "acompanamiento": 0,
+                "fortalecimiento": 0,
+                "medicion": 0,
+                "proyecto": this.botonProyecto + 1,
+                "charla": 0,
+                "capacitacion": 0,
+                "reunion": 0,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newProyecto)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonProyecto);
+                    window.location.href = '/proyecto';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+
+        contarCharla: function() {
+            this.botonCharla = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonCharla);
+
+            this.newProyecto = {
+                "id_rol": id,
+                "lineamientos": 0,
+                "socializacion": 0,
+                "acompanamiento": 0,
+                "fortalecimiento": 0,
+                "medicion": 0,
+                "proyecto": 0,
+                "charla": this.botonCharla + 1,
+                "capacitacion": 0,
+                "reunion": 0,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newCharla)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonCharla);
+                    window.location.href = '/charla';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+
+        contarCapacitacion: function() {
+            this.botonCapacitacion = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonCapacitacion);
+
+            this.newProyecto = {
+                "id_rol": id,
+                "lineamientos": 0,
+                "socializacion": 0,
+                "acompanamiento": 0,
+                "fortalecimiento": 0,
+                "medicion": 0,
+                "proyecto": 0,
+                "charla": 0,
+                "capacitacion": this.botonCapacitacion + 1,
+                "reunion": 0,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newCapacitacion)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonCapacitacion);
+                    window.location.href = '/capacitacion';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+
+        contarReunion: function() {
+            this.botonReunion = 0;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+            console.log(this.id, this.botonReunion);
+
+            this.newReunion = {
+                "id_rol": id,
+                "lineamientos": 0,
+                "socializacion": 0,
+                "acompanamiento": 0,
+                "fortalecimiento": 0,
+                "medicion": 0,
+                "proyecto": 0,
+                "charla": 0,
+                "capacitacion": 0,
+                "reunion": this.botonReunion + 1,
+            }
+
+            axios.post("http://127.0.0.1:8000/request/solicitud/", this.newReunion)
+                .then((result) => {
+                    console.log(this.id);
+                    console.log(this.botonReunion);
+                    window.location.href = '/reunion';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
+        },
+  }
+}
 </script>
 
 <style>
@@ -161,6 +476,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+#Request a {
+    border: solid 1px #e6effd;
+    background-color: #e6effd;
+    text-decoration: none; /*quitar el subrayado del hipervinculo*/
+    cursor: pointer;
 }
 #Request .Encabezado {
     display: flex;
@@ -207,6 +528,7 @@
   background-color: #ffffff;
   display: flex;
   justify-content: center;
+  
 }
 #Request .Lineamientos img {
   width: 92px;
