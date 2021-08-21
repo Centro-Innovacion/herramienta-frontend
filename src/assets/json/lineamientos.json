@@ -1,0 +1,309 @@
+[
+   {
+      "id":"1",
+      "nombre":"Acuerdos Marco de Precios",
+      "categoria":"Acuerdos",
+      "descripcion":"xxxx",
+      "nombre_site":"¿Qué es la política?",
+      "site": "https://gobiernodigital.mintic.gov.co/portal/",
+      "nombre_site2":"Decreto xxx",
+      "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+   },
+   {
+      "id":"2",
+      "nombre":"Guía de calidad e interoperabilidad de Datos Abiertos",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"3",
+      "nombre":"Guía de Gestión de cuentas en correo GOV.CO Territorial",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"4",
+      "nombre":"Guía de lineamientos para el uso de tecnologías emergentes",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"5",
+      "nombre":"Guía de referencia de Blockchain",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"6",
+      "nombre":"Guía Nacional de Datos Abiertos",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"7",
+      "nombre":"Guía para solicitud y creación de sitios web",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"8",
+      "nombre":"Guías de servicios ciudadanos digitales",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"9",
+      "nombre":"Guías y lineamientos de integracion a GOV.CO",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"10",
+      "nombre":"Guías y lineamientos para la vinculación a SCD",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"11",
+      "nombre":"Hoja de Ruta de Datos Abiertos",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"12",
+      "nombre":"Integración a GOV.CO",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"13",
+      "nombre":"Integración a GOV.CO/Territorial",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"14",
+      "nombre":"Lineamientos biblioteca gobierno digital",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"15",
+      "nombre":"Lineamiento en uso de redes sociales",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"16",
+      "nombre":"Lineamientos de innovación pública",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"17",
+      "nombre":"Lineamientos de integración de Sedes, Trámites y Servicios",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"18",
+      "nombre":"Lineamientos generales en el uso y operación de los Servicios Ciudadanos Digitales",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"19",
+      "nombre":"Lineamientos Modelo de Arquitectura Empresarial",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"20",
+      "nombre":"Lineamientos Modelo de Gestión de Proyectos de TI",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"21",
+      "nombre":"Lineamientos para el protocolo Internet IPv6",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"22",
+      "nombre":"Manual de Gobierno Digital",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"23",
+      "nombre":"Manuales, protocolos o guías de comunicación digital para entidades de gobierno",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"24",
+      "nombre":"Marco de Arquitectura Empresarial",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"25",
+      "nombre":"Marco de Interoperabilidad",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"26",
+      "nombre":"Marco de Seguridad y Privacidad",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"27",
+      "nombre":"Marco de Transformación Digital",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"28",
+      "nombre":"Metodologia Cocrear ",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"29",
+      "nombre":"Modelo de Seguridad y privacidad de la información",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"30",
+      "nombre":"Modelo de Madurez de Ciudades y Territorios Inteligentes",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"31",
+      "nombre":"Marco de Referencia Arquitectura TI",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"32",
+      "nombre":"Política de Gobierno Digital",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"33",
+      "nombre":"Lineamientos y estándares para la estrategia de seguridad digital",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   },
+   {
+      "id":"34",
+      "nombre":"Simplificación de la interacción digital entre los ciudadanos y el Estado",
+      "categoria":"Guías",
+      "descripcion":"xxxx",
+      "informacion":"Tierra",
+      "nombre_site":"Uso del estándar de lenguaje común",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
+   }
+] 

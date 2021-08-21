@@ -14,7 +14,6 @@ import Charla from '../components/Charla'
 import Capacitacion from '../components/Capacitacion'
 import Reunion from '../components/Reunion'
 import Evaluacion from '../components/Evaluacion'
-import Prueba from '../components/Prueba'
 
 const router = new vueRouter({
     mode: 'history',
@@ -89,11 +88,6 @@ const router = new vueRouter({
             path: '/evaluar',
             name: "Evaluacion",
             component: Evaluacion
-        },
-        {
-            path: '/prueba',
-            name: "Prueba",
-            component: Prueba
         }
         ]
         })
