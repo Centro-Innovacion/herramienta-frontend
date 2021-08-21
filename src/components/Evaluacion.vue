@@ -1,12 +1,12 @@
 <template>
   <div id="Evaluacion">
         <div class="Encabezado">
-            <h4>SECCIÓN 4. RETROALIMENTACIÓN</h4>
+            <h4>SOLICITUD ESPECÍFICA</h4>
             
         </div>
         <br>
         <div class="Pregunta">
-            <p>1. ¿Esta herramienta te ayudó a resolver tu solicitud?</p>
+            <p>1. ¿Tu solicitud fue resuelta por medio de esta herramienta?</p>
                 <b-form-group
                     v-slot="{ ariaDescribedby }"
                 >
@@ -24,15 +24,9 @@
                 </b-form-group>
         </div>
         <br>
-        <div class="Rating">
-            <p> 2. Por favor califica qué tanto te ayudó esta herramienta a resolver tu solicitud</p>
-            <b-form-rating v-model="value" variant="warning" class="mb-2"></b-form-rating>
-        </div>
-        <br>
-        
-
+      
         <div class="Textarea">
-      <p>3. Por favor indícanos tus apreciaciones adicionales</p>
+      <p>2. Si seleccionaste "No" por favor escribe a continuación tu solicitud de manera detallada:</p>
       <b-form-textarea
         id="eval"
         v-model="text"
@@ -42,6 +36,13 @@
       ></b-form-textarea>
 
       <pre class="mt-3 mb-0">{{ text }}</pre>
+    </div>
+
+    <div class="redireccion">
+    <p> Para radicar tu petición en el sistema de información del Ministerio de las Tecnologías de
+    la Información y las Comunicaciones, por favor dirígete a este link: 
+    <a class="boton" href="https://www.mintic.gov.co/portal/inicio/Atencion-y-Servicio-a-la-Ciudadania/Informes-de-PQRSD/125804:Registro-PQRSD" target="_blank">Sistema de PQRS</a>
+    </p>
     </div>
 
     <center>

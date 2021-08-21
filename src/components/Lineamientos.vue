@@ -9,128 +9,439 @@
     </div>
 
     <div class="Temas">
-        <b-card title="Política de Gobierno Digital" sub-title="Categoría: Lineamientos" class="text-left">
+        <b-card title="Acuerdos Marco de Precios" sub-title="Categoría: Lineamientos" class="text-left">
             <h6>
-            La política de Gobierno Digital define los lineamientos, estándares y proyectos estratégicos,
-            que que permiten llevar a cabo la transformación digital del Estado, a fin de lograr una mejor 
-            interacción con ciudadanos, usuarios y grupos de interés; permitiendo resolver necesidades 
-            satisfactoriamente, resolver problemáticas públicas, posibilitar el desarrollo sostenible y en 
-            general, crear valor público.
+            
             </h6>
 
-            <h6>Puedes consultar mayor información sobre la Política de Gobierno Digital haciendo
+            <h6>Puedes consultar mayor información sobre la Acuerdos Marco de Precios haciendo
                 click en los siguientes links:
             </h6>
 
-            <a href= "https://gobiernodigital.mintic.gov.co/portal/Politica-de-Gobierno-Digital/" target = "blank" class="card-link">Portal Gobierno Digital</a>
-            <b-link href="http://es.presidencia.gov.co/normativa/normativa/DECRETO%201008%20DEL%2014%20DE%20JUNIO%20DE%202018.pdf" target = "blank" class="card-link">Decreto 1008 de 2018</b-link>
+            <a href= "" target = "blank" class="card-link">¿Qué son los Acuerdos Marco de Precios?</a>
+            <b-link href="" target = "blank" class="card-link">Acuerdos Marco de Precios Vigentes</b-link>
         </b-card>
         <br>
-        <b-card title="Documento Maestro de Arquitectura Empresarial" sub-title="Categoría: Lineamientos" class="text-left">
+        <b-card title="Guía de Calidad de Datos Abiertos" sub-title="Categoría: Lineamientos" class="text-left">
             <h6>
-            Instrumento para implementar el habilitador de Arquitectura de la Política de Gobierno Digital
-            del Estado Colombiano que establece el uso y aprovechamiento de las tecnologías de la información
-            y las comunicaciones para consolidar un Estado y ciudadanos competitivos, proactivos e innovadores,
-            que generen valor público en un entorno de confianza digital.
+            
             </h6>
 
-            <h6>Puedes consultar mayor información sobre el Documento Maestro de Arquitectura Empresarial
+            <h6>Puedes consultar mayor información sobre la Guía de Calidad de Datos Abiertos
                 haciendo click en el siguiente link:
             </h6>
 
-            <a href="https://www.mintic.gov.co/arquitecturati/630/articles-144764_recurso_pdf.pdf" target = "blank" class="card-link">Documento Maestro de Arquitectura Empresarial</a>
+            <a href="" target = "blank" class="card-link">¿Qué es la guía de calidad de datos abiertos?</a>
         </b-card>
         <br>
-        <b-card title="Documento Maestro de Gestión de Proyectos de TI" sub-title="Categoría: Lineamientos">
+        <b-card title="Guía de calidad e interoperabilidad de Datos Abiertos" sub-title="Categoría: Lineamientos">
             <h6>
-            El Modelo de Gestión de Proyectos de TI orienta a las entidades públicas a gestionar de principio a fin los proyectos con componentes
-            de Tecnologías de la Información que habilitan servicios digitales de confianza y mejoran las capacidades
-            institucionales.
+            
             </h6>
 
-            <h6>Puedes consultar mayor información sobre el Modelo de Gestión de Proyectos de TI
+            <h6>Puedes consultar mayor información sobre la Guía de calidad e interoperabilidad de Datos Abiertos
                 haciendo click en el siguiente link:</h6>
 
-            <a href="https://www.mintic.gov.co/arquitecturati/630/articles-144766_recurso_pdf.pdf" target = "blank" class="card-link">Documento Maestro de Gestión de Proyectos de TI</a>
+            <a href="" target = "blank" class="card-link">¿Qué es la guía de calidad e interoperabilidad de Datos Abiertos?</a>
         </b-card>
         <br>
-        <b-card title="Documento Maestro del Modelo de Gestión y Gobierno de TI" sub-title="Categoría: Lineamientos">
+        <b-card title="Guía de Gestion de cuentas en correo GOV.CO Territorial  " sub-title="Categoría: Lineamientos">
             <h6>
-            El Documento Maestro del Modelo de Gestión y Gobierno de TI describe la estructura del Modelo de Gestión
-            y Gobierno de TI, los dominios y lineamientos, las guías que componen el modelo, las evidencias que se
-            deben generar y los procesos que permiten gestionar las TI de forma adecuada. Este documento está dirigido
-            a los líderes Estratégicos de TI, a los profesionales de las áreas de TI y a los profesionales encargados
-            de la implementación de la Política de Gobierno Digital de las Entidades Públicas del Estado Colombiano.
+
             </h6>
 
-            <h6>Puedes consultar mayor información sobre el Modelo de Gestión
-                y Gobierno de TI haciendo click en el siguiente link:</h6>
+            <h6>Puedes consultar mayor información sobre la Guia de Gestion de cuentas en correo GOV.CO Territorial
+             haciendo click en el siguiente link:</h6>
 
-            <a href="https://www.mintic.gov.co/arquitecturati/630/articles-144767_recurso_pdf.pdf" target="blank" class="card-link">Documento Maestro del Modelo de Gestión y Gobierno de TI</a>
+            <a href="" target="blank" class="card-link">¿Qué es la Guia de Gestion de cuentas en correo GOV.CO Territorial?</a>
             
         </b-card>
         <br>
-        <b-card title="Guía de Referencia de Blockchain" sub-title="Categoría Lineamientos">
+        <b-card title="Guia de lineamientos para el uso de tecnologias emergentes " sub-title="Categoría Lineamientos">
             <h6>
-            En esta guía, se presentan los lineamientos que deberán tener en cuenta las entidades públicas para el
-            desarrollo de proyectos de blockchain en la gestión pública, para diseñarlos y operarlos de forma
-            organizada, escalonada y estructurada, a partir de las recomendaciones y buenas prácticas,
-            permitiendo la mejora general del bienestar de la ciudadanía y de los servicios a cargo del Estado.
+            
             </h6>
 
-            <h6>Puedes consultar mayor información sobre la Guía de Referencia de Blockchain
+            <h6>Puedes consultar mayor información sobre la Guia de lineamientos para el uso de tecnologias emergentes 
                  haciendo click en el siguiente link:</h6>
 
-            <a href="https://gobiernodigital.mintic.gov.co/692/articles-161810_Ley_2052_2020.pdf" target = 'blank' class="card-link">Guía de Referencia de Blockchain</a>
+            <a href="" target = 'blank' class="card-link">Guia de lineamientos para el uso de tecnologias emergentes</a>
             
         </b-card>
         <br>
-        <b-card title="Marco de Interoperabilidad" sub-title="Categoría Lineamientos">
+        <b-card title="Guía de referencia de Blockchain" sub-title="Categoría Lineamientos">
             <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
+            
             </h6>
 
-            <h6>A second paragraph of text in the card.</h6>
+            <h6>Puedes consultar mayor información sobre la Guía de referencia de Blockchain 
+                 haciendo click en el siguiente link:</h6>
 
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
+            <a href="" class="card-link">Guía de referencia de Blockchain</a>
+            <!--<b-link href="" class="card-link">Another link</b-link>-->
         </b-card>
         <br>
-        <b-card title="Modelo de Territorios y Ciudades Inteligentes" sub-title="Categoría Lineamientos">
+        <b-card title="Guía de tecnologías emergentes" sub-title="Categoría Lineamientos">
             <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
+            
             </h6>
 
-            <h6>A second paragraph of text in the card.</h6>
+            <h6>Puedes consultar mayor información sobre la Guía de tecnologías emergentes 
+                 haciendo click en el siguiente link:</h6>
 
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
+            <a href="" class="card-link">Guía de tecnologías emergentes</a>
         </b-card>
         <br>
-        <b-card title="Guías de Servicios Ciudadanos Digitales" sub-title="Categoría Lineamientos">
+        <b-card title="Guía Nacional de Datos Abiertos" sub-title="Categoría Lineamientos">
             <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
+            
             </h6>
 
-            <h6>A second paragraph of text in the card.</h6>
+            <h6>Puedes consultar mayor información sobre la Guía nacional de Datos Abiertos 
+                 haciendo click en el siguiente link:</h6>
 
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
+            <a href="" class="card-link">Guía nacional de Datos Abiertos</a>
+            
         </b-card>
         <br>
-        <b-card title="Lineamientos para el protocolo de Internet IPv6" sub-title="Categoría Lineamientos">
+        <b-card title="Guia para solicitud y creacion de sitios web" sub-title="Categoría Lineamientos">
             <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
+            
             </h6>
 
-            <h6>A second paragraph of text in the card.</h6>
+            <h6>Puedes consultar mayor información sobre la Guia para solicitud y creacion de sitios web 
+                 haciendo click en el siguiente link:</h6>
 
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
+            <a href="" class="card-link">Guia para solicitud y creacion de sitios web</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Guías de servicios ciudadanos digitales" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Guías de servicios ciudadanos digitales 
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Guías de servicios ciudadanos digitales</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Guias y lineamientos de integracion a GOV.CO" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Guias y lineamientos de integracion a GOV.CO
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Guias y lineamientos de integracion a GOV.CO</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Guías y lineamientos para la vinculación a Servicios Ciudadanos Digitales" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Guías y lineamientos para la vinculación a Servicios Ciudadanos Digitales
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Guías y lineamientos para la vinculación a Servicios Ciudadanos Digitales</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Hoja de Ruta de Datos Abiertos" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Hoja de Ruta de Datos Abiertos
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Hoja de Ruta de Datos Abiertos</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Integración a GOV.CO" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Integración a GOV.CO
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Integración a GOV.CO</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Integración a GOV.CO/Territorial" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Integración a GOV.CO/Territorial
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Integración a GOV.CO/Territorial</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos biblioteca gobierno digital" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos biblioteca gobierno digital
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Lineamientos biblioteca gobierno digital</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos en uso de redes sociales" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos en uso de redes sociales
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Lineamiento en uso de redes sociales</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos de innovación pública" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos de innovación pública
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Metodología Cocrear</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos de intregacion de Sedes, Tramites y Servicios" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos de intregacion de Sedes, Tramites y Servicios
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Lineamientos de intregacion de Sedes, Tramites y Servicios</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos generales en el uso y operación de los Servicios Ciudadanos Digitales" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos generales en el uso y operación de los Servicios Ciudadanos Digitales
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Lineamientos generales en el uso y operación de los Servicios Ciudadanos Digitales</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos Modelo de Arquitectura Empresarial" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos Modelo de Arquitectura Empresarial
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Lineamientos Modelo de Arquitectura Empresarial</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos Modelo de Gestión y Gobierno TI" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos Modelo de Gestión y Gobierno TI
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Lineamientos Modelo de Gestión y Gobierno TI</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos Modelo de Gestión de Proyectos de TI" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos Modelo de Gestión de Proyectos de TI
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Lineamientos Modelo de Gestión de Proyectos de TI</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Lineamientos para el protocolo Internet IPv6" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Lineamientos para el protocolo Internet IPv6
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Lineamientos para el protocolo Internet IPv6</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Manual de Gobierno Digital" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre el Manual de Gobierno Digital
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Manual de Gobierno Digital</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Manuales de comunicación digital para entidades de gobierno" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre los Manuales de comunicación digital para entidades de gobierno
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Manuales de comunicación digital para entidades de gobierno</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Marco de Arquitectura Empresarial" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre el Marco de Arquitectura Empresarial
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Marco de Arquitectura Empresarial</a>
+            
+        </b-card>
+        <br>
+        <b-card title="Marco de Interoperabilidad " sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre el Marco de Interoperabilidad
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Marco de Interoperabilidad</a>
+            <a href="" class="card-link">Servicios Ciudadanos Digitales</a>
+            <a href="" class="card-link">Uso estándar del lenguaje común</a>   
+        </b-card>
+        <br>
+        <b-card title="Marco de Seguridad y Privacidad" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre el Marco de Seguridad y Privacidad
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Marco de Seguridad y Privacidad</a>
+        </b-card>
+        <br>
+        <b-card title="Marco de Transformación Digital" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre el Marco de Transformación Digital
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Marco de Transformación Digital</a>
+        </b-card>
+        <br>
+        <b-card title="Metodologia Cocrear " sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Metodologia Cocrear 
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Metodologia Cocrear</a>
+        </b-card>
+        <br>
+        <b-card title="Metodologia Cocrear " sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Metodologia Cocrear 
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Metodologia Cocrear</a>
+        </b-card>
+        <br>
+        <b-card title="Modelo de Seguridad y privacidad de la información" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre el Modelo de Seguridad y privacidad de la información
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Modelo de Seguridad y privacidad de la información</a>
+        </b-card>
+        <br>
+        <b-card title="Modelo de Madurez de Ciudades y Territorios Inteligentes" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre el Modelo de Madurez de Ciudades y Territorios Inteligentes
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Modelo de Madurez de Ciudades y Territorios Inteligentes</a>
+        </b-card>
+        <br>
+        <b-card title="Marco de Referencia Arquitectura TI" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre el Marco de Referencia Arquitectura TI
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Marco de Referencia Arquitectura TI</a>
+        </b-card>
+        <br>
+        <b-card title="Política de Gobierno Digital" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Política de Gobierno Digital
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Política de Gobierno Digital</a>
+        </b-card>
+        <br>
+        <b-card title="Política de Gobierno Digital" sub-title="Categoría Lineamientos">
+            <h6>
+            
+            </h6>
+
+            <h6>Puedes consultar mayor información sobre la Política de Gobierno Digital
+                 haciendo click en el siguiente link:</h6>
+
+            <a href="" class="card-link">Política de Gobierno Digital</a>
         </b-card>
         <br>
     </div>
@@ -148,7 +459,7 @@
 #Lineamientos .card{
     margin-left: 10%;
     margin-right: 10%;
-    background-color:rgb(248, 248, 241);
+    background-color:#ffffff;
 }
 #Lineamientos .Temas h6 {
     text-align: justify;

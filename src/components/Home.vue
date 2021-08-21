@@ -13,19 +13,19 @@
         </h2>
         <br>
         <h3>
-          Para empezar, por favor selecciona una opción:
+          Para empezar, por favor selecciona el rol desde el cual deseas hacer tu consulta:
         </h3> 
         <br>
         <div class="botones">
-          <a class="boton" v-on:click="contarCiudadania" id="botonCiudadania">Ciudadanía</a>
+          <a class="boton" v-on:click="contarCiudadania" id="botonCiudadania">Soy un ciudadano</a>
           <br>
-          <a class="boton" v-on:click="contarPublicas" id="botonPublicas">Entidades Públicas </a>
+          <a class="boton" v-on:click="contarPublicas" id="botonPublicas">Soy una Entidad Pública </a>
           <br>
-          <a class="boton" v-on:click="contarPrivadas" id="botonPrivadas">Empresas Privadas</a>
+          <a class="boton" v-on:click="contarPrivadas" id="botonPrivadas">Soy una Empresa Privada</a>
           <br>
-          <a class="boton" v-on:click="contarAcademia" id="botonAcademia">Academia</a>
+          <a class="boton" v-on:click="contarAcademia" id="botonAcademia">Soy de la Academia</a>
           <br>
-          <a class="boton" v-on:click="contarSociedadCivil" id="botonSociedadCivil">Sociedad Civil</a>
+          <a class="boton" v-on:click="contarSociedadCivil" id="botonSociedadCivil">Hago parte de la Sociedad Civil</a>
           <br>
           <a class="boton" v-on:click="contarOtro" id="botonOtro">Otro</a>
         </div>
@@ -208,8 +208,8 @@ export default {
   display:flex;
   justify-content: center;
   flex-direction: column; /*poner uno debajo del otro*/
-  padding-right: 220px;
-  padding-left: 220px;
+  padding-right: 180px;
+  padding-left: 180px;
   text-align: center; /*alinear texto al centro*/
 }
 #Home .boton {

@@ -384,7 +384,7 @@ export default {
             let id = localStorage.getItem('identificador');
             console.log(this.id, this.botonCharla);
 
-            this.newProyecto = {
+            this.newCharla = {
                 "id_rol": id,
                 "lineamientos": 0,
                 "socializacion": 0,
@@ -414,7 +414,7 @@ export default {
             let id = localStorage.getItem('identificador');
             console.log(this.id, this.botonCapacitacion);
 
-            this.newProyecto = {
+            this.newCapacitacion = {
                 "id_rol": id,
                 "lineamientos": 0,
                 "socializacion": 0,

@@ -18,29 +18,26 @@
       <pre class="mt-3 mb-0">{{ text }}</pre>
     </div>
 
-    <div class="Select">
-      <p>2. Por favor selecciona el área a la que pertenece tu solicitud:</p>
-      <b-form-select
-        id="charla_tema"
-        v-model="selected" 
-        :options="options" 
-        size="md" 
-        class="mt-3"
-      >
-      </b-form-select>
-      <br>
-      <br>
-      <b-form-group 
-            id="input-group" 
-            label="Otra:" 
-            label-for="input"
-            >
-            <b-form-input
-            id="charla_otro_tema"
-            placeholder="Si seleccionaste otra, por favor escribe cuál"
-            ></b-form-input>
-        </b-form-group>
-    </div>
+    <div class="dep_mun">
+                    <label for="Tema" class="Tema">2. Por favor selecciona un Tema para visualizar el correo al que debes enviar tu solicitud:
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <br>
+                    <select  v-model="selectedMunicipio" @change="selectMunicipio">
+                        <option v-for="(municipio,index) in municipios" :value="index">{{ municipio.label }}</option>
+                    </select>
+                    <br>
+                    <select id = "mun_ent" v-model="selectedOption" v-if="selectedMunicipio != -1">
+                        <option id = "dep_ent" v-for="option in municipios[selectedMunicipio].options">{{ option }}</option>
+                    </select>
+                    <br>
+                    <span v-if="selectedOption">
+                        Para solicitudes relacionadas con el tema {{ municipios[selectedMunicipio].label }} por favor escribe un correo a {{ selectedOption }}.
+                    </span>
+
+                    <!-- departamento{{ municipios[selectedMunicipio].label }} municipio{{ selectedOption }}-->
+                    
+                </div>
 
     <br>
     
@@ -52,44 +49,75 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        selected: null,
-        options: [
-          { value: null, text: 'Selecciona una opción' },
-          { value: 'a', text: 'Adopción de IPv6' },
-          { value: 'b', text: 'Centro de Innovación Pública Digital' },
-          { value: 'c', text: 'Ciudades y Territorios Inteligentes' },
-          { value: 'd', text: 'Datos Abiertos' },
-          { value: 'd', text: 'Espacio Colaborativo Data Sandbox' },
-          { value: 'd', text: 'Gov.Co / Territorial' },
-          { value: 'd', text: 'Marco de Arquitectura Empresarial' },
-          { value: 'd', text: 'Marco de Interoperabilidad' },
-          { value: 'd', text: 'Marco de Transformación Digital' },
-          { value: 'd', text: 'Mi Colombia Digital' },
-          { value: 'd', text: 'Máxima Velocidad' },
-          { value: 'd', text: 'Portal Único del Estado Colombiano' },
-          { value: 'd', text: 'Seguridad y Privacidad de la Información' },
-          { value: 'd', text: 'Sello de Excelencia Gobierno Digital' },
-          { value: 'd', text: 'Servicios Ciudadanos Digitales' },
-          { value: 'd', text: 'Software Libre' },
-          { value: 'd', text: 'Tecnologías Emergentes' },
-          { value: 'd', text: 'Transfórmate con Gobierno Digital' },
-          { value: 'd', text: 'Transparencia y Accesibilidad Web' },
-          { value: 'd', text: 'Urna de Cristal' },
-          { value: 'd', text: 'Otra' },
+  import axios from "axios";
+
+export default {
+    name: "Personas",
+    data: function (){
+        return {
+            municipios: null,
+            selectedMunicipio: -1,
+            selectedOption: '',
+            
+            municipios:[{ label: 'Por favor selecciona una opción de la lista', value: null },
+                {
+                    label:"Adopción de IPv6",
+                    options:["pepito@mintic.gov.co"]
+                },
+                {
+                    label:"Centro de Innovación Pública Digital",
+                    options:["mvosorio@mintic.gov.co"]
+                },
+                {
+                    label:"Ciudades y Territorios Inteligentes",
+                    options:["mguerra@mintic.gov.co"]
+                },
+                {
+                    label:"Datos Abiertos",
+                    options:["lsantamaria@mintic.gov.co"]
+                },
+                {
+                    label:"Espacio Colaborativo Data Sandbox",
+                    options:["jxxx@mintic.gov.co"]
+                },
+                {
+                    label:"Gov.co/Territorial",
+                    options:["dclavijo@mintic.gov.co"]
+                },
+                {
+                    label:"Marco de Arquitectura Empresarial",
+                    options:["hbermudez@mintic.gov.co"]
+                },
+                {
+                    label:"Marco de Interoperabilidad",
+                    options:["hbermudez@mintic.gov.co"]
+                },
+                {
+                    label:"Marco de Transformación Digital",
+                    options:["hbermudez@mintic.gov.co"]
+                },
+                {
+                    label:"Mi Colombia Digital",
+                    options:["hbermudez@mintic.gov.co"]
+                },
+                {
+                    label:"Máxima Velocidad",
+                    options:["hbermudez@mintic.gov.co"]
+                },
+                {
+                    label:"Urna de Cristal",
+                    options:["hbermudez@mintic.gov.co"]
+                },
         ],
         value: '',
         
       }
     },
-    methods: {
-     envio: function() {
+    methods:{
 
-            alert("Tu solicitud ha sido recibida, la analizaremos y pronto nos pondremos en contacto contigo");
-            window.location.href = '/evaluar';
-     }
+        selectMunicipio:function() {
+        this.selectedOption = '';
+        },
     }
   }
 </script>
@@ -117,5 +145,15 @@
 #Charla .Select p {
   text-align: left;
   font-weight:bold;
+}
+#Charla .dep_mun {
+  margin-left: 128px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold
+}
+#Charla .dep_mun select {
+  margin-right: 500px;
+  
 }
 </style>

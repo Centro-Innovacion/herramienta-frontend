@@ -2951,19 +2951,22 @@
                         <span class="obligatorio">*</span>
                     </label>
 
-                    <select id="dep_ent" v-model="selectedMunicipio" @change="selectMunicipio">
+                    <select  v-model="selectedMunicipio" @change="selectMunicipio">
                         <option v-for="(municipio,index) in municipios" :value="index">{{ municipio.label }}</option>
                     </select>
 
-                    <select id="mun_ent" v-model="selectedOption" v-if="selectedMunicipio != -1">
-                        <option v-for="option in municipios[selectedMunicipio].options">{{ option }}</option>
+                    <select id = "mun_ent" v-model="selectedOption" v-if="selectedMunicipio != -1">
+                        <option id = "dep_ent" v-for="option in municipios[selectedMunicipio].options">{{ option }}</option>
                     </select>
+
+                    <!-- departamento{{ municipios[selectedMunicipio].label }} municipio{{ selectedOption }}-->
                     
                 </div>
                 <br>
                 </div>
                 <div class="boton">
-                    <a class="boton" href = '/request'>Siguiente</a>
+                    <a class="boton" v-on:click="crearEntidad" id="botonEntidad">Siguiente
+                    </a>
                 </div>
                 <br>
                 <p class="aviso">
@@ -2982,8 +2985,8 @@ export default {
     data: function (){
         return {
             nombre_entidad: '',
-            departamento_entidad: '',
-            municipio_entidad: '',
+            departamento: '',
+            municipio: '',
             municipios: null,
             selectedMunicipio: -1,
             selectedOption: '',
@@ -3274,8 +3277,33 @@ export default {
     },
 
     methods:{
+
         selectMunicipio:function() {
         this.selectedOption = '';
+        },
+
+        crearEntidad: function() {
+            this.nombre_entidad = document.getElementById("nombre_ent").value;
+            this.departamento = document.getElementById("dep_ent").value;
+            this.municipio = document.getElementById("mun_ent").value;
+            let self = this;
+            let id = localStorage.getItem('identificador');
+
+            this.newEntidad = {
+                "id_rol": id,
+                "nombre_entidad": this.nombre_entidad,
+                "departamento": this.departamento,
+                "municipio": this.municipio,  
+            }
+
+            axios.post("http://127.0.0.1:8000/entidad/crear/", this.newEntidad)
+                .then((result) => {
+                    console.log(this.id);
+                    window.location.href = '/request';
+                })
+                .catch((error) => {
+                    alert("Error, contacte al administrador del sitio");
+                });
         },
 
   }
