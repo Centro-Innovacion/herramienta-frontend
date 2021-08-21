@@ -6,6 +6,7 @@
       "descripcion":"xxxx",
       "informacion":"Tierra",
       "img":"a.png",
+      "nombre_site":"¿Qué es la política?",
       "site": "https://gobiernodigital.mintic.gov.co/portal/",
       "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
    },
@@ -16,7 +17,8 @@
       "debilidad":"Electricidad",
       "tipo":"Agua",      
       "img":"b.png",
-      "site": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+      "nombre_site":"¿Qué es el marco?",
+      "site": "https://centrodeinnovacion.mintic.gov.co/"
    },
    {
       "id":"3",

@@ -32,9 +32,12 @@
               <strong>Información asociada:</strong> {{ item.informacion }} 
             </p>
             <p class="card-text">
-              <strong>Información asociada:</strong> 
+              <strong>Información asociada:</strong>
+              <br>
               <!--For example, instead of <div id="{{ val }}">, use <div :id="val">.-->
-              <a :href= "item.site">link</a> <br> {{ <a href=item.site2>link</a> }}
+              <a :href= "item.site">{{ item.nombre_site }}</a>
+              <br>
+              <a :href= "item.site2">Recurso 2</a>
             </p>
          
             
