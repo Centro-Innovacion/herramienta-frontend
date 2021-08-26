@@ -1,0 +1,29 @@
+[
+    {
+        "id":"1",
+        "nombre":"Conéctate con Gobierno Digital",
+        "categoria":"Socialización",
+        "descripcion":"A través de esta estrategia se adelantan talleres virtuales direccionados a los equipos TI de las entidades públicas de los 32 departamentos con el propósito de capacitarlos en los fundamentos de los diferentes elementos de la Política de Gobierno Digital.",
+        "nombre_site":"Consulta más información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Conectate-con-Gobierno-Digital/"
+    },
+    
+    {
+      "id":"2",
+      "nombre":"Súmate a la plataforma CIEN",
+      "categoria":"Socialización",
+      "descripcion":"xxxx",
+      "nombre_site":"Plataforma CIEN",
+      "site": "https://gobiernodigital.mintic.gov.co/portal/"
+    },
+    {
+      "id":"3",
+      "nombre":"Transfórmate con Gobierno Digital",
+      "categoria":"Socialización",
+      "descripcion":"Los líderes de TI de las entidades públicas fortalecen sus capacidades de TI, mejoran la prestación de los servicios digitales e implementan los elementos y productos tipo de la política de Gobierno Digital a través de la participación en talleres virtuales y el uso de la caja de herramientas de autoformación y autogestión.",
+      "nombre_site":"Consulta más información aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Transformate-con-Gobierno-Digital/#data=%7B%22filter%22:%2247312%22,%22page%22:1%7D",
+      "nombre_site2":"Caja de Herramientas",
+      "site2": "https://gobiernodigital.mintic.gov.co/portal/Transformate-con-Gobierno-Digital-/Caja-de-herramientas/"
+    }
+]

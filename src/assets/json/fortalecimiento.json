@@ -1,0 +1,210 @@
+[
+    {
+        "id":"1",
+        "nombre":"Caja de Herramientas",
+        "categoria":"Fortalecimiento",
+        "descripcion":"",
+        "nombre_site":"Consúltala aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Transformate-con-Gobierno-Digital-/Caja-de-herramientas/"
+    },
+    {
+        "id":"7",
+        "nombre":"Catalizadores de la innovación",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"8",
+        "nombre":"Ciudades y Territorios Inteligentes",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"9",
+        "nombre":"Cooperación en seguridad digital",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"10",
+        "nombre":"Data Sandbox",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"11",
+        "nombre":"Datos Abiertos",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"12",
+        "nombre":"Cursos Virtuales",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Administrador de sitios web",
+        "site": "http://104.45.133.12/cursovirtual/login/index.php",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"13",
+        "nombre":"Comunicación Digital",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"14",
+        "nombre":"Evolutivos para GOV.CO 3.0",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"15",
+        "nombre":"Evolutivos para GOV.CO 3.0",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"16",
+        "nombre":"Generación de capacidades de TI",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"17",
+        "nombre":"Hacker Girls",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"18",
+        "nombre":"Máxima Velocidad",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"19",
+        "nombre":"Mentorías sobre innovación",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"20",
+        "nombre":"Piloto Blockchain",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"21",
+        "nombre":"Recursos de Seguridad",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"22",
+        "nombre":"Sello de Excelencia",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"23",
+        "nombre":"Tecnologías Emergentes de la 4ta Revolución Industrial",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"24",
+        "nombre":"Servicios Ciudadanos Digitales",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"25",
+        "nombre":"Curso virtual: Administrador de sitio web",
+        "categoria":"Fortalecimiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"4",
+        "nombre":"Tutoriales: Aprende de tu sitio web",
+        "categoria":"Socialización",
+        "descripcion":"xxxx",
+        "nombre_site":"Biblioteca",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    }
+]

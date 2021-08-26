@@ -1,0 +1,354 @@
+[
+    {
+        "id":"1",
+        "nombre":"Asesoría sobre manejo y administración de redes sociales",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"2",
+        "nombre":"Acompañamiento a las entidades en la adopción de IPv6",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"3",
+        "nombre":"Acompañamiento en digitalización de trámites a entidades",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"4",
+        "nombre":"Acompañamiento en Carpeta Ciudadana Digital",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"5",
+        "nombre":"Acompañamiento en el Marco de Referencia para la Arquitectura Empresarial",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"6",
+        "nombre":"Acompañamiento en el Modelo de Gestión y Gobierno TI",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"7",
+        "nombre":"Acompañamiento en el Modelo de Gestión de Proyectos de TI",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"8",
+        "nombre":"Acompañamiento al Plan Estratégico de las Tecnologías de la Información y Comunicaciones -PETI",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"9",
+        "nombre":"Acompañamiento y Estructuración de Acuerdos Marco de Precios en Tecnología",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"10",
+        "nombre":"Asesoría sobre manejo y administración de redes sociales",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"11",
+        "nombre":"Acompañamiento a servicios ciudadanos digitales",
+        "categoria":"Socialización",
+        "descripcion":"xxxx",
+        "nombre_site":"Biblioteca",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"12",
+        "nombre":"Centro de Contacto",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"socialización",
+        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"13",
+        "nombre":"Acompañamiento en el Marco de Interoperabilidad",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Solicita aquí tu acompañamiento",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"14",
+        "nombre":"Acompañamiento en el Marco de Interoperabilidad",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Solicita aquí tu acompañamiento",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"15",
+        "nombre":"Equipo de Respuesta a Incidentes de Seguridad -CSIRT Gobierno",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Solicita aquí tu acompañamiento",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Decreto xxx",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"16",
+        "nombre":"Acompañamiento en Datos Abiertos",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Inducción",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Publicar datos abiertos",
+        "site3": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/",
+        "nombre_site3":"Material de ayuda Datos Abiertos",
+        "site2": "https://herramientas.datos.gov.co/"
+    },
+    {
+        "id":"17",
+        "nombre":"Acompañamiento en Acuerdos Marco de Precios",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Inducción",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Publicar datos abiertos",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"18",
+        "nombre":"Acompañamiento en Manejo de redes sociales y comunicación digital",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Inducción",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Publicar datos abiertos",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"19",
+        "nombre":"Acompañamiento en Servicios Ciudadanos Digitales",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"20",
+        "nombre":"Acompañamiento en la implementación de la política de Seguridad Digital",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"21",
+        "nombre":"Acompañamiento en la implementación de la política de Seguridad Digital",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"22",
+        "nombre":"Acompañamiento en la implementación del Modelo de Seguridad y Privacidad de la Información",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"23",
+        "nombre":"Laboratorio de Innovación",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"24",
+        "nombre":"Laboratorio de Innovación",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"25",
+        "nombre":"Acompañamiento técnico en Tecnología e Innovación",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"26",
+        "nombre":"Acompañamiento para el desarollo de campañas de comunicación digital",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"27",
+        "nombre":"Acompañamiento en el Marco de Referencia de Arquitectura Empresarial",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"28",
+        "nombre":"Semilleros de investigación",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"29",
+        "nombre":"Servicios de acompañamiento a las entidades nacionales y territoriales con Urna de Cristal",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"30",
+        "nombre":"Talleres: Aprende de tu sitio web",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"31",
+        "nombre":"Talleres: Aprende de tu sitio web",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"32",
+        "nombre":"Talleres: Formación y conocimiento de la Política de Gobierno Digital",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"33",
+        "nombre":"Talleres de Ideación y Co-creación",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"34",
+        "nombre":"Talleres: Funcionalidades de sitios web",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"35",
+        "nombre":"Transfórmate con Gobierno Digital",
+        "categoria":"Acompañamiento",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    }
+]

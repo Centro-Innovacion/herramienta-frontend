@@ -1,93 +1,111 @@
 <template>
-    <div id="Socializacion">
-    <div class=Encabezado>
-        <a href= "/Request">Regresar al menú de temas</a>&nbsp; &nbsp;
-        &nbsp; &nbsp;<a href= "/evaluar">Ir a la evaluación</a>
+  <div id="Socializacion">
+
+    <div class="Encabezado">
+      <a href= "/Request">Regresar al menú de temas</a> 
+      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+    </div>
+      
+    <br>
+    <br>
+   <div class="container cont">
+
+    <div class="row">
+
+      <div class="col-md-12">
+      
+        <h1>Buscar Socializacion </h1> 
         <br>
+        <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Hablemos de Gobierno Digital"/>              
         <br>
-        <h4>SOCIALIZACIÓN</h4>
-            <p>Según la descripción, selecciona el link con el tema que desees consultar</p>
+        <br
+      </div>
+
     </div>
 
-    <div class="Temas">
-        <b-card title="Hablemos de Gobierno Digital" sub-title="Categoría: Socialización" class="text-left">
-            <h6>
-                
-            A través de los ciclos "Hablemos con Gobierno Digital" se desarrollan sesiones de profundización
-            temática, presenciales y virtuales, en las cuales se abordan de manera específica elementos y 
-            lineamientos para la implementación de los habilitadores y el desarrollo de acciones que favorezcan
-            el cumplimiento de los propósitos de la Política de Gobierno Digital.
-               
-            </h6>
+    <div class="row mt-3">
 
-            <h6>
-                Puedes consultar mayor información sobre "Hablemos de Gobierno Digital" haciendo
-                click en los siguientes links:
-            </h6>
+      <div class="col-md-4" v-for="item in items" v-bind:key="item.id"> 
 
-            <a href= "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Hablemos-de-Gobierno-Digital/" target = "blank" class="card-link">¿Qué es Hablemos de Gobierno Digital?</a>
-            <b-link href="https://app.powerbi.com/view?r=eyJrIjoiZjk4OGFhNjktNWE4Zi00YjVkLWJiODQtNDRmYzg5ZmE2MDBjIiwidCI6IjFhMDY3M2M2LTI0ZTEtNDc2ZC1iYjRkLWJhNmE5MWEzYzU4OCIsImMiOjR9" target = "blank" class="card-link">Datos 2020</b-link>
-            <b-link href="https://app.powerbi.com/view?r=eyJrIjoiNjQxZjk4NjMtZDEwNi00NmQ3LTkzYmMtNjliZGRiMGZkMTFhIiwidCI6IjFhMDY3M2M2LTI0ZTEtNDc2ZC1iYjRkLWJhNmE5MWEzYzU4OCIsImMiOjR9&pageName=ReportSection" target = "blank" class="card-link">Datos 2021</b-link>
-        </b-card>
-        <br>
-        <b-card title="Conéctate con Gobierno Digital" sub-title="Categoría: Socialización">
-            <h6>
-            A través del ciclo "Conéctate con Gobierno Digital" se adelantan talleres presenciales y 
-            virtuales con el propósito de desarrollar una ruta de acompañamiento que permita a las
-            entidades avanzar en la gestión de proyectos e iniciativas que faciliten la mplementación 
-            de la Política de Gobierno Digital.
-            </h6>
-
-            <h6>Puedes consultar mayor información sobre "Conéctate con Gobierno Digital" haciendo
-                click en los siguientes links:
-            </h6>
-
-            <a href="https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Conectate-con-Gobierno-Digital/" target = 'blank' class="card-link">¿Qué es Conéctate con Gobierno Digital?</a>
-            <b-link href="https://app.powerbi.com/view?r=eyJrIjoiZjk4OGFhNjktNWE4Zi00YjVkLWJiODQtNDRmYzg5ZmE2MDBjIiwidCI6IjFhMDY3M2M2LTI0ZTEtNDc2ZC1iYjRkLWJhNmE5MWEzYzU4OCIsImMiOjR9" target = "blank" class="card-link">Datos 2020</b-link>
-            <b-link href="https://app.powerbi.com/view?r=eyJrIjoiNjQxZjk4NjMtZDEwNi00NmQ3LTkzYmMtNjliZGRiMGZkMTFhIiwidCI6IjFhMDY3M2M2LTI0ZTEtNDc2ZC1iYjRkLWJhNmE5MWEzYzU4OCIsImMiOjR9&pageName=ReportSection" target = "blank" class="card-link">Datos 2021</b-link>
-        </b-card>
-        <br>
-        <b-card title="Transfórmate con Gobierno Digital" sub-title="Categoría: Socialización">
-            <h6>
-            Esta estrategia busca apoyar la implementación de la Política de Gobierno Digital mediante la
-            realización de talleres masivos y la provisión de herramientas de autoformación y autogestión
-            con el propósito de mejorar las capacidades de TI y la prestación de servicios digitales en las 
-            entidades públicas.
-            </h6>
-
-            <h6>Puedes consultar mayor información sobre "Transfórmate con Gobierno Digital" haciendo
-                click en los siguientes links:</h6>
-
-            <a href="https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Transformate-con-Gobierno-Digital/#data=%7B%22filter%22:%2247311%22,%22page%22:1%7D" class="card-link">¿Qué es Transfórmate con Gobierno Digital?</a>
-            
-        </b-card>
-        <br>
-    </div>
-    <div class=Pie>
-        <a href= "/Request">Regresar al menú de temas</a>&nbsp; &nbsp;
-        &nbsp; &nbsp;<a href= "/evaluar">Ir a la evaluación</a>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h3 class="card-title mb-3">{{ item.nombre }}</h3>
+            <p class="card-text">
+              <strong>Categoría:</strong> {{ item.categoria }} 
+            </p>
+            <p class="card-text">
+              <strong>Descripción:</strong> {{ item.descripcion }} 
+            </p>
+            <p class="card-text">
+              <strong>Información asociada:</strong>
+              <br>
+              <!--For example, instead of <div id="{{ val }}">, use <div :id="val">.-->
+              <a :href= "item.site" >{{ item.nombre_site }} </a>
+              <br>
+              <a :href= "item.site2" target="\_blank">{{ item.nombre_site2 }}</a>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
+   </div>
+   </div>
 </template>
 
+<script>
+import datos from "../assets/json/socializacion.json";
+export default {
+ 
+  name: 'Socializacion',
+  props: {
+    msg: String
+  },
+  
+  // declaro el elemento buscar 
+  data() {
+    return {
+      buscar: ''
+    }
+  },
+    
+  // Creo un método llamado 'items' y obtengo los datos de los lineamientos
+  // Asimismo filtro la búsqueda con el método filter()  
+  computed: {
+    items() {
+      return datos.filter(item => {
+        return item.nombre.normalize("NFD").replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(this.buscar.toLowerCase());
+      });
+    },
+  }
+  
+}
+</script>
+
 <style>
-#Socializacion {
-    text-align: left;
-}
 #Socializacion .Encabezado {
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 88px 0 88px ;/*top-right-bottom-left*/
 }
-#Socializacion .card{
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: rgb(242, 241, 243);
+#Socializacion .Encabezado a {
+  color: #004884;
 }
-#Socializacion .Temas h6 {
-    text-align: justify;
-    font-weight: lighter;
+#Socializacion h1 {
+  color: #004884;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 32px;
 }
-#Socializacion .Pie {
-    text-align: center;
+#Socializacion .card h3 {
+    color: #004884;
+    font-family: Work-Sans;
+    font-size: 22px;
+    font-weight: bold;
+}
+#Socializacion .card p {
+    color: #004884;
+    font-family: Work-Sans;
+    font-size: 17px;
 }
 </style>

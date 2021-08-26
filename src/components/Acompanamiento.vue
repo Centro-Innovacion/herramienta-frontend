@@ -1,125 +1,107 @@
 <template>
-    <div id="Acompanamiento">
-    <div class=Encabezado>
-        <a href= "/Request">Regresar al menú de temas</a>&nbsp; &nbsp;
-        &nbsp; &nbsp;<a href= "/evaluar">Ir a la evaluación</a>
+  <div id="Acompanamiento">
+
+  <div class="Encabezado">
+    <a href= "/Request">Regresar al menú de temas</a> 
+    <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+  </div>
+  <br>
+  <br>
+   <div class="container cont">
+
+    <div class="row">
+
+      <div class="col-md-12">
+      
+        <h1>Buscar Acompañamiento </h1> 
         <br>
+        <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Talleres de ideación y co-creación"/>              
         <br>
-        <h4>ACOMPAÑAMIENTO</h4>
-            <p>Según la descripción, selecciona el link con el tema que desees consultar</p>
+        <br
+      </div>
+
     </div>
 
-    <div class="Temas">
-        <b-card title="Transfórmate con Gobierno Digital" sub-title="Categoría: Acompañamiento">
-            <h6>
-            Estrategia que busca apoyar la implementación de la política de Gobierno Digital mediante la realización 
-            de talleres masivos y la provisión de herramientas de autoformación y autogestión con el propósito
-            de mejorar las capacidades de TI y la prestación de servicios digitales en las entidades públicas.
-            </h6>
+    <div class="row mt-3">
 
-            <h6>Puedes consultar mayor información sobre Transfórmate con Gobierno Digital, haciendo
-                click en los siguientes links:
-            </h6>
+      <div class="col-md-4" v-for="item in items" v-bind:key="item.id"> 
 
-            <a href= "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Transformate-con-Gobierno-Digital/#data=%7B%22filter%22:%2247311%22,%22page%22:1%7D" target = "blank" class="card-link">¿Qué es Transfórmate con Gobierno Digital?</a>
-            <b-link href="https://www.youtube.com/playlist?list=PLhTx9maDqE9KvXLeo96I2E7D872no74gm" target = "blank" class="card-link">Videos</b-link>
-        </b-card>
-        <br>
-        <b-card title="Máxima Velocidad" sub-title="Categoría: Acompañamiento">
-            <h6>
-            Máxima velocidad es una estrategia del Ministerio de Tecnologías de la Información y las Comunicaciones
-            que se orienta en dinamizar el uso de las tecnologías en pro de mejorar la gestión pública.
-            </h6>
-
-            <h6>Puedes consultar mayor información sobre Máxima Velocidad haciendo
-                click en los siguientes links:</h6>
-
-            <a href="https://maximavelocidad.gov.co/774/w3-channel.html" class="card-link">Página web Máxima Velocidad</a>
-            
-        </b-card>
-        <br>
-        <b-card title="Caja de Herramientas" sub-title="Categoría: Acompañamiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Urna de Cristal" sub-title="Categoría: Acompañamiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="CSIRT Gobierno (Equipo de Respuesta a Incidentes de Seguridad" sub-title="Categoría Acompañamiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Acuerdo Marco de Precios en Tecnología" sub-title="Categoría Acompañamiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Centro de Contacto" sub-title="Categoría Acompañamiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-    </div>
-    <div class=Pie>
-        <a href= "/Request">Regresar al menú de temas</a>&nbsp; &nbsp;
-        &nbsp; &nbsp;<a href= "/evaluar">Ir a la evaluación</a>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h3 class="card-title mb-3">{{ item.nombre }}</h3>
+            <p class="card-text">
+              <strong>Categoría:</strong> {{ item.categoria }} 
+            </p>
+            <p class="card-text">
+              <strong>Descripción:</strong> {{ item.descripcion }} 
+            </p>
+            <p class="card-text">
+              <strong>Información asociada:</strong>
+              <br>
+              <!--For example, instead of <div id="{{ val }}">, use <div :id="val">.-->
+              <a :href= "item.site" >{{ item.nombre_site }} </a>
+              <br>
+              <a :href= "item.site2" target="\_blank">{{ item.nombre_site2 }}</a>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
+   </div>
+   </div>
 </template>
+
+<script>
+import datos from "../assets/json/acompanamiento.json";
+export default {
+ 
+  name: 'Acompanamiento',
+  props: {
+    msg: String
+  },
+  
+  // declaro el elemento buscar 
+  data() {
+    return {
+      buscar: ''
+    }
+  },
+    
+  // Creo un método llamado 'items' y obtengo los datos de los lineamientos
+  // Asimismo filtro la búsqueda con el método filter()  
+  computed: {
+    items() {
+      return datos.filter(item => {
+        return item.nombre.normalize("NFD").replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(this.buscar.toLowerCase());
+      });
+    },
+  }
+  
+}
+</script>
 
 <style>
 #Acompanamiento .Encabezado {
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 88px 0 88px ;/*top-right-bottom-left*/
 }
-#Acompanamiento .card{
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color:rgb(248, 248, 241);
+#Acompanamiento h1 {
+  color: #004884;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 32px;
 }
-#Acompanamiento .Temas h6 {
-    text-align: justify;
-    font-weight: lighter;
+#Acompanamiento .card h3 {
+    color: #004884;
+    font-family: Work-Sans;
+    font-size: 22px;
+    font-weight: bold;
 }
-#Acompanamiento .Pie {
-    text-align: center;
+#Acompanamiento .card p {
+    color: #004884;
+    font-family: Work-Sans;
+    font-size: 17px;
 }
 </style>

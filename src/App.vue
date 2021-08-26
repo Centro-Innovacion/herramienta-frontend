@@ -29,7 +29,9 @@
           Horario de atención: Lunes a viernes 8:00am a 5:00pm
           <br>
           <h2>
-          Twitter &nbsp &nbsp Facebook &nbsp &nbsp Instagram
+          <a class="boton" href="https://twitter.com/GobDigitalCO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+          &nbsp &nbsp 
+          <a class="boton" href="https://www.facebook.com/GobDigitalCO/" target="_blank">Facebook</a> &nbsp &nbsp
           </h2>
           </p>
       </div>
@@ -43,9 +45,6 @@
           <br>
           <h2>
           Términos y Condiciones
-          <br>
-          <br>
-          Política de tratamiento de datos
           </h2>
       </div>
     </div>
@@ -59,7 +58,7 @@
 #App .headergovco {
   width: 1280px;
   height: 50px;
-  padding: 8px 10px 8px 10px;
+  padding: 8px 10px 8px 10px;/*top-right-bottom-left*/
   border: solid 1px #3366CC;
   background-color: #3366CC;
   display: flex;
@@ -110,7 +109,7 @@
   height:fit-content;
   min-height: 85vh;
   margin: 0%;
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-bottom: 10vh;
   margin-bottom: 0%;
 }
@@ -153,5 +152,13 @@
   height: 160px;
   margin: 10px 39px 29px 0;
 
+}
+#App .footertext1 a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+#App .footertext2 h2 {
+  margin-top: 20px;
 }
 </style>

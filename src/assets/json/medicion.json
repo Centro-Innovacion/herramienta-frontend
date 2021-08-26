@@ -1,0 +1,152 @@
+[
+    {
+        "id":"1",
+        "nombre":"Autodiagnóstico de Gobierno Digital",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"2",
+        "nombre":"Autodiagnóstico de Seguridad y Privacidad de la Información",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"3",
+        "nombre":"Diagnóstico de Calidad de Datos Abiertos",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"4",
+        "nombre":"Estado de trámites - Servicios Ciudadanos Digitales",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"5",
+        "nombre":"Formulario Único de Reporte de Avances en la Gestión: FURAG",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"6",
+        "nombre":"Herramienta de medición de la Transformación Digital del Estado",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"7",
+        "nombre":"Herramienta de seguimiento de IPv6",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"8",
+        "nombre":"Índice de Gobierno Digital",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"9",
+        "nombre":"Índices interancionales de Datos Abiertos",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"10",
+        "nombre":"Informe de gestión 2020",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"11",
+        "nombre":"Informe de gestión 2021",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"12",
+        "nombre":"Instrumento evaluación Modelo de Seguridad y Privacidad de la Información -MSPI",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"13",
+        "nombre":"Mapa Interactivo",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"14",
+        "nombre":"Modelo de madurez de ciudades y territorios inteligentes",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    },
+    {
+        "id":"15",
+        "nombre":"GOV.CO",
+        "categoria":"Medición",
+        "descripcion":"xxxx",
+        "nombre_site":"Integración a Gov.co",
+        "site": "http://lenguaje.mintic.gov.co/",
+        "nombre_site2":"Caja de Herramientas",
+        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+    }
+]

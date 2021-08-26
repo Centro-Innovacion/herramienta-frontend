@@ -61,7 +61,7 @@ export default {
             axios.post("http://127.0.0.1:8000/rol/crear/", this.newCiudadania)
                 .then((result) => {
                     console.log(result.data.id_rol);
-                    localStorage.setItem('identificador', result.data.id_rol)
+                    sessionStorage.setItem('identificador', result.data.id_rol)
                     window.location.href = '/request';
                 })
                 .catch((error) => {
@@ -79,8 +79,8 @@ export default {
             axios.post("http://127.0.0.1:8000/rol/crear/", this.newPublicas)
                 .then((result) => {
                     console.log(result.data.id_rol);
-                    localStorage.setItem('identificador', result.data.id_rol)
-                    window.location.href = '/personas';
+                    sessionStorage.setItem('identificador', result.data.id_rol)
+                    window.location.href = '/entidad';
                 })
                 .catch((error) => {
                     alert("Error, contacte al administrador del sitio");
@@ -97,7 +97,7 @@ export default {
             axios.post("http://127.0.0.1:8000/rol/crear/", this.newPrivadas)
                 .then((result) => {
                     console.log(result.data.id_rol);
-                    localStorage.setItem('identificador', result.data.id_rol)
+                    sessionStorage.setItem('identificador', result.data.id_rol)
                     window.location.href = '/request';
                 })
                 .catch((error) => {
@@ -115,7 +115,7 @@ export default {
             axios.post("http://127.0.0.1:8000/rol/crear/", this.newAcademia)
                 .then((result) => {
                     console.log(result.data.id_rol);
-                    localStorage.setItem('identificador', result.data.id_rol)
+                    sessionStorage.setItem('identificador', result.data.id_rol)
                     window.location.href = '/request';
                 })
                 .catch((error) => {
@@ -133,7 +133,7 @@ export default {
             axios.post("http://127.0.0.1:8000/rol/crear/", this.newSociedadCivil)
                 .then((result) => {
                     console.log(result.data.id_rol);
-                    localStorage.setItem('identificador', result.data.id_rol)
+                    sessionStorage.setItem('identificador', result.data.id_rol)
                     window.location.href = '/request';
                 })
                 .catch((error) => {
@@ -151,7 +151,7 @@ export default {
             axios.post("http://127.0.0.1:8000/rol/crear/", this.newOtro)
                 .then((result) => {
                     console.log(result.data.id_rol);
-                    localStorage.setItem('identificador', result.data.id_rol)
+                    sessionStorage.setItem('identificador', result.data.id_rol)
                     window.location.href = '/request';
                 })
                 .catch((error) => {
@@ -171,7 +171,7 @@ export default {
 #Home img {
   width: 40%;
   height: 40%;
-  margin: 0px 47px 0px 20px;/*top-right-bottom-left*/
+  margin: 40px 47px 0px 20px;/*top-right-bottom-left*/
   filter: brightness(1.1);
   mix-blend-mode: multiply;
 }
@@ -179,6 +179,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding-right: 10px;
+  margin-top: 40px;
 }
 #Home .texto h1 {
   color: #004884;

@@ -1,138 +1,94 @@
 <template>
-    <div id="Fortalecimiento">
-    <div class=Encabezado>
-        <a href= "/Request">Regresar al menú de temas</a>&nbsp; &nbsp;
-        &nbsp; &nbsp;<a href= "/evaluar">Ir a la evaluación</a>
+  <div id="Fortalecimiento">
+   <div class="container cont">
+
+    <div class="row">
+
+      <div class="col-md-12">
+      
+        <h1>Buscar Fortalecimiento </h1> 
         <br>
+        <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Máxima Velocidad"/>              
         <br>
-        <h4>FORTALECIMIENTO</h4>
-            <p>Según la descripción, selecciona el link con el tema que desees consultar</p>
+        <br
+      </div>
+
     </div>
 
-    <div class="Temas">
-        <b-card title="Generación de Capacidades TI" sub-title="Categoría: Fortalecimiento">
-            <h6>
-            La política de Gobierno Digital define los lineamientos, estándares y proyectos estratégicos,
-            que que permiten llevar a cabo la transformación digital del Estado, a fin de lograr una mejor 
-            interacción con ciudadanos, usuarios y grupos de interés; permitiendo resolver necesidades 
-            satisfactoriamente, resolver problemáticas públicas, posibilitar el desarrollo sostenible y en 
-            general, crear valor público.
-            </h6>
+    <div class="row mt-3">
 
-            <h6>Puedes consultar mayor información sobre la política de Gobierno Digital haciendo
-                click en los siguientes links:
-            </h6>
+      <div class="col-md-4" v-for="item in items" v-bind:key="item.id"> 
 
-            <a href= "https://gobiernodigital.mintic.gov.co/portal/Politica-de-Gobierno-Digital/" target = "blank" class="card-link">Portal Gobierno Digital</a>
-            <b-link href="http://es.presidencia.gov.co/normativa/normativa/DECRETO%201008%20DEL%2014%20DE%20JUNIO%20DE%202018.pdf" target = "blank" class="card-link">Decreto 1008 de 2018</b-link>
-        </b-card>
-        <br>
-        <b-card title="Gov.co y Gov.co/Territorial" sub-title="Categoría: Fortalecimiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Catalizadores de la Innovación" sub-title="Categoría: Fortalecimiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Ciudades y Territorios Inteligentes" sub-title="Categoría: Fortalecimiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Data Sandbox" sub-title="Categoría Fortalecimiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Hacker Girls" sub-title="Categoría: Fortalecimiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Proyectos Especiales" sub-title="Categoría: Fortalecimiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-        <b-card title="Sello de Excelencia" sub-title="Categoría: Fortalecimiento">
-            <h6>
-            Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-            content.
-            </h6>
-
-            <h6>A second paragraph of text in the card.</h6>
-
-            <a href="#" class="card-link">Card link</a>
-            <b-link href="#" class="card-link">Another link</b-link>
-        </b-card>
-        <br>
-    </div>
-    <div class=Pie>
-        <a href= "/Request">Regresar al menú de temas</a>&nbsp; &nbsp;
-        &nbsp; &nbsp;<a href= "/evaluar">Ir a la evaluación</a>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h3 class="card-title mb-3">{{ item.nombre }}</h3>
+            <p class="card-text">
+              <strong>Categoría:</strong> {{ item.categoria }} 
+            </p>
+            <p class="card-text">
+              <strong>Descripción:</strong> {{ item.descripcion }} 
+            </p>
+            <p class="card-text">
+              <strong>Información asociada:</strong>
+              <br>
+              <!--For example, instead of <div id="{{ val }}">, use <div :id="val">.-->
+              <a :href= "item.site" >{{ item.nombre_site }} </a>
+              <br>
+              <a :href= "item.site2" target="\_blank">{{ item.nombre_site2 }}</a>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
+   </div>
+   </div>
 </template>
 
+<script>
+import datos from "../assets/json/fortalecimiento.json";
+export default {
+ 
+  name: 'Fortalecimiento',
+  props: {
+    msg: String
+  },
+  
+  // declaro el elemento buscar 
+  data() {
+    return {
+      buscar: ''
+    }
+  },
+    
+  // Creo un método llamado 'items' y obtengo los datos de los lineamientos
+  // Asimismo filtro la búsqueda con el método filter()  
+  computed: {
+    items() {
+      return datos.filter(item => {
+        return item.nombre.normalize("NFD").replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(this.buscar.toLowerCase());
+      });
+    },
+  }
+  
+}
+</script>
+
 <style>
-#Fortalecimiento .Encabezado {
-    text-align: center;
+#Fortalecimiento h1 {
+  color: #004884;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 32px;
 }
-#Fortalecimiento .card{
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color:rgb(248, 248, 241);
+#Fortalecimiento .card h3 {
+    color: #004884;
+    font-family: Work-Sans;
+    font-size: 22px;
+    font-weight: bold;
 }
-#Fortalecimiento .Temas h6 {
-    text-align: justify;
-    font-weight: lighter;
-}
-#Fortalecimiento .Pie {
-    text-align: center;
+#Fortalecimiento .card p {
+    color: #004884;
+    font-family: Work-Sans;
+    font-size: 17px;
 }
 </style>

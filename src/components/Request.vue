@@ -1,5 +1,10 @@
 <template>
     <div id="Request">
+
+        <div class="MigaPan">
+        <a href= "/Home">Regresar a la página de inicio</a> 
+        <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+        </div>
         <div class="Encabezado">
             <img src="../assets/quiero_saber.png">
             <h1> | </h1>
@@ -17,9 +22,9 @@
                 </div>
                 <div class="Lnea-4"></div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>
+                      Acuerdos, guías, manuales, marcos, modelos, normatividad.
+                    </h1>
                 </div>
             </div>
             </a>
@@ -32,9 +37,9 @@
                 </div>
                 <div class="Lnea-5"></div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>
+                      Conéctate y transfórmate con Gobierno Digital, plataforma CIEN.
+                    </h1>
                 </div>
             </div>
             </a>
@@ -47,9 +52,9 @@
                 </div>
                 <div class="Lnea-6"></div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>
+                      Cursos virtuales, herramientas colaborativas, máxima velocidad, piloto blockchain.
+                    </h1>
                 </div>
             </div>
             </a>
@@ -62,9 +67,9 @@
                 </div>
                 <div class="Lnea-7"></div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>
+                      Carpeta ciudadana digital, acompañamiento en marcos, modelos, PETI, caja de herramientas.
+                    </h1>
                 </div>
             </div>
             </a>
@@ -77,9 +82,11 @@
                 </div>
                 <div class="Lnea-8"></div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>
+                      Autodiagnóstico, FURAG, herramientas de medición, índice de Gobierno Digital, informes de gestión,
+                      mapas y tableros interactivos.
+                      
+                    </h1>
                 </div>
             </div>
             </a>
@@ -98,46 +105,42 @@
         </div>
         <div class="Contenido">
             <a class="boton" v-on:click="contarProyecto" id="botonProyecto">
-            <div class="Lineamientos">
+            <div class="Proyecto">
                 <div class="titulo">
-                    <img src="../assets/lineamientos.png">
+                    <img src="../assets/proyecto.png">
                     <p>PROYECTO</p>
                 </div>
                 <div class="Lnea-4"></div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>
+                      Elige esta opción si necesitas acompañamiento con un proyecto.
+                    </h1>
                 </div>
             </div>
             </a>
             
             <a class="boton" v-on:click="contarCharla" id="botonCharla">
-            <div class="Socializacion">
+            <div class="Charla">
                 <div class="titulo">
                   <img src="../assets/socializacion.png">
                   <p>CHARLA</p>
                 </div>
                 <div class="Lnea-5"></div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>Elige esta opción si necesitas una charla.</h1>
                 </div>
             </div>
             </a>
 
             <a class="boton" v-on:click="contarCapacitacion" id="botonCapacitacion">
-            <div class="Fortalecimiento">
+            <div class="Capacitacion">
                 <div class="titulo">
                   <img src="../assets/fortalecimiento.png">
                   <p>CAPACITACIÓN</p>
                 </div>
                 <div class="Lnea-6"></div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>Elige esta opción si necesitas una capacitación</h1>
                 </div>
             </div>
             </a>
@@ -147,12 +150,12 @@
           <hr>
           <br>
           <div class="Encabezado">
-            <img src="../assets/seccion_acompanamiento.png">
+            <img src="../assets/quiero_reunion.png">
             <h1> | </h1>
             <span class="QUIERO-SABER">SECCIÓN 3. QUIERO UNA REUNIÓN</span>
         </div>
         <div class="descripcion">
-          <p>Esta opción es únicamente si ya revisaste las anteriores y no se encuentra allí la información que solicitas</p>
+          <p>Escoge esta opción únicamente si ya revisaste las anteriores y no se encuentra allí la información que requieres</p>
         </div>
 
         
@@ -160,15 +163,17 @@
           <a class="boton" v-on:click="contarReunion" id="botonReunion">
             <div class="Reunion">
                 <div class="titulo">
-                    <img src="../assets/lineamientos.png">
+                    <img src="../assets/reunion.png">
                     <p>REUNIÓN</p>
                 </div>
                 <div class="Lnea-4">
                 </div>
                 <div class="texto">
-                    <h1>politicas xxxx xsfdxgcfvgbhn tcvgtcvt etrdytf restdf restdrf
-                    zrxtryctu vyiukoij uhgfyugyihoj pkoijuygtrd ytugiiuyvcvbn bvcyvuybnb
-                    dfgh fyguhj ytughji ytguhji rfytguhij yftguhji rtfyguhj rfytg</h1>
+                    <h1>
+                      Si ya revisaste las secciones anteriores y no encontraste lo que buscabas,
+                      y consideras que una reunión es la única forma de resolver tu solicitud, puedes
+                      seleccionar esta opción.
+                    </h1>
                 </div>
             </div>
           </a>
@@ -201,7 +206,7 @@ export default {
         contarLineamientos: function() {
             this.botonLineamientos = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonLineamientos);
 
             this.newLineamientos = {
@@ -231,7 +236,7 @@ export default {
         contarSocializacion: function() {
             this.botonSocializacion = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonSocializacion);
 
             this.newSocializacion = {
@@ -261,7 +266,7 @@ export default {
         contarAcompanamiento: function() {
             this.botonAcompanamiento = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonAcompanamiento);
 
             this.newAcompanamiento = {
@@ -291,7 +296,7 @@ export default {
         contarFortalecimiento: function() {
             this.botonFortalecimiento = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonFortalecimiento);
 
             this.newFortalecimiento = {
@@ -321,7 +326,7 @@ export default {
         contarMedicion: function() {
             this.botonMedicion = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonMedicion);
 
             this.newMedicion = {
@@ -351,7 +356,7 @@ export default {
         contarProyecto: function() {
             this.botonProyecto = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonProyecto);
 
             this.newProyecto = {
@@ -381,7 +386,7 @@ export default {
         contarCharla: function() {
             this.botonCharla = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonCharla);
 
             this.newCharla = {
@@ -411,7 +416,7 @@ export default {
         contarCapacitacion: function() {
             this.botonCapacitacion = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonCapacitacion);
 
             this.newCapacitacion = {
@@ -441,7 +446,7 @@ export default {
         contarReunion: function() {
             this.botonReunion = 0;
             let self = this;
-            let id = localStorage.getItem('identificador');
+            let id = sessionStorage.getItem('identificador');
             console.log(this.id, this.botonReunion);
 
             this.newReunion = {
@@ -472,6 +477,15 @@ export default {
 </script>
 
 <style>
+#Request .MigaPan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 100px 30px 100px ;/*top-right-bottom-left*/
+}
+#Request .MigaPan a {
+  color: #004884;
+}
 #Request .Contenido {
     display: flex;
     flex-wrap: wrap;
@@ -558,7 +572,7 @@ export default {
 #Request .Lineamientos h1 {
   width: 226px;
   height: 162px;
-  margin: 10px 10px 0 10px;/*top-right-bottom-left*/
+  margin: 60px 10px 0 10px;/*top-right-bottom-left*/
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;
@@ -610,7 +624,7 @@ export default {
 #Request .Socializacion h1 {
   width: 226px;
   height: 162px;
-  margin: 10px 10px 0 10px;/*top-right-bottom-left*/
+  margin: 50px 10px 0 10px;/*top-right-bottom-left*/
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;
@@ -661,7 +675,7 @@ export default {
 #Request .Fortalecimiento h1 {
   width: 226px;
   height: 162px;
-  margin: 10px 10px 0 10px;/*top-right-bottom-left*/
+  margin: 50px 10px 0 10px;/*top-right-bottom-left*/
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;
@@ -712,7 +726,7 @@ export default {
 #Request .Acompanamiento h1 {
   width: 226px;
   height: 162px;
-  margin: 10px 10px 0 10px;/*top-right-bottom-left*/
+  margin: 40px 10px 0 10px;/*top-right-bottom-left*/
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;
@@ -734,9 +748,9 @@ export default {
   justify-content: space-around;
 }
 #Request .Medicion img {
-  width: 82px;
+  width:80px;
   height:80px;
-  margin: 30px 0 10px 45px;/*top-right-bottom-left*/
+  margin: 20px 0 20px 60px;/*top-right-bottom-left*/
 }
 
 #Request .Medicion .Lnea-8 {
@@ -749,7 +763,7 @@ export default {
 #Request .Medicion p {
   width: 161px;
   height: 24px;
-  margin: 14px 0px 0px 40px;/*top-right-bottom-left*/
+  margin: 14px 0px 0px 55px;/*top-right-bottom-left*/
   font-family: Montserrat;
   font-size: 18px;
   font-weight: bold;
@@ -763,7 +777,7 @@ export default {
 #Request .Medicion h1 {
   width: 226px;
   height: 162px;
-  margin: 10px 10px 0 10px;/*top-right-bottom-left*/
+  margin: 30px 10px 0 10px;/*top-right-bottom-left*/
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;
@@ -774,6 +788,58 @@ export default {
   text-align: left;
   color: #004884;
 }
+#Request .Proyecto {
+  width: 509px;
+  height: 160px;
+  margin: 10px 10px 10px 100px;
+  padding: 0px 30px 42px 0px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  
+}
+#Request .Proyecto img {
+  width: 120px;
+  height:60px;
+  margin: 30px 15px 25px 20px;/*top-right-bottom-left*/
+}
+#Request .Proyecto .Lnea-4 {
+  width: 0;
+  height: 159px;
+  margin: 0px 0 43.5px;/*top-right-bottom-left*/
+  border: solid 1px #e6effd;
+}
+#Request .Proyecto p {
+  width: 161px;
+  height: 24px;
+  margin: 14px 20px 0 0;/*top-right-bottom-left*/
+  padding-left: 30px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #004884;
+}
+#Request .Proyecto h1 {
+  width: 226px;
+  height: 162px;
+  margin: 50px 10px 0 10px;/*top-right-bottom-left*/
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #004884;
+}
+
 #Request .Contenidoreunion {
     display: flex;
     justify-content: center;
@@ -789,9 +855,9 @@ export default {
   justify-content: center;
 }
 #Request .Reunion img {
-  width: 92px;
-  height:90px;
-  margin: 20px 15px 10px 25px;/*top-right-bottom-left*/
+  width: 72px;
+  height:50px;
+  margin: 40px 25px 30px 40px;/*top-right-bottom-left*/
 }
 #Request .Reunion .Lnea-4 {
   width: 0;
@@ -803,6 +869,7 @@ export default {
   width: 161px;
   height: 24px;
   margin: 14px 20px 0 0;/*top-right-bottom-left*/
+  padding-left: 37px; 
   font-family: Montserrat;
   font-size: 18px;
   font-weight: bold;
@@ -816,7 +883,109 @@ export default {
 #Request .Reunion h1 {
   width: 226px;
   height: 162px;
-  margin: 10px 10px 0 10px;/*top-right-bottom-left*/
+  margin: 25px 10px 0 10px;/*top-right-bottom-left*/
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #004884;
+}
+#Request .Charla {
+  width: 509px;
+  height: 160px;
+  margin: 10px 100px 10px 10px;/*top-right-bottom-left*/
+  padding: 0px 30px 42px 0px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+#Request .Charla img {
+  width: 92px;
+  height:90px;
+  margin: 20px 15px 10px 25px;/*top-right-bottom-left*/
+}
+
+#Request .Charla .Lnea-5 {
+  width: 0;
+  height: 159px;
+  margin: 0px 0 43.5px;/*top-right-bottom-left*/
+  border: solid 1px #e6effd;
+}
+
+#Request .Charla p {
+  width: 161px;
+  height: 24px;
+  margin: 14px 20px 0 0;/*top-right-bottom-left*/
+  padding-left: 40px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #004884;
+}
+#Request .Charla h1 {
+  width: 226px;
+  height: 162px;
+  margin: 60px 10px 0 10px;/*top-right-bottom-left*/
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #004884;
+}
+#Request .Capacitacion {
+  width: 509px;
+  height: 160px;
+  margin: 10px 10px 10px 100px;
+  padding: 0px 30px 42px 0px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  
+}
+#Request .Capacitacion img {
+  width: 92px;
+  height:90px;
+  margin: 20px 15px 10px 25px;/*top-right-bottom-left*/
+}
+#Request .Capacitacion .Lnea-4 {
+  width: 0;
+  height: 159px;
+  margin: 0px 0 43.5px;/*top-right-bottom-left*/
+  border: solid 1px #e6effd;
+}
+#Request .Capacitacion p {
+  width: 161px;
+  height: 24px;
+  margin: 14px 20px 0 0;/*top-right-bottom-left*/
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #004884;
+}
+#Request .Capacitacion h1 {
+  width: 226px;
+  height: 162px;
+  margin: 60px 10px 0 10px;/*top-right-bottom-left*/
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;

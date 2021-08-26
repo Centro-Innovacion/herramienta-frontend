@@ -2,308 +2,209 @@
    {
       "id":"1",
       "nombre":"Acuerdos Marco de Precios",
-      "categoria":"Acuerdos",
-      "descripcion":"xxxx",
-      "nombre_site":"¿Qué es la política?",
-      "site": "https://gobiernodigital.mintic.gov.co/portal/",
-      "nombre_site2":"Decreto xxx",
-      "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+      "categoria":"Lineamientos",
+      "descripcion":"Son la nueva forma de comprar tecnología para lo público. Son el mecanismo para garantizar el mejor uso del dinero de los ciudadanos. Con ellos, el Estado negocia como un solo comprador.",
+      "nombre_site":"¿Qué son los acuerdos marco de precios?",
+      "site": "https://www.mintic.gov.co/gestion-ti/Inversion-TI/Acuerdos-Marco-de-Precios/",
+      "nombre_site2":"",
+      "site2": ""
    },
    {
       "id":"2",
       "nombre":"Guía de calidad e interoperabilidad de Datos Abiertos",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "categoria":"Lineamientos",
+      "descripcion":"Esta guía contribuye al logro del propósito de toma de decisiones basadas en datos a partir del aumento en el uso y aprovechamiento de la información",
+      "nombre_site":"Visualiza la guía aquí",
+      "site": "https://herramientas.datos.gov.co/sites/default/files/Guia%20de%20Datos%20Abiertos%20de%20Colombia.pdf"
    },
    {
       "id":"3",
-      "nombre":"Guía de Gestión de cuentas en correo GOV.CO Territorial",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Guía para solicitud y creación de sitio web GOV.CO/Territorial",
+      "categoria":"Lineamientos",
+      "descripcion":"En esta guía se describe el paso a paso para realizar la solicitud y creación del sitio web de una entidad territorial",
+      "nombre_site":"Visualiza la guía aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/692/articles-179091_recurso_6.pdf",
+      "nombre_site2": "Portal Gov.Co Territorial",
+      "site2": "https://www.gov.co/territorial/"
    },
    {
       "id":"4",
       "nombre":"Guía de lineamientos para el uso de tecnologías emergentes",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "categoria":"Lineamientos",
+      "descripcion":"Esta guía es un documento que orienta a las entidades públicas en el uso y adopción de las nuevas herramientas digitales que permiten crear servicios y habilitar procesos internos más eficientes",
+      "nombre_site":"Visualiza la guía aquí",
+      "site": "https://www.mintic.gov.co/portal/715/articles-149186_recurso_5.pdf"
    },
    {
       "id":"5",
       "nombre":"Guía de referencia de Blockchain",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "categoria":"Lineamientos",
+      "descripcion":"En esta guía, se presentan los lineamientos que deberán observar las entidades públicas para el desarrollo de proyectos de blockchain en la gestión pública",
+      "nombre_site":"Visualiza la guía aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/692/articles-161810_Ley_2052_2020.pdf"
    },
    {
       "id":"6",
       "nombre":"Guía Nacional de Datos Abiertos",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "categoria":"Lineamientos",
+      "descripcion":"Esta guía proporciona orientaciones y buenas prácticas para el desarrollo de estrategias de apertura y uso de datos, encaminadas a la generación de valor económico y social en los distintos ámbitos de la sociedad.",
+      "nombre_site":"Visualiza la guía aquí",
+      "site": "https://herramientas.datos.gov.co/sites/default/files/Guia%20de%20Datos%20Abiertos%20de%20Colombia.pdf",
+      "nombre_site2": "Portal Datos Abiertos",
+      "site2": "https://www.datos.gov.co/"   
    },
    {
       "id":"7",
-      "nombre":"Guía para solicitud y creación de sitios web",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Guías de servicios ciudadanos digitales",
+      "categoria":"Lineamientos",
+      "descripcion":"Esta guía define el modelo que establece las condiciones para garantizar la correcta prestación de los Servicios Ciudadanos Digitales (SCD), incluyendo todos sus componentes, relaciones, modelo de intención, procesos, obligatoriedad, requerimientos técnicos, lineamientos y estándares necesarios",
+      "nombre_site":"Visualiza la guía aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/692/articles-161274_Anexo1_Resolucion_2160_2020.pdf"
    },
    {
       "id":"8",
-      "nombre":"Guías de servicios ciudadanos digitales",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Guías y lineamientos de integracion a GOV.CO",
+      "categoria":"Lineamientos",
+      "descripcion":"Esta documentación apoya el aprendizaje para la implementación de la estrategia de integración digital del Estado",
+      "nombre_site":"Consulta más información aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/portal/Noticias/176192:Ministerio-TIC-divulga-las-guias-y-lineamientos-de-integracion-a-GOV-CO"
    },
    {
       "id":"9",
-      "nombre":"Guías y lineamientos de integracion a GOV.CO",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Guías de lineamientos para la vinculación a SCD",
+      "categoria":"Lineamientos",
+      "descripcion":"En esta guía se dan algunas indicaciones para permitir la compatibilidad de aplicaciones, así como la correcta operación y desarrollo de los servicios a ofrecer a las entidades públicas que se vinculen a los SCD.",
+      "nombre_site":"Visualiza la guía aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/692/articles-161274_Anexo1_Resolucion_2160_2020.pdf"
    },
    {
       "id":"10",
-      "nombre":"Guías y lineamientos para la vinculación a SCD",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Hoja de Ruta de Datos Abiertos Estratégicos para el Estado Colombiano",
+      "categoria":"Lineamientos",
+      "descripcion":"Cataloga los datos abiertos que se consideren críticos, estratégicos o muy importantes para asegurar su permanente disponibilidad pública y actualización, por parte de los sujetos obligados de niveles nacional, territorial y órganos autónomos",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://herramientas.datos.gov.co/noticias/se-publica-el-documento-hoja-de-ruta-de-datos-estrategicos",
+      "nombre_site2": "Portal Datos Abiertos",
+      "site2": " www.datos.gov.co"
    },
    {
       "id":"11",
-      "nombre":"Hoja de Ruta de Datos Abiertos",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Integración a GOV.CO",
+      "categoria":"Lineamientos",
+      "descripcion":"Los líderes TI y CIO de las entidades públicas nacionales y territoriales encontrarán información, conceptos y línea de trabajo sobre el proceso de integración a GOV.CO y vinculación a los Servicios Ciudadanos Digitales.",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/portal/Noticias/176192:Ministerio-TIC-divulga-las-guias-y-lineamientos-de-integracion-a-GOV-CO"
    },
    {
       "id":"12",
-      "nombre":"Integración a GOV.CO",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Lineamientos biblioteca gobierno digital",
+      "categoria":"Lineamientos",
+      "descripcion":"Recopilación de guías y lineamientos",
+      "nombre_site":"Biblioteca Gobierno Digital",
+      "site": "https://www.gov.co/biblioteca/recurso/conozco/lineamientos-y-gu%C3%ADas/dos/2"
    },
    {
       "id":"13",
-      "nombre":"Integración a GOV.CO/Territorial",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Documento Maestro del Modelo de Arquitectura Empresarial",
+      "categoria":"Lineamientos",
+      "descripcion":"Es un instrumento para implementar el habilitador de Arquitectura de la PGD del Estado Colombiano que establece el uso y aprovechamiento de las tecnologías de la información y las comunicaciones",
+      "nombre_site":"Visualiza el documento aquí",
+      "site": "https://www.mintic.gov.co/arquitecturati/630/articles-144764_recurso_pdf.pdf"
    },
    {
       "id":"14",
-      "nombre":"Lineamientos biblioteca gobierno digital",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Lineamientos Modelo de Gestión de Proyectos de TI",
+      "categoria":"Lineamientos",
+      "descripcion":"Este documento describe la estructura del Modelo de Gestión de Proyectos TI, los dominios y lineamientos, las guías que componen el modelo, las evidencias que se deben generar y los procesos que permiten gestionar los proyectos de TI de forma adecuada.",
+      "nombre_site":"Visualiza el documento aquí",
+      "site": "https://www.mintic.gov.co/arquitecturati/630/articles-144766_recurso_pdf.pdf"
    },
    {
       "id":"15",
-      "nombre":"Lineamiento en uso de redes sociales",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Lineamientos para el protocolo Internet IPv6",
+      "categoria":"Lineamientos",
+      "descripcion":"Lineamientos para el proceso de transición y adopción del nuevo protocolo IPv6 por parte de las entidades del orden nacional y territorial.",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://www.mintic.gov.co/portal/inicio/Sala-de-prensa/176075:Ministerio-TIC-expide-resolucion-que-modifica-los-lineamientos-para-la-adopcion-del-protocolo-IPv6"
    },
    {
       "id":"16",
-      "nombre":"Lineamientos de innovación pública",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Manual de Gobierno Digital",
+      "categoria":"Lineamientos",
+      "descripcion":"Es el documento que establece los lineamientos y estándares de los componentes de la política y de los habilitadores transversales",
+      "nombre_site":"¿Qué es?",
+      "site": "https://gobiernodigital.mintic.gov.co/portal/Politica-de-Gobierno-Digital/Manual-de-Gobierno-Digital/",
+      "nombre_site2": "Visualiza el documento aquí",
+      "site2": "https://estrategia.gobiernoenlinea.gov.co/623/articles-81473_recurso_1.pdf"
    },
    {
       "id":"17",
-      "nombre":"Lineamientos de integración de Sedes, Trámites y Servicios",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Marco de Referencia de Arquitectura Empresarial para la Gestión de TI",
+      "categoria":"Lineamientos",
+      "descripcion":"Con el Marco se apoya especialmente la gestión de TI en los organismos de la rama ejecutiva, tanto del orden nacional como del territorial; así como en las demás entidades que decidan adoptar las mejores prácticas señaladas por este instrumento.",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9440.html"
    },
    {
       "id":"18",
-      "nombre":"Lineamientos generales en el uso y operación de los Servicios Ciudadanos Digitales",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Marco de Interoperabilidad",
+      "categoria":"Lineamientos",
+      "descripcion":"Este marco define el conjunto de principios, recomendaciones y lineamientos que orientan los esfuerzos políticos y legales, organizacionales, semánticos y técnicos de las entidades con el fin de facilitar el intercambio seguro y eficiente de información.",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://www.mintic.gov.co/arquitecturati/630/w3-propertyvalue-8117.html"
    },
    {
       "id":"19",
-      "nombre":"Lineamientos Modelo de Arquitectura Empresarial",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Modelo de Seguridad y Privacidad de la Información",
+      "categoria":"Lineamientos",
+      "descripcion":"Este modelo conduce a la preservación de la confidencialidad, integridad, disponibilidad de la información, permitiendo garantizar la privacidad de los datos, mediante la aplicación de un proceso de gestión del riesgo, brindando confianza a las partes interesadas acerca de la adecuada gestión de riesgos.",
+      "nombre_site":"Visualiza el documento aquí",
+      "site": "https://www.mintic.gov.co/gestionti/615/articles-5482_Modelo_de_Seguridad_Privacidad.pdf"
    },
    {
       "id":"20",
-      "nombre":"Lineamientos Modelo de Gestión de Proyectos de TI",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Marco de Transformación Digital",
+      "categoria":"Lineamientos",
+      "descripcion":"El propósito del Marco es apalancar la transformación digital del Estado y el uso de tecnologías emergentes a través de la reinvención o modificación de los procesos, productos o servicios para asegurar la generación de valor en lo público.",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://www.mintic.gov.co/portal/inicio/Sala-de-Prensa/Noticias/149186:MinTIC-publica-el-Marco-de-Transformacion-Digital-para-mejorar-la-relacion-Estado-ciudadano",
+      "nombre_site2": "Visualiza el documento aquí",
+      "site2": "https://estrategia.gobiernoenlinea.gov.co/623/articles-149178_recurso_1.pdf"
    },
    {
       "id":"21",
-      "nombre":"Lineamientos para el protocolo Internet IPv6",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Modelo de Madurez de Ciudades y Territorios Inteligentes",
+      "categoria":"Lineamientos",
+      "descripcion":"El objetivo del modelo es diagnosticar la situación actual de una ciudad o territorio con relación a las dimensiones y ejes habilitadores definidos en el modelo, con el fin de generar datos e información para la toma de decisiones y a su vez, establecer y definir un plan de acción u hoja de ruta que promueva el desarrollo de ciudades y territorios inteligentes en Colombia",
+      "nombre_site":"Visualiza el documento aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/692/articles-179100_recurso_3.pdf",
+      "nombre_site2": "Consulta mayor información aquí",
+      "site2": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Ciudades-y-Territorios-Inteligentes/"
    },
    {
       "id":"22",
-      "nombre":"Manual de Gobierno Digital",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Documento Maestro del Modelo de Arquitectura Empresarial",
+      "categoria":"Lineamientos",
+      "descripcion":"Describe la estructura del Modelo de Arquitectura Empresarial (MAE), la normatividad asociada, los principios, los dominios y lineamientos, las guías que componen el MAE, las evidencias que se deben generar y la metodología para implementar un ejercicio de arquitectura empresarial.",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://www.mintic.gov.co/arquitecturati/630/w3-propertyvalue-8118.html",
+      "nombre_site2": "Visualiza el documento aquí",
+      "site2":"https://www.mintic.gov.co/arquitecturati/630/articles-144764_recurso_pdf.pdf"
    },
    {
       "id":"23",
-      "nombre":"Manuales, protocolos o guías de comunicación digital para entidades de gobierno",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "nombre":"Política de Gobierno Digital",
+      "categoria":"Lineamientos",
+      "descripcion":"Define los lineamientos, estándares y proyectos estratégicos, que que permiten llevar a cabo la transformación digital del Estado, a fin de lograr una mejor interacción con ciudadanos, usuarios y grupos de interés",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://gobiernodigital.mintic.gov.co/portal/Politica-de-Gobierno-Digital/"
    },
    {
       "id":"24",
-      "nombre":"Marco de Arquitectura Empresarial",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"¿Qué es el marco?",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"25",
-      "nombre":"Marco de Interoperabilidad",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"26",
-      "nombre":"Marco de Seguridad y Privacidad",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"27",
-      "nombre":"Marco de Transformación Digital",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"28",
-      "nombre":"Metodologia Cocrear ",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"29",
-      "nombre":"Modelo de Seguridad y privacidad de la información",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"30",
-      "nombre":"Modelo de Madurez de Ciudades y Territorios Inteligentes",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"31",
-      "nombre":"Marco de Referencia Arquitectura TI",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"32",
-      "nombre":"Política de Gobierno Digital",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"33",
       "nombre":"Lineamientos y estándares para la estrategia de seguridad digital",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
-   },
-   {
-      "id":"34",
-      "nombre":"Simplificación de la interacción digital entre los ciudadanos y el Estado",
-      "categoria":"Guías",
-      "descripcion":"xxxx",
-      "informacion":"Tierra",
-      "nombre_site":"Uso del estándar de lenguaje común",
-      "site": "https://centrodeinnovacion.mintic.gov.co/"
+      "categoria":"Lineamientos",
+      "descripcion":"A través de este instrumento, los encargados de seguridad pueden encontrar una guía para establecer la hoja de ruta para la implementación de la estrategia de seguridad digital, de acuerdo con las características propias de cada entidad.",
+      "nombre_site":"Consulta mayor información aquí",
+      "site": "https://www.mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/162626:MinTIC-expide-la-resolucion-que-establece-los-lineamientos-y-estandares-para-la-estrategia-de-seguridad-digital"
    }
 ] 
