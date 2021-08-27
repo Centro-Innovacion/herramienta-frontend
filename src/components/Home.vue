@@ -1,7 +1,7 @@
 <template>
   <div id="Home">
     <div class="contenido">
-      <img src="../assets/imagenhome.png">
+      <img src="../assets/imagenhomematica.png">
       <div class= "texto">
         <h1>
            ¡Te damos la bienvenida!
@@ -168,6 +168,13 @@ export default {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 600px) {
+  #Home .contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 #Home img {
   width: 40%;
   height: 40%;
@@ -175,12 +182,28 @@ export default {
   filter: brightness(1.1);
   mix-blend-mode: multiply;
 }
+@media (max-width: 600px) {
+  #Home img {
+    width: 35%;
+    height: 35%;
+    margin: 0 0 0 140px;
+   
+  }
+}
 #Home .texto {
   display: flex;
   flex-direction: column;
   padding-right: 10px;
   margin-top: 40px;
 }
+@media (max-width:600px) {
+  #Home .texto {
+    margin: 5px 20px 0 20px;/*top-right-bottom-left*/
+    display: flex;
+    justify-content: center;
+  }
+}
+
 #Home .texto h1 {
   color: #004884;
   font-family: Montserrat;
@@ -188,6 +211,11 @@ export default {
   font-size: 40px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 600px) {
+  #Home .texto h1 {
+    font-size: 25px;
+  }
 }
 #Home .texto h2 {
   color: #004884;
@@ -197,6 +225,11 @@ export default {
   text-align: justify;
   font-weight: regular;
 }
+@media (max-width: 600px) {
+  #Home .texto h2 {
+    font-size: 18px;
+  }
+}
 #Home .texto h3 {
   color: #004884;
   font-family: Montserrat;
@@ -204,6 +237,11 @@ export default {
   display: flex;
   text-align: justify;
   font-weight: bold;
+}
+@media (max-width: 600px) {
+  #Home .texto h3 {
+    font-size: 15px;
+  }
 }
 #Home .botones {
   display:flex;
@@ -213,7 +251,13 @@ export default {
   padding-left: 180px;
   text-align: center; /*alinear texto al centro*/
 }
+@media (max-width: 600px) {
+  #Home .botones {
+    padding: 0 40px 0 40px ;/*top-right-bottom-left*/
+  }
+}
 #Home .boton {
+width: 100%;
 padding-right: 30px; /*espacio alrededor texto*/
 padding-left: 30px;
 padding-bottom: 5px;
@@ -224,5 +268,10 @@ font-family: Montserrat;
 border-radius: 40px; /*bordes redondos*/
 text-decoration: none; /*quitar el subrayado del hipervinculo*/
 cursor: pointer;
+}
+@media (max-width: 600px) {
+  #Home .boton {
+    font-size: 13px;
+  }
 }
 </style>
