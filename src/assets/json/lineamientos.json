@@ -206,5 +206,13 @@
       "descripcion":"A través de este instrumento, los encargados de seguridad pueden encontrar una guía para establecer la hoja de ruta para la implementación de la estrategia de seguridad digital, de acuerdo con las características propias de cada entidad.",
       "nombre_site":"Consulta mayor información aquí",
       "site": "https://www.mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/162626:MinTIC-expide-la-resolucion-que-establece-los-lineamientos-y-estandares-para-la-estrategia-de-seguridad-digital"
-   }
+   },
+   {
+      "id":"25",
+      "nombre":"Política de seguridad digital",
+      "categoria":"Fortalecimiento",
+      "descripcion":"Hoja de ruta para que el Gobierno, las organizaciones públicas y privadas, la fuerza pública, la academia y los ciudadanos en general, cuenten con un entorno digital confiable y seguro.",
+      "nombre_site":"Lineamientos",
+      "site": "https://www.mintic.gov.co/portal/inicio/Sala-de-Prensa/Noticias/15410:Lo-que-usted-debe-saber-del-Conpes-de-Seguridad-Digital"
+  }
 ] 

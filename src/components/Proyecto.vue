@@ -9,39 +9,18 @@
     <br>
 
       <div class="Titulo">
-        <h4>PROYECTO</h4>
+        <h4>ACOMPAÑAMIENTO PARA UN PROYECTO</h4>
       </div>
-
-      <br>
-      <div class="Subtitulo">
-        <p>Proporciona mayor información sobre tu solicitud</p>
-      </div>
-    
-
-    <div class="dep_mun">
-        <label for="Tema" class="Tema">1. Por favor selecciona un Tema para visualizar el correo al que debes enviar tu solicitud:
-            <span class="obligatorio">*</span>
-        </label>
-        <br>
-        <select  v-model="selectedMunicipio" @change="selectMunicipio">
-            <option v-for="(municipio,index) in municipios" :value="index">{{ municipio.label }}</option>
-        </select>
-        <br>
-        <select id = "mun_ent" v-model="selectedOption" v-if="selectedMunicipio != -1">
-            <option id = "dep_ent" v-for="option in municipios[selectedMunicipio].options">{{ option }}</option>
-        </select>
-        <br>
-        <span v-if="selectedOption">
-            Para solicitudes relacionadas con el tema {{ municipios[selectedMunicipio].label }}, por favor escribe un correo a {{ selectedOption }}.
-        </span>
-
-        <!-- departamento{{ municipios[selectedMunicipio].label }} municipio{{ selectedOption }}-->
-    </div>
 
     <br>
+    <div class="Subtitulo">
+      <p>Proporciona mayor información sobre tu solicitud</p>
+    </div>
     
     <div class="Textarea">
-      <p>2. Para ayudarnos a mejorar esta herramienta puedes enviarnos un resumen de tu solicitud aquí:</p>
+      <label for="Tema" class="Tema">1. Registra en este campo de texto tu solicitud de manera detallada:
+            <span class="obligatorio">*</span>
+      </label>
       <b-form-textarea
         id="sol_charla"
         v-model="text"
@@ -52,10 +31,64 @@
       <pre class="mt-3 mb-0">{{ text }}</pre>
     </div>
 
-    <br>
+    <div class="temas">
+      <label for="tema" class="tema">2. Selecciona el tema relacionado con tu solicitud:
+            <span class="obligatorio">*</span>
+      </label>
+      <div v-for="n, i in 1">
+        <p><input type="radio" value="ipv6" v-model="choices[i]">Adopción de IPv6</p>
+        <p><input type="radio" value="innovacion" v-model="choices[i]">Innovación Pública Digital</p>
+        <p><input type="radio" value="ciudades" v-model="choices[i]">Ciudades y Territorios Inteligentes</p>
+        <p><input type="radio" value="datos" v-model="choices[i]">Datos Abiertos</p>
+        <p><input type="radio" value="sandbox" v-model="choices[i]">Espacio Colaborativo Data Sandbox</p>
+        <p><input type="radio" value="govco" v-model="choices[i]">Gov.co/Territorial</p>
+        <p><input type="radio" value="arquitectura" v-model="choices[i]">Marco de Arquitectura Empresarial</p>
+        <p><input type="radio" value="interoperabilidad" v-model="choices[i]">Marco de Interoperabilidad</p>
+        <p><input type="radio" value="transformacion" v-model="choices[i]">Marco de Transformación Digital</p>
+        <p><input type="radio" value="digital" v-model="choices[i]">Mi Colombia Digital</p>
+        <p><input type="radio" value="maxima" v-model="choices[i]">Máxima Velocidad</p>
+        <p><input type="radio" value="portal" v-model="choices[i]">Portal único del Estado Colombiano</p>
+        <p><input type="radio" value="seguridad" v-model="choices[i]">Seguridad y Privacidad de la Información</p>
+        <p><input type="radio" value="sello" v-model="choices[i]">Sello de Excelencia Gobierno Digital</p>
+        <p><input type="radio" value="scd" v-model="choices[i]">Servicios Ciudadanos Digitales</p>
+        <p><input type="radio" value="libre" v-model="choices[i]">Software Libre</p>
+        <p><input type="radio" value="emergentes" v-model="choices[i]">Tecnologías Emergentes</p>
+        <p><input type="radio" value="gobierno" v-model="choices[i]">Transfórmate con Gobierno Digital</p>
+        <p><input type="radio" value="transparencia" v-model="choices[i]">Transparencia y Accesibilidad Web</p>
+        <p><input type="radio" value="urna" v-model="choices[i]">Urna de Cristal</p>
+        <p><input type="radio" value="otro" v-model="choices[i]">Otro</p>
+        <div class="otra">
+          <b-form-group 
+              id="input-group" 
+              >
+              <b-form-input
+              id="otra"
+              placeholder="¿Cuál?"
+              ></b-form-input>
+          </b-form-group>
+        </div>
+      </div>
+    </div>
+
+    <div class="correo">
+      <label for="correo" class="correo">3. Escribe tu correo electrónico:
+            <span class="obligatorio">*</span>
+      </label>
+      <div class="correotext">
+        <b-form-group 
+              id="input-group" 
+              label-for="input"
+              >
+              <b-form-input
+              id="otra"
+              placeholder="Correo electrónico"
+              ></b-form-input>
+          </b-form-group>
+      </div>
+    </div>
 
     <div class="boton">
-      <b-button type="submit" variant="primary" v-on:click="terminar">Terminar</b-button>
+      <b-button type="submit" variant="primary" v-on:click="terminar">Enviar</b-button>
     </div>
 
   </div>
@@ -68,92 +101,12 @@ export default {
     name: "Personas",
     data: function (){
         return {
+            choices:[],
             municipios: null,
             selectedMunicipio: -1,
             selectedOption: '',
             
-            municipios:[{ label: 'Por favor selecciona una opción de la lista', value: null },
-                {
-                    label:"Adopción de IPv6",
-                    options:["pepito@mintic.gov.co"]
-                },
-                {
-                    label:"Centro de Innovación Pública Digital",
-                    options:["mvosorio@mintic.gov.co"]
-                },
-                {
-                    label:"Ciudades y Territorios Inteligentes",
-                    options:["mguerra@mintic.gov.co"]
-                },
-                {
-                    label:"Datos Abiertos",
-                    options:["lsantamaria@mintic.gov.co"]
-                },
-                {
-                    label:"Espacio Colaborativo Data Sandbox",
-                    options:["jxxx@mintic.gov.co"]
-                },
-                {
-                    label:"Gov.co/Territorial",
-                    options:["dclavijo@mintic.gov.co"]
-                },
-                {
-                    label:"Marco de Arquitectura Empresarial",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Marco de Interoperabilidad",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Marco de Transformación Digital",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Mi Colombia Digital",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Máxima Velocidad",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Portal único del Estado Colombiano",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Seguridad y Privacidad de la Información",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Sello de Excelencia Gobierno Digital",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Servicios Ciudadanos Digitales",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Software Libre",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Tecnologías Emergentes",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Transfórmate con Gobierno Digital",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Transparencia y Accesibilidad Web",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Urna de Cristal",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-        ],
+            
         value: '',
         
       }
@@ -163,6 +116,10 @@ export default {
         selectMunicipio:function() {
         this.selectedOption = '';
         },
+        
+        terminar: function() {
+            window.location.href = '/home';
+        }
     }
   }
 </script>
@@ -197,36 +154,67 @@ export default {
   font-size: 24px;
   font-weight: bold;
 }
-#Proyecto .dep_mun {
+#Proyecto .temas {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
 }
-#Proyecto .dep_mun label {
+#Proyecto .temas label {
   font-family: Montserrat;
   color: #004884;
   font-size: 18px;
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
 }
-#Proyecto .dep_mun select {
-  margin: 10px 0 10px 0;
+#Proyecto .temas p {
+  font-family: Montserrat;
+  color: #004884;
+  margin: 0px 0px 0px 0px;/*top-right-bottom-left*/
 }
-#Proyecto .dep_mun span {
+#Proyecto .temas span {
   margin-top: 30px;
   color: #f42f63;
   font-weight: bold;
   font-family: Montserrat;
 }
+#Proyecto .otra {
+  margin: 0 700px 0 0;
+}
+#Proyecto .correotext {
+  margin: 0 500px 0 0;
+}
 #Proyecto .Textarea {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
 }
-#Proyecto .Textarea p {
+#Proyecto .Textarea label {
   font-family: Montserrat;
   color: #004884;
   font-size: 18px;
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
 }
+#Proyecto .Textarea span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+#Proyecto .correo{
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Proyecto .correo label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+}
+#Proyecto .correo span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: bold;
+  font-family: Montserrat;
+}
 #Proyecto .boton {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }

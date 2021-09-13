@@ -10,7 +10,7 @@
         <br>
         <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Máxima Velocidad"/>              
         <br>
-        <br
+        <br>
       </div>
 
     </div>
@@ -33,6 +33,7 @@
               <br>
               <!--For example, instead of <div id="{{ val }}">, use <div :id="val">.-->
               <a :href= "item.site" >{{ item.nombre_site }} </a>
+              <br>
               <br>
               <a :href= "item.site2" target="\_blank">{{ item.nombre_site2 }}</a>
             </p>

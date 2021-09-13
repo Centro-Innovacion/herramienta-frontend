@@ -162,6 +162,11 @@ export default {
         selectMunicipio:function() {
         this.selectedOption = '';
         },
+
+        terminar: function() {
+            window.location.href = '/home';
+        }
+    
     }
   }
 </script>

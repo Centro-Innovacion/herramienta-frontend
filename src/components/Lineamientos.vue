@@ -12,12 +12,11 @@
     <div class="row">
 
       <div class="col-md-12">
-      
-        <h1>Buscar en Lineamientos </h1> 
+        <h1>Buscar en Lineamientos</h1> 
         <br>
-        <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Política de Gobierno Digital"/>              
+        <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Política de Gobierno Digital">              
         <br>
-        <br
+        <br>
       </div>
 
     </div>

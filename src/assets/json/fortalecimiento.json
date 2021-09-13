@@ -3,12 +3,12 @@
         "id":"1",
         "nombre":"Caja de Herramientas",
         "categoria":"Fortalecimiento",
-        "descripcion":"",
-        "nombre_site":"Consúltala aquí",
+        "descripcion":"Aquí encontrarás un espacio con contenidos claros y oportunos que permitirán comprender las guías y lineamientos establecidos por MinTIC, con el propósito de apoyar los planes de transformación digital y el proceso de vinculación a Servicios Ciudadanos Digitales (SCD) e integración al portal www.gov.co",
+        "nombre_site":"Consulta la caja de herramientas aquí",
         "site": "https://gobiernodigital.mintic.gov.co/portal/Transformate-con-Gobierno-Digital-/Caja-de-herramientas/"
     },
     {
-        "id":"7",
+        "id":"2",
         "nombre":"Catalizadores de la innovación",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -18,47 +18,33 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"8",
+        "id":"3",
         "nombre":"Ciudades y Territorios Inteligentes",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"La iniciativa de ciudad inteligente genera datos de valor, para la toma de decisiones en tiempo real, a través del uso y apropiación de tecnologías. Esto otorga a las ciudades la capacidad de entender, comprender y resolver sus desafíos y problemas o las necesidades de sus ciudadanos.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Ciudades-y-Territorios-Inteligentes/"
     },
     {
-        "id":"9",
-        "nombre":"Cooperación en seguridad digital",
-        "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"10",
+        "id":"4",
         "nombre":"Data Sandbox",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Es una plataforma empleada para explorar conjuntos de datos de manera colaborativa e interactiva entre varios Usuarios del Data Sandbox de una misma Entidad, con el fin de probar, experimentar, ensayar y determinar soluciones aplicables en el contexto real a problemáticas públicas y/o ciudadanas.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://sandbox.datos.gov.co/#!/inicio"
     },
     {
-        "id":"11",
+        "id":"5",
         "nombre":"Datos Abiertos",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Los datos abiertos son información pública dispuesta en formatos que permiten su uso y reutilización bajo licencia abierta y sin restricciones legales para su aprovechamiento.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Datos-abiertos/",
+        "nombre_site2":"Portal de Datos Abiertos",
+        "site2": "https://www.datos.gov.co/"
     },
     {
-        "id":"12",
+        "id":"6",
         "nombre":"Cursos Virtuales",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -68,7 +54,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"13",
+        "id":"7",
         "nombre":"Comunicación Digital",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -78,7 +64,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"14",
+        "id":"8",
         "nombre":"Evolutivos para GOV.CO 3.0",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -88,7 +74,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"15",
+        "id":"9",
         "nombre":"Evolutivos para GOV.CO 3.0",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -98,7 +84,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"16",
+        "id":"10",
         "nombre":"Generación de capacidades de TI",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -108,7 +94,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"17",
+        "id":"11",
         "nombre":"Hacker Girls",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -118,7 +104,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"18",
+        "id":"12",
         "nombre":"Máxima Velocidad",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -128,7 +114,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"19",
+        "id":"13",
         "nombre":"Mentorías sobre innovación",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -138,7 +124,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"20",
+        "id":"14",
         "nombre":"Piloto Blockchain",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -148,7 +134,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"21",
+        "id":"15",
         "nombre":"Recursos de Seguridad",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -158,7 +144,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"22",
+        "id":"16",
         "nombre":"Sello de Excelencia",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -168,7 +154,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"23",
+        "id":"17",
         "nombre":"Tecnologías Emergentes de la 4ta Revolución Industrial",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -178,7 +164,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"24",
+        "id":"18",
         "nombre":"Servicios Ciudadanos Digitales",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -188,7 +174,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"25",
+        "id":"19",
         "nombre":"Curso virtual: Administrador de sitio web",
         "categoria":"Fortalecimiento",
         "descripcion":"xxxx",
@@ -198,7 +184,7 @@
         "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
     },
     {
-        "id":"4",
+        "id":"20",
         "nombre":"Tutoriales: Aprende de tu sitio web",
         "categoria":"Socialización",
         "descripcion":"xxxx",

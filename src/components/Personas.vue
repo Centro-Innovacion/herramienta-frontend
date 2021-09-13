@@ -38,8 +38,7 @@
                             <option value= "AGENCIA NACIONAL DE TIERRAS"></option>
                             <option value= "AGENCIA NACIONAL DEL ESPECTRO"></option>
                             <option value= "AGENCIA NACIONAL INMOBILIARIA VIRGILIO BARCO VARGAS"></option>
-                            "<option value= ""AGENCIA PARA LA COOPERACION INTERNACIONAL DE MEDELLIN - ACI
-                            ""></option>"
+                            <option value= "AGENCIA PARA LA COOPERACION INTERNACIONAL DE MEDELLIN - ACI"></option>"
                             <option value= "AGENCIA PARA LA GESTION DEL PAISAJE, EL PATRIMONIO Y LAS ALIANZAS PUBLICO PRIVADAS"></option>
                             <option value= "AGENCIA PARA LA INFRAESTRUCTURA DEL META"></option>
                             <option value= "AGENCIA PARA LA REINCORPORACION Y LA NORMALIZACION"></option>
@@ -1179,9 +1178,8 @@
                             <option value= "BOMBEROS DE BUCARAMANGA"></option>
                             <option value= "C.P.G.A. DE LA PROVINCIA DE GARCIA ROVIRA - CEPROGAR"></option>
                             <option value= "C.P.G.A. DEL NOROCCIDENTE DEL HUILA - NOROCEAGRO"></option>
-                            "<option value= ""CAFUCHES EMPRESA DE SERVICIOS PUBLICOS
-                            DOMICILIARIOS DE SAN MARTIN DE LOS LLANOS S.A
-                            ""></option>"
+                            <option value= "CAFUCHES EMPRESA DE SERVICIOS PUBLICOS
+                            DOMICILIARIOS DE SAN MARTIN DE LOS LLANOS S.A"></option>
                             <option value= "CAJA DE PREVISION SOCIAL MUNICIPAL DE BUCARAMANGA"></option>
                             <option value= "CAJA DE RETIRO DE LAS FUERZAS MILITARES"></option>
                             <option value= "CAJA DE SUELDOS DE RETIRO DE LA POLICIA NACIONAL"></option>
@@ -2160,8 +2158,7 @@
                             <option value= "HOSPITAL DEPARTAMENTAL SAN RAFAEL ZARZAL"></option>
                             <option value= "HOSPITAL DEPARTAMENTAL SAN VICENTE DE PAUL DE GARZON"></option>
                             <option value= "HOSPITAL DEPARTAMENTAL SANTA SOFIA DE CALDAS"></option>
-                            "<option value= ""HOSPITAL DEPARTAMENTAL UNIVERSITARIO DEL QUINDIO SAN JUAN DE DIOS E.S.E.
-                            ""></option>"
+                            <option value= "HOSPITAL DEPARTAMENTAL UNIVERSITARIO DEL QUINDIO SAN JUAN DE DIOS E.S.E."></option>
                             <option value= "HOSPITAL DIOGENES TRONCOSO"></option>
                             <option value= "HOSPITAL DIVINO NIÑO - BUGA"></option>
                             <option value= "HOSPITAL DIVINO NIÑO - RIVERA"></option>

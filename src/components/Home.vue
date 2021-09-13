@@ -65,7 +65,8 @@ export default {
                     window.location.href = '/request';
                 })
                 .catch((error) => {
-                    alert("Error, contacte al administrador del sitio");
+                    //alert("Error, contacte al administrador del sitio");
+                    window.location.href = '/request';
                 });
         },
 
@@ -83,7 +84,8 @@ export default {
                     window.location.href = '/entidad';
                 })
                 .catch((error) => {
-                    alert("Error, contacte al administrador del sitio");
+                    //alert("Error, contacte al administrador del sitio");
+                    window.location.href = '/entidad';
                 });
         },
 
@@ -101,7 +103,8 @@ export default {
                     window.location.href = '/request';
                 })
                 .catch((error) => {
-                    alert("Error, contacte al administrador del sitio");
+                    //alert("Error, contacte al administrador del sitio");
+                     window.location.href = '/request';
                 });
         },
 
@@ -119,7 +122,8 @@ export default {
                     window.location.href = '/request';
                 })
                 .catch((error) => {
-                    alert("Error, contacte al administrador del sitio");
+                    //alert("Error, contacte al administrador del sitio");
+                     window.location.href = '/request';
                 });
         },
 
@@ -137,7 +141,8 @@ export default {
                     window.location.href = '/request';
                 })
                 .catch((error) => {
-                    alert("Error, contacte al administrador del sitio");
+                    //alert("Error, contacte al administrador del sitio");
+                    window.location.href = '/request';
                 });
         },
 
@@ -155,7 +160,8 @@ export default {
                     window.location.href = '/request';
                 })
                 .catch((error) => {
-                    alert("Error, contacte al administrador del sitio");
+                    //alert("Error, contacte al administrador del sitio");
+                    window.location.href = '/request';
                 });
         },
 
@@ -178,7 +184,7 @@ export default {
 #Home img {
   width: 40%;
   height: 40%;
-  margin: 40px 47px 0px 20px;/*top-right-bottom-left*/
+  margin: 70px 47px 0px 20px;/*top-right-bottom-left*/
   filter: brightness(1.1);
   mix-blend-mode: multiply;
 }

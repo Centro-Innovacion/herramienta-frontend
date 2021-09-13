@@ -49,7 +49,7 @@
 
     methods: {
         final: function() {
-            alert("Gracias, tu evaluación ha sido recibida");
+            
             window.location.href = '/home';
         }
     }

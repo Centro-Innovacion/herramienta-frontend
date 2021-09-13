@@ -75,11 +75,9 @@ export default {
             municipios:[{ label: 'Por favor selecciona una opción de la lista', value: null },
                 {
                     label:"Adopción de IPv6",
-                    options:["pepito@mintic.gov.co"]
                 },
                 {
-                    label:"Centro de Innovación Pública Digital",
-                    options:["mvosorio@mintic.gov.co"]
+                    label:"Innovación Pública Digital",
                 },
                 {
                     label:"Ciudades y Territorios Inteligentes",
@@ -163,6 +161,10 @@ export default {
         selectMunicipio:function() {
         this.selectedOption = '';
         },
+
+        terminar: function() {
+            window.location.href = '/home';
+        }
     }
   }
 </script>
