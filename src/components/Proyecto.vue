@@ -13,24 +13,24 @@
       <p>Proporciona mayor información sobre tu solicitud</p>
     </div>
     <div class="Textarea">
-      <label for="Tema" class="Tema">1. Registra en este campo de texto tu solicitud de manera detallada:
-        <span class="obligatorio">*</span>
-      </label>
-      <b-form-textarea
-        id="sol_charla"
-        v-model="text"
-        placeholder="Escribe algo..."
+      <p>1. Por favor escribe tu solicitud de manera detallada:</p>
+      <span>Caracteres restantes: {{limite - mensaje.length}}</span>
+      <textarea
+        id ="texto_charla"
+        cols="50"
         rows="3"
-        max-rows="6"
-      ></b-form-textarea>
-      <pre class="mt-3 mb-0">{{ text }}</pre>
+        class="form-control"
+        v-model="mensaje"
+        maxlenght="1000"
+        >
+      </textarea>
     </div>
 
     <div class="temas">
       <label for="tema" class="tema">2. Selecciona el tema relacionado con tu solicitud:
         <span class="obligatorio">*</span>
       </label>
-      <div v-for="n, i in 1">
+      <div v-for="n, i in 1" id="tema_proyecto">
         <p><input type="radio" value="ipv6" v-model="choices[i]">Adopción de IPv6</p>
         <p><input type="radio" value="innovacion" v-model="choices[i]">Innovación Pública Digital</p>
         <p><input type="radio" value="ciudades" v-model="choices[i]">Ciudades y Territorios Inteligentes</p>
@@ -57,7 +57,7 @@
             id="input-group" 
             >
             <b-form-input
-            id="otra"
+            id="otro_tema_proyecto"
             placeholder="¿Cuál?"
             ></b-form-input>
           </b-form-group>
@@ -75,14 +75,42 @@
           label-for="input"
           >
           <b-form-input
-          id="otra"
+          id="correo_proyecto"
           placeholder="Correo electrónico"
           ></b-form-input>
         </b-form-group>
       </div>
     </div>
+    <br>
+    <div class='termycond'>
+      <input type="checkbox" id="politica" value="Politica" v-model="checkedNames">
+      <label for="politica">
+        <a
+        href="/privacidad"
+        target="_blank"
+        >Autorizo el tratamiento de datos personales</a>
+      </label>
+      <br>
+      <input type="checkbox" id="terminos" value="Terminos" v-model="checkedNames1">
+      <label for="terminos">
+        <a
+        href="/terminos"
+        target="_blank"
+        >Acepto los términos y condiciones</a>
+      </label>
+      <br>
+    </div>
     <div class="boton">
-      <b-button type="submit" variant="primary" v-on:click="terminar">Enviar</b-button>
+      <b-button type="submit" variant="primary" :disabled="!(checkedNames&&checkedNames1)" v-on:click="crearCitaProyecto()">Enviar</b-button>
+      <b-modal ref="my-modal" hide-footer title="Solicitud recibida">
+      <div class="d-block text-center">
+        <h3>
+          Tu solicitud ha sido recibida y pronto nos pondremos en contacto contigo.
+          Ya puedes cerrar esta ventana.
+        </h3>
+      </div>
+      <b-button class="mt-3" variant="outline-danger" block @click="hideModal">Cerrar</b-button>
+    </b-modal>  
     </div>
   </div>
 </template>
@@ -97,18 +125,63 @@ export default {
       municipios: null,
       selectedMunicipio: -1,
       selectedOption: '',
-    value: '',
+      value: '',
+      texto_proyecto: '',
+      tema_proyecto:'',
+      otro_tema_proyecto:'',
+      correo_proyecto:'',
+      limite: 1000,
+      mensaje: '',
+      checkedNames: null,
+      checkedNames1: null,
     }
   },
   methods:{
+
+      hideModal() {
+        this.$refs['my-modal'].hide(),
+        window.location.href = '/home'
+      },
 
       selectMunicipio:function() {
       this.selectedOption = '';
       },
       
-      terminar: function() {
-          window.location.href = '/home';
-      }
+      crearCitaProyecto: function() {
+      this.texto_proyecto = document.getElementById("texto_proyecto").value;
+      this.tema_proyecto = document.getElementById("tema_proyecto").value;
+      this.otro_tema_proyecto = document.getElementById("otro_tema_proyecto").value;
+      this.correo_proyecto = document.getElementById("correo_proyecto").value;
+      let self = this;
+      let id = sessionStorage.getItem('identificador');
+
+      if(this.texto_proyecto!== '' && this.tema_proyecto !== '' && this.correo_proyecto!=='')
+      {
+        this.newCitaProyecto = {
+          "id_rol": id,
+          "texto_proyecto": this.texto_proyecto,
+          "tema_proyecto": this.tema_proyecto,
+          "otro_tema_proyecto": this.otro_tema_proyecto,
+          "correo_proyecto": this.correo_proyecto,
+        }
+      
+      axios.post("http://127.0.0.1:8000/proyecto/create/", this.newCitaProyecto)
+        .then((result) => {
+          this.$refs['my-modal'].show(),
+          document.getElementById("texto_proyecto").value = "",
+          document.getElementById("tema_proyecto").value = "",
+          document.getElementById("otro_tema_proyecto").value = "",
+          document.getElementById("correo_proyecto").value = null
+        })
+        .catch((error) => {
+          //alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          this.$refs['my-modal'].show()
+        });  
+    }
+    else {
+          alert("Debes completar todos los campos antes de continuar");
+          }
+    }
   }
 }
 </script>
@@ -142,6 +215,25 @@ export default {
   color: #004884;
   font-size: 24px;
   font-weight: bold;
+}
+#Proyecto .Textarea {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Proyecto .Textarea label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+}
+#Proyecto .Textarea span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: light;
+  font-family: Montserrat;
+}
+#Proyecto .termycond {
+  margin: 0px 0px 0 470px;/*top-right-bottom-left*/;
 }
 #Proyecto .temas {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
@@ -180,10 +272,17 @@ export default {
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
 }
+#Proyecto .Textarea p {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+}
 #Proyecto .Textarea span {
   margin-top: 30px;
   color: #f42f63;
-  font-weight: bold;
+  font-weight: normal;
   font-family: Montserrat;
 }
 #Proyecto .correo{

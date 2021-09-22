@@ -198,6 +198,7 @@ export default {
   }
 },
     methods:{
+      
       hideModal() {
         this.$refs['my-modal'].hide(),
         window.location.href = '/home'
