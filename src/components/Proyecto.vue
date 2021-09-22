@@ -16,7 +16,7 @@
       <p>1. Por favor escribe tu solicitud de manera detallada:</p>
       <span>Caracteres restantes: {{limite - mensaje.length}}</span>
       <textarea
-        id ="texto_charla"
+        id ="texto_proyecto"
         cols="50"
         rows="3"
         class="form-control"
@@ -142,10 +142,6 @@ export default {
         this.$refs['my-modal'].hide(),
         window.location.href = '/home'
       },
-
-      selectMunicipio:function() {
-      this.selectedOption = '';
-      },
       
       crearCitaProyecto: function() {
       this.texto_proyecto = document.getElementById("texto_proyecto").value;
@@ -171,7 +167,7 @@ export default {
           document.getElementById("texto_proyecto").value = "",
           document.getElementById("tema_proyecto").value = "",
           document.getElementById("otro_tema_proyecto").value = "",
-          document.getElementById("correo_proyecto").value = null
+          document.getElementById("correo_proyecto").value = ""
         })
         .catch((error) => {
           //alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
