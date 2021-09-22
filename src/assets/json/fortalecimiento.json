@@ -50,7 +50,7 @@
         "site": "http://104.45.133.12/cursovirtual/login/index.php"
     },
     {
-        "id":"10",
+        "id":"7",
         "nombre":"Generación de capacidades de TI",
         "categoria":"Fortalecimiento",
         "descripcion":"La Dirección de Gobierno Digital, entre uno de sus objetivos tiene la finalidad de capacitar a los servidores públicos del país en temas relacionados a la transformación digital, seguridad y gestión TI y temas transversales técnicos de la Política de Gobierno Digital.",
@@ -58,7 +58,7 @@
         "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Generacion-de-capacidad/#:~:text=%C2%BFQu%C3%A9%20es%20Generaci%C3%B3n%20de%20Capacidad,la%20Pol%C3%ADtica%20de%20Gobierno%20Digital."
     },
     {
-        "id":"12",
+        "id":"8",
         "nombre":"Máxima Velocidad",
         "categoria":"Fortalecimiento",
         "descripcion":"Máxima Velocidad es una estrategia de gamificación que busca fortalecer las capacidades de TI de las entidades públicas mediante el desarrollo de retos enfocados a cada uno de los elementos que conforman la política de Gobierno Digital.",
@@ -68,7 +68,7 @@
         "site2": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Maxima-Velocidad/"
     },
     {
-        "id":"14",
+        "id":"9",
         "nombre":"Piloto Blockchain",
         "categoria":"Fortalecimiento",
         "descripcion":"Esta tecnología da la posibilidad de reforzar el acceso a la información pública y el uso de datos abiertos al contar con bases de datos distribuidos, además genera una trazabilidad de la gestión y de los documentos desde el origen, impide la manipulación, garantiza la transparencia en los procesos y evita la fuga de información y el manejo inadecuado de los datos",
@@ -78,7 +78,7 @@
         "site2": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Centro-de-Innovacion-Publica-Digital/"
     },
     {
-        "id":"15",
+        "id":"10",
         "nombre":"Recursos de Seguridad",
         "categoria":"Fortalecimiento",
         "descripcion":"Es un elemento que apoya a las entidades de manera trasversal, habilitando el desarrollo de los componentes de la política de Gobierno Digital. ",
@@ -86,7 +86,7 @@
         "site": "https://gobiernodigital.mintic.gov.co/seguridadyprivacidad/portal/"
     },
     {
-        "id":"16",
+        "id":"11",
         "nombre":"Sello de Excelencia",
         "categoria":"Fortalecimiento",
         "descripcion":"Es una distinción que certifica la calidad de trámites, servicios, iniciativas y productos digitales de las entidades públicas en 5 categorías, a través de: Evaluación por parte de la comunidad virtual (3 categorías) y Evaluación por parte de expertos (2 categorías).",
@@ -94,33 +94,11 @@
         "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Sello-de-Excelencia-Gobierno-Digital/"
     },
     {
-        "id":"18",
+        "id":"12",
         "nombre":"Servicios Ciudadanos Digitales",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"19",
-        "nombre":"Curso virtual: Administrador de sitio web",
-        "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"20",
-        "nombre":"Tutoriales: Aprende de tu sitio web",
-        "categoria":"Socialización",
-        "descripcion":"xxxx",
-        "nombre_site":"Biblioteca",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Son un conjunto de soluciones tecnológicas y procedimientos que brindan al Estado la capacidad para su transformación digital y lograr una adecuada interacción con el ciudadano, garantizando el derecho a la utilización de medios electrónicos ante la administración pública. Se clasifican en SCD base y especiales.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Servicios-Ciudadanos-Digitales/"
     }
 ]

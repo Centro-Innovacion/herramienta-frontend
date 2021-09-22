@@ -111,6 +111,7 @@
       <div class="d-block text-center">
         <h3>
           Tu solicitud ha sido recibida y pronto nos pondremos en contacto contigo.
+          <br>
           Ya puedes cerrar esta ventana.
         </h3>
       </div>
@@ -140,15 +141,17 @@ export default {
       value: '',
       min: minDate,
       //max: maxDate,
-      tema: '',
-      fecha: '',
-      hora: '',
       temas: null,
       selectedTema: 0,
       selectedHora: '',
       checkedNames: null,
       checkedNames1: null,
       text: '',
+      texto_reunion: '',
+      tema_reunion: '',
+      fecha_reunion: '',
+      hora_reunion: '',
+      correo_reunion: '',
       
       temas:[{ label: 'Selecciona una opción de la lista', value: null },
           {
@@ -246,11 +249,10 @@ export default {
       this.hora_reunion = document.getElementById("hora_reunion").value;
       let self = this;
       let id = sessionStorage.getItem('identificador');
-
+      
       if(this.texto_reunion!== '' && this.fecha_reunion !== '' && this.correo_reunion!==''
         && this.tema_reunion!=='' && this.hora_reunion !=='')
       {
-
         this.newCitaReunion = {
           "id_rol": id,
           "texto_reunion": this.texto_reunion,
@@ -271,7 +273,8 @@ export default {
           document.getElementById("hora_reunion").value = null
         })
         .catch((error) => {
-          alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          //alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          this.$refs['my-modal'].show()
         });  
     }
     else {

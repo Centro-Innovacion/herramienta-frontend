@@ -2,7 +2,7 @@
   <div id="Menu">
 
     <div class="MigaPan">
-      <a href= "/Home">Regresar a la página de inicio</a> 
+      <a href= "/Request">Regresar al menú de temas</a> 
       <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
     </div>
 

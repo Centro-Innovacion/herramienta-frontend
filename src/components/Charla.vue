@@ -187,7 +187,14 @@ export default {
       limite: 1000,
       mensaje: '',
       checkedNames: null,
-      checkedNames1: null,       
+      checkedNames1: null,
+      texto_charla: '',
+      personas_charla: 0,
+      modalidad_charla: '',
+      tema_charla: '',
+      otro_tema_charla: '',
+      fecha_charla: '',
+      correo_charla: '',         
   }
 },
     methods:{
@@ -197,39 +204,46 @@ export default {
       },
 
       crearCitaCharla: function() {
-      this.texto_reunion = document.getElementById("texto_reunion").value;
-      this.fecha_reunion = document.getElementById("fecha_reunion").value;
-      this.correo_reunion = document.getElementById("correo_reunion").value;
-      this.tema_reunion = document.getElementById("tema_reunion").value;
-      this.hora_reunion = document.getElementById("hora_reunion").value;
+      this.texto_charla = document.getElementById("texto_charla").value;
+      this.personas_charla = document.getElementById("personas_charla").value;
+      this.modalidad_charla = document.getElementById("modalidad_charla").value;
+      this.tema_charla = document.getElementById("tema_charla").value;
+      this.otro_tema_charla = document.getElementById("otro_tema_charla").value;
+      this.fecha_charla = document.getElementById("fecha_charla").value;
+      this.correo_charla = document.getElementById("correo_charla").value;
       let self = this;
       let id = sessionStorage.getItem('identificador');
 
-      if(this.texto_reunion!== '' && this.fecha_reunion !== '' && this.correo_reunion!==''
-        && this.tema_reunion!=='' && this.hora_reunion !=='')
+      if(this.texto_capacitacion!== '' && this.personas_capacitacion !== '' && this.modalidad_capacitacion!==''
+        && this.tema_capacitacion!=='' && this.fecha_capacitacion !=='' && this.correo_capacitacion !=='')
       {
 
-        this.newCitaReunion = {
+        this.newCitaCharla = {
           "id_rol": id,
-          "texto_reunion": this.texto_reunion,
-          "tema_reunion": this.tema_reunion,
-          "fecha_reunion": this.fecha_reunion,
-          "hora_reunion": this.hora_reunion,
-          "correo_reunion": this.correo_reunion,
+          "texto_charla": this.texto_charla,
+          "personas_charla": this.personas_charla,
+          "modalidad_charla": this.modalidad_charla,
+          "tema_charla": this.tema_charla,
+          "otro_tema_charla": this.otro_tema_charla,
+          "fecha_charla": this.fecha_charla,
+          "correo_charla": this.correo_charla,
         }
       
       
-      axios.post("http://127.0.0.1:8000/meeting/create/", this.newCitaReunion)
+      axios.post("http://127.0.0.1:8000/charla/create/", this.newCitaCharla)
         .then((result) => {
           this.$refs['my-modal'].show(),
-          document.getElementById("texto_reunion").value = "",
-          document.getElementById("fecha_reunion").value = "",
-          document.getElementById("correo_reunion").value = "",
-          document.getElementById("tema_reunion").value = null,
-          document.getElementById("hora_reunion").value = null
+          document.getElementById("texto_charla").value = "",
+          document.getElementById("personas_charla").value = "",
+          document.getElementById("modalidad_charla").value = "",
+          document.getElementById("tema_charla").value = null,
+          document.getElementById("otro_tema_charla").value = null,
+          document.getElementById("fecha_charla").value = null
+          document.getElementById("correo_charla").value = null
         })
         .catch((error) => {
-          alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          //alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          this.$refs['my-modal'].show()
         });  
     }
     else {

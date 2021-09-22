@@ -1,9 +1,14 @@
 <template>
   <div id="Fortalecimiento">
+    <div class="Encabezado">
+      <a href= "/Request">Regresar al menú de temas</a> 
+      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+    </div>
+    <br><br>
     <div class="container cont">
       <div class="row">
         <div class="col-md-12">  
-          <h1>Buscar Fortalecimiento </h1> 
+          <h1>Buscar en Fortalecimiento </h1> 
           <br>
           <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Máxima Velocidad"/>              
           <br>
@@ -66,6 +71,15 @@ export default {
 </script>
 
 <style>
+#Fortalecimiento .Encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 78px 0 78px ;/*top-right-bottom-left*/
+}
+#Fortalecimiento .Encabezado a {
+  color: #004884;
+}
 #Fortalecimiento h1 {
   color: #004884;
   font-family: Montserrat;

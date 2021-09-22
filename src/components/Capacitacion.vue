@@ -1,54 +1,100 @@
 <template>
-  <div id="Reunion">
+  <div id="Capacitacion">
 
     <div class="MigaPan">
-      <a href= "/request">Regresar al menú de temas</a> 
-      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
-    </div>
-    <br>
-
-    <div class="Titulo">
-      <h4>SOLICITUD DE REUNIÓN</h4>
+        <a href= "/request">Regresar al menú de temas</a> 
+        <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
     </div>
 
     <br>
 
+      <div class="Titulo">
+        <h4>SOLICITUD DE CAPACITACIÓN</h4>
+      </div>
+
+    <br>
     <div class="Subtitulo">
       <p>Proporciona mayor información sobre tu solicitud</p>
     </div>
-    <div class="Textarea">
+    
+  <div class="Textarea">
       <p>1. Por favor escribe tu solicitud de manera detallada:</p>
       <span>Caracteres restantes: {{limite - mensaje.length}}</span>
       <textarea
-        id ="texto_reunion"
+        id ="texto_capacitacion"
         cols="50"
         rows="3"
         class="form-control"
         v-model="mensaje"
         maxlenght="1000"
-        v-on:keyup="parar()"
         >
       </textarea>
     </div>
 
-    <div class="tema">
-      <label for="Tema" class="Tema">2. Selecciona el tema de la reunión:
-        <span class="obligatorio">*</span>
-      </label>
-      
-      <select v-model="selectedTema" @change="selectTema">
-        <option v-for="(tema,index) in temas" :key="tema.id" :value="index">{{ tema.label }}</option>
-      </select>
+     <div class="num_personas"> 
+      <label>2. Registra el número de personas que asistirán a la capacitación: </label>
       <br>
+      <input type="number" name="num_personas" id="personas_capacitacion">
+     </div>
 
-    <label for="Calendario" class="Calendario">3. Selecciona una fecha disponible en el calendario para la reunión:
+      <div class="modalidad">
+      <label>3. Selecciona la modalidad de la capacitación:</label>
+      <br>
+      <select name="select" id="modalidad_capacitacion">
+        <option hidden selected>Selecciona una opción</option>
+        <option value="value1">Virtual</option>
+        <option value="value2">Presencial</option>
+      </select>
+      </div>
+
+    <div class="temas">
+      <label for="tema" class="tema">4. Selecciona el tema relacionado con tu solicitud:
+            <span class="obligatorio">*</span>
+      </label>
+      <div v-for="n, i in 1" id="tema_capacitacion">
+        <p><input type="radio" value="ipv6" v-model="choices[i]">Adopción de IPv6</p>
+        <p><input type="radio" value="innovacion" v-model="choices[i]">Innovación Pública Digital</p>
+        <p><input type="radio" value="ciudades" v-model="choices[i]">Ciudades y Territorios Inteligentes</p>
+        <p><input type="radio" value="datos" v-model="choices[i]">Datos Abiertos</p>
+        <p><input type="radio" value="sandbox" v-model="choices[i]">Espacio Colaborativo Data Sandbox</p>
+        <p><input type="radio" value="govco" v-model="choices[i]">Gov.co/Territorial</p>
+        <p><input type="radio" value="arquitectura" v-model="choices[i]">Marco de Arquitectura Empresarial</p>
+        <p><input type="radio" value="interoperabilidad" v-model="choices[i]">Marco de Interoperabilidad</p>
+        <p><input type="radio" value="transformacion" v-model="choices[i]">Marco de Transformación Digital</p>
+        <p><input type="radio" value="digital" v-model="choices[i]">Mi Colombia Digital</p>
+        <p><input type="radio" value="maxima" v-model="choices[i]">Máxima Velocidad</p>
+        <p><input type="radio" value="portal" v-model="choices[i]">Portal único del Estado Colombiano</p>
+        <p><input type="radio" value="seguridad" v-model="choices[i]">Seguridad y Privacidad de la Información</p>
+        <p><input type="radio" value="sello" v-model="choices[i]">Sello de Excelencia Gobierno Digital</p>
+        <p><input type="radio" value="scd" v-model="choices[i]">Servicios Ciudadanos Digitales</p>
+        <p><input type="radio" value="libre" v-model="choices[i]">Software Libre</p>
+        <p><input type="radio" value="emergentes" v-model="choices[i]">Tecnologías Emergentes</p>
+        <p><input type="radio" value="gobierno" v-model="choices[i]">Transfórmate con Gobierno Digital</p>
+        <p><input type="radio" value="transparencia" v-model="choices[i]">Transparencia y Accesibilidad Web</p>
+        <p><input type="radio" value="urna" v-model="choices[i]">Urna de Cristal</p>
+        <p><input type="radio" value="otro" v-model="choices[i]">Otro</p>
+        <div class="otra">
+          <b-form-group 
+              id="input-group" 
+              >
+              <b-form-input
+              id="otro_tema_capacitacion"
+              placeholder="¿Cuál?"
+              ></b-form-input>
+          </b-form-group>
+        </div>
+      </div>
+    </div>
+
+    <div class="calendario">
+    <label for="Calendario" class="Calendario">5. Selecciona una fecha disponible en el calendario para la capacitación:
         <span class="obligatorio">*</span>
         <br>
         <p>
-          Ten en cuenta que únicamente podrás programar reuniones para los días miércoles o viernes
-          y a partir de siete días calendario desde la fecha de hoy.
+          Ten en cuenta que únicamente podrás programar capacitaciones a partir de siete días calendario desde la fecha de hoy.
         </p> 
       </label>
+      <br>
   
       <b-calendar 
         v-model="value" 
@@ -58,41 +104,34 @@
         nav-button-variant="primary" 
         :min="min" 
         :max="max" 
-        width: block
         locale="es"
-        id = "fecha_reunion">
+        id = "fecha_capacitacion">
       </b-calendar>
       <br>
-      <label for="Hora" class="Hora">4. Selecciona la hora de la reunión:
-        <span class="obligatorio">*</span>
-      </label>
-      <select id = "hora_reunion" v-model="selectedHora" >
-        <option id = "tema_reunion" v-for="hora in temas[selectedTema].options" :key="hora.id">{{ hora }}</option>
-      </select>
-    </div>
+      </div>
 
     <div class="correo">
-      <label for="correo" class="correo">4. Escribe tu correo electrónico:
-        <span class="obligatorio">*</span>
+      <label for="correo" class="correo">6. Escribe tu correo electrónico:
+            <span class="obligatorio">*</span>
       </label>
       <div class="correotext">
         <b-form-group 
-          id="input-group" 
-          label-for="input"
-          >
-          <b-form-input
-          id="correo_reunion"
-          placeholder="Correo electrónico"
-          ></b-form-input>
-        </b-form-group>
+              id="input-group" 
+              label-for="input"
+              >
+              <b-form-input
+              id="correo_capacitacion"
+              placeholder="Correo electrónico"
+              ></b-form-input>
+          </b-form-group>
       </div>
-      </div>
+    </div>
     <br>
     <div class='termycond'>
       <input type="checkbox" id="politica" value="Politica" v-model="checkedNames">
       <label for="politica">
         <a
-        href="https://www.mintic.gov.co/portal/715/articles-62124_politica_tratamiento_datos_personales_u20200917.pdf"
+        href="/privacidad"
         target="_blank"
         >Autorizo el tratamiento de datos personales</a>
       </label>
@@ -107,339 +146,263 @@
       <br>
     </div>
     <div class="boton">
-      <b-button type="submit" variant="primary" :disabled="!(checkedNames&&checkedNames1)" v-on:click="crearCitaReunion()">Enviar</b-button>
+      <b-button type="submit" variant="primary" :disabled="!(checkedNames&&checkedNames1)" v-on:click="crearCitaCapacitacion()">Enviar</b-button>
       <b-modal ref="my-modal" hide-footer title="Solicitud recibida">
       <div class="d-block text-center">
         <h3>
           Tu solicitud ha sido recibida y pronto nos pondremos en contacto contigo.
+          <br>
           Ya puedes cerrar esta ventana.
         </h3>
       </div>
       <b-button class="mt-3" variant="outline-danger" block @click="hideModal">Cerrar</b-button>
     </b-modal>  
     </div>
+
   </div>
 </template>
 
 <script>
 import axios from "axios";
 export default {
-  name: "Reunion",
+  name: "Capacitacion",
   data: function (){
     const now = new Date()
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
     const minDate = new Date(today)
     //minDate.setMonth(minDate.getMonth())
-    minDate.setDate(now.getDate() + 7)
+    minDate.setDate(now.getDate()+7)
     // 15th in two months
     //const maxDate = new Date(today)
     //maxDate.setMonth(maxDate.getMonth() + 1)
     //maxDate.setDate(15)
+
     return {
-      mensaje:'',
-      limite: 1000,
-      value: '',
       min: minDate,
-      //max: maxDate,
-      tema: '',
-      fecha: '',
-      hora: '',
-      temas: null,
-      selectedTema: 0,
-      selectedHora: '',
+      choices:[],
+      municipios: null,
+      selectedMunicipio: -1,
+      selectedOption: '',  
+      value: '',
+      text: null,
+      limite: 1000,
+      mensaje: '',
       checkedNames: null,
       checkedNames1: null,
-      text: '',
-      
-      temas:[{ label: 'Selecciona una opción de la lista', value: null },
-          {
-              label:"Ciudades y Territorios inteligentes",
-              options:["Ciudades y Territorios inteligentes", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Datos abiertos",
-              options:["Datos abiertos", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Espacio colaborativo Data Sandbox",
-              options:["Espacio colaborativo Data Sandbox", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Máxima velocidad",
-              options:["Máxima velocidad", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Sello de excelencia Gobierno Digital",
-              options:["Sello de excelencia Gobierno Digital", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Software Libre",
-              options:["Software Libre", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Transfórmate con Gobierno Digital",
-              options:["Transfórmate con Gobierno Digital", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Adopción de IPv6",
-              options:["Adopción de IPv6", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Marco de arquitectura empresarial",
-              options:["Marco de arquitectura empresarial", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Marco de interoperabilidad",
-              options:["Marco de interoperabilidad", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Seguridad y privacidad de la información",
-              options:["Seguridad y privacidad de la información", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Gov.co/Territorial",
-              options:["Gov.co/Territorial", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Portal único del Estado colombiano",
-              options:["Portal único del Estado colombiano", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Innovación pública digital",
-              options:["Innovación pública digital", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Urna de cristal",
-              options:["Urna de cristal", "7:30 - 8:00 am"]
-          },
-          {
-              label:"Tecnologías emergentes",
-              options:["Tecnologías emergentes", "7:30 - 8:00 am"]
-          },
-      ]
-    }    
-  },                
-  methods: {
-
-    dateDisabled(ymd, date) {
-      // Disable weekends (Sunday = `0`, Saturday = `6`) and
-      // disable days that fall on the 13th of the month
-      const weekday = date.getDay()
-      const day = date.getDate()
-      // Return `true` if the date should be disabled
-      return weekday === 0 || weekday === 1 || weekday === 2 || weekday === 4 || weekday === 6 
-
-      //if ((document.getElementById("tema_reunion").value) === "Datos abiertos"){
-      //return weekday === 5
-      //}
-    },
-
-    onSubmit(event) {
-        event.preventDefault()
-        },
-
-    hideModal() {
+      texto_capacitacion: '',
+      personas_capacitacion: 0,
+      modalidad_capacitacion: '',
+      tema_capacitacion: '',
+      otro_tema_capacitacion: '',
+      fecha_capacitacion: '',
+      correo_capacitacion: '',   
+  }
+},
+    methods:{
+      hideModal() {
         this.$refs['my-modal'].hide(),
         window.location.href = '/home'
       },
 
-    onKeyDown: function() {
-      if (this.mensaje.lenght > this.limite){
-          mensaje.lenght = mensaje.lenght
-      }
-    },
-    
-    onSubmit(event) {
-        event.preventDefault()
-        },
-
-    parar: function() {
-      if(mensaje.lenght >= limit){
-        mensaje.lenght = limit
-      }
-    },
-        
-    crearCitaReunion: function() {
-      this.texto_reunion = document.getElementById("texto_reunion").value;
-      this.fecha_reunion = document.getElementById("fecha_reunion").value;
-      this.correo_reunion = document.getElementById("correo_reunion").value;
-      this.tema_reunion = document.getElementById("tema_reunion").value;
-      this.hora_reunion = document.getElementById("hora_reunion").value;
+      crearCitaCapacitacion: function() {
+      this.texto_capacitacion = document.getElementById("texto_capacitacion").value;
+      this.personas_capacitacion = document.getElementById("personas_capacitacion").value;
+      this.modalidad_capacitacion = document.getElementById("modalidad_capacitacion").value;
+      this.tema_capacitacion = document.getElementById("tema_capacitacion").value;
+      this.otro_tema_capacitacion = document.getElementById("otro_tema_capacitacion").value;
+      this.fecha_capacitacion = document.getElementById("fecha_capacitacion").value;
+      this.correo_capacitacion = document.getElementById("correo_capacitacion").value;
       let self = this;
       let id = sessionStorage.getItem('identificador');
 
-      if(this.texto_reunion!== '' && this.fecha_reunion !== '' && this.correo_reunion!==''
-        && this.tema_reunion!=='' && this.hora_reunion !=='')
+      if(this.texto_capacitacion!== '' && this.personas_capacitacion !== '' && this.modalidad_capacitacion!==''
+        && this.tema_capacitacion!=='' && this.fecha_capacitacion !=='' && this.correo_capacitacion !=='')
       {
 
         this.newCitaReunion = {
           "id_rol": id,
-          "texto_reunion": this.texto_reunion,
-          "tema_reunion": this.tema_reunion,
-          "fecha_reunion": this.fecha_reunion,
-          "hora_reunion": this.hora_reunion,
-          "correo_reunion": this.correo_reunion,
+          "texto_capacitacion": this.texto_capacitacion,
+          "personas_capacitacion": this.personas_capacitacion,
+          "modalidad_capacitacion": this.modalidad_capacitacion,
+          "tema_capacitacion": this.tema_capacitacion,
+          "otro_tema_capacitacion": this.otro_tema_capacitacion,
+          "fecha_capacitacion": this.fecha_capacitacion,
+          "correo_capacitacion": this.correo_capacitacion,
         }
       
       
-      axios.post("http://127.0.0.1:8000/meeting/create/", this.newCitaReunion)
+      axios.post("http://127.0.0.1:8000/capacitacion/create/", this.newCitaCapacitacion)
         .then((result) => {
           this.$refs['my-modal'].show(),
-          document.getElementById("texto_reunion").value = "",
-          document.getElementById("fecha_reunion").value = "",
-          document.getElementById("correo_reunion").value = "",
-          document.getElementById("tema_reunion").value = null,
-          document.getElementById("hora_reunion").value = null
+          document.getElementById("texto_capacitacion").value = "",
+          document.getElementById("personas_capacitacion").value = "",
+          document.getElementById("modalidad_capacitacion").value = "",
+          document.getElementById("tema_capacitacion").value = null,
+          document.getElementById("otro_tema_capacitacion").value = null,
+          document.getElementById("fecha_capacitacion").value = null
+          document.getElementById("correo_capacitacion").value = null
         })
         .catch((error) => {
-          alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          //alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          this.$refs['my-modal'].show()
         });  
     }
     else {
           alert("Debes completar todos los campos antes de continuar");
           }
     }
-  }
+    }
 }
 </script>
 
 <style>
-#Reunion .MigaPan {
+#Capacitacion .MigaPan {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin:0 100px 30px 100px ;/*top-right-bottom-left*/
 }
-#Reunion .MigaPan a {
+#Capacitacion .MigaPan a {
   color: #004884;
 }
-#Reunion .Titulo {
+#Capacitacion .Titulo {
   display: flex;
   justify-content: center;
 }
-#Reunion .Titulo h4 {
+#Capacitacion .Titulo h4 {
   font-family: Montserrat;
   color: #004884;
   font-size: 36px;
   font-weight: bold;
 }
-#Reunion .Subtitulo {
+#Capacitacion .Subtitulo {
   display: flex;
   justify-content: center;
 }
-#Reunion .Subtitulo p {
+#Capacitacion .Subtitulo p {
   font-family: Montserrat;
   color: #004884;
   font-size: 24px;
   font-weight: bold;
 }
-#Reunion .tema p {
-  font-size: 12px;
+#Capacitacion .temas {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Capacitacion .calendario {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Capacitacion .temas label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Capacitacion .calendario label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Capacitacion .calendario p {
   color: #f42f63;
+  font-size: 15px;
+  font-weight:normal;
 }
-#Reunion .tema {
-  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
-  display: flex;
-  flex-direction: column;
-}
-#Reunion .tema select {
-  margin-right: 500px;
-}
-#Reunion .Calendario {
-  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
-}
-#Reunion .Calendario p {
-  font-family: Montserrat;
-  color: #004884;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
-}
-#Reunion .Hora {
-  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
-}
-#Reunion .termycond {
-  margin: 0px 0px 0 470px;/*top-right-bottom-left*/;
-}
-#Reunion .terminos{
-  display: flex;
-  justify-content: center;
-}
-#Reunion .tratamiento{
-  margin: 20px 0 0 0;
-  display: flex;
-  justify-content: center;
-}
-#Reunion .Hora p {
-  font-family: Montserrat;
-  color: #004884;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
-}
-#Reunion .Calendario label {
-  font-family: Montserrat;
-  color: #004884;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
-}
-#Reunion .Textarea span {
-  color: #004884;
-  font-family: Montserrat;
-}
-#Reunion .tema label {
-  font-family: Montserrat;
-  color: #004884;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
-}
-#Reunion .tema p {
+#Capacitacion .temas p {
   font-family: Montserrat;
   color: #004884;
   margin: 0px 0px 0px 0px;/*top-right-bottom-left*/
 }
-#Reunion .tema span {
+#Capacitacion .temas span {
   margin-top: 30px;
   color: #f42f63;
   font-weight: bold;
   font-family: Montserrat;
 }
-#Reunion .otra {
+#Capacitacion .num_personas {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Capacitacion .num_personas span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+#Capacitacion .Textarea p {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+}
+#Capacitacion .termycond {
+  margin: 0px 0px 0 470px;/*top-right-bottom-left*/;
+}
+#Capacitacion .num_personas label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Capacitacion .modalidad {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Capacitacion .modalidad span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+#Capacitacion .modalidad label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Capacitacion .otra {
   margin: 0 700px 0 0;
 }
-#Reunion .correo{
+#Capacitacion .correotext {
+  margin: 0 500px 0 0;
+}
+#Capacitacion .Textarea {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
 }
-#Reunion .correo label {
+#Capacitacion .Textarea label {
   font-family: Montserrat;
   color: #004884;
   font-size: 18px;
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
 }
-#Reunion .correo span {
+#Capacitacion .Textarea span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: light;
+  font-family: Montserrat;
+}
+#Capacitacion .correo{
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Capacitacion .correo label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+}
+#Capacitacion .correo span {
   margin-top: 30px;
   color: #f42f63;
   font-weight: bold;
   font-family: Montserrat;
 }
-#Reunion .correotext {
-  margin: 0 500px 0 0;
-}
-#Reunion .Textarea {
-  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
-}
-#Reunion .Textarea p {
-  font-family: Montserrat;
-  color: #004884;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
-}
-#Reunion .boton {
-  margin: 40px 0 0 0;
+#Capacitacion .boton {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }

@@ -9,7 +9,7 @@
     <div class="container cont">
       <div class="row">
         <div class="col-md-12">
-          <h1>Buscar Socializacion </h1> 
+          <h1>Buscar en Socializacion </h1> 
           <br>
           <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Hablemos de Gobierno Digital"/>              
           <br>

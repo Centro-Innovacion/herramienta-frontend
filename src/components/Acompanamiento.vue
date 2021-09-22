@@ -9,7 +9,7 @@
     <div class="container cont">
       <div class="row">
         <div class="col-md-12">
-          <h1>Buscar Acompañamiento </h1> 
+          <h1>Buscar en Acompañamiento </h1> 
           <br>
           <input type="text" v-model="buscar" class="form-control" placeholder="Ejemplo: Talleres de ideación y co-creación"/>              
           <br>
@@ -78,6 +78,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin:0 88px 0 88px ;/*top-right-bottom-left*/
+}
+#Acompanamiento .Encabezado a {
+  color: #004884;
 }
 #Acompanamiento h1 {
   color: #004884;

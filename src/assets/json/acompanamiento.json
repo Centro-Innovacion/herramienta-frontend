@@ -1,143 +1,61 @@
 [
     {
-        "id":"1",
-        "nombre":"Asesoría sobre manejo y administración de redes sociales",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
         "id":"2",
         "nombre":"Acompañamiento a las entidades en la adopción de IPv6",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"3",
-        "nombre":"Acompañamiento en digitalización de trámites a entidades",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"IPv6 es el nuevo protocolo de acceso a internet en el mundo, que reemplazará paulatinamente al actual IPv4 en virtud de su agotamiento, por lo tanto la iniciativa del Ministerio TIC es establecer los lineamientos y políticas con ayuda de guías de buenas prácticas a fin de que las entidades del gobierno adopten IPv6 de manera exitosa.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Adopcion-de-IPv6/"
     },
     {
         "id":"4",
         "nombre":"Acompañamiento en Carpeta Ciudadana Digital",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Plataforma donde los ciudadanos encuentran en un solo sitio los documentos que necesitan para hacer trámites con las entidades públicas",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://www.gov.co/biblioteca/recurso/integro/carpeta-ciudadana-digital/dos/20"
     },
     {
         "id":"5",
         "nombre":"Acompañamiento en el Marco de Referencia para la Arquitectura Empresarial",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"La Arquitectura Empresarial es una práctica estratégica, que permite identificar oportunidades de mejora, abordar y solucionar problemas complejos de las organizaciones. ",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Marco-de-Arquitectura-Empresarial/"
     },
     {
         "id":"6",
         "nombre":"Acompañamiento en el Modelo de Gestión y Gobierno TI",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"7",
-        "nombre":"Acompañamiento en el Modelo de Gestión de Proyectos de TI",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"El modelo de Gestión y Gobierno de las Tecnologías de la Información MGGTI es un complemento del Plan Estratégico de las Tecnologías de la Información PETI, el cual contribuye a ampliar diversos componentes de las políticas de Gobierno Digital y Seguridad Digital",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://mintic.gov.co/arquitecturati/630/w3-propertyvalue-8118.html"
     },
     {
         "id":"8",
         "nombre":"Acompañamiento al Plan Estratégico de las Tecnologías de la Información y Comunicaciones -PETI",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"El Plan Estratégico de Tecnología y Sistemas de Información (PETI) parte del diagnóstico, análisis, definición y planeación de los proyectos de tecnología.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://mintic.gov.co/arquitecturati/630/w3-article-15031.html"
     },
     {
         "id":"9",
         "nombre":"Acompañamiento y Estructuración de Acuerdos Marco de Precios en Tecnología",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"10",
-        "nombre":"Asesoría sobre manejo y administración de redes sociales",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"11",
-        "nombre":"Acompañamiento a servicios ciudadanos digitales",
-        "categoria":"Socialización",
-        "descripcion":"xxxx",
-        "nombre_site":"Biblioteca",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"12",
-        "nombre":"Centro de Contacto",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://www.mintic.gov.co/arquitecturati/630/w3-article-9453.html",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Los Acuerdos Marco de TI son la nueva forma de comprar tecnología para lo público. Son el mecanismo para garantizar el mejor uso del dinero de los ciudadanos. Con ellos, el Estado negocia como un solo comprador logrando generar economías de escala, eficiencias administrativas en contratación, incrementando la gobernabilidad de las decisiones de TI en el Estado para beneficio de la ciudadanía.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Acuerdo-Marco-de-Precios/"
     },
     {
         "id":"13",
         "nombre":"Acompañamiento en el Marco de Interoperabilidad",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Solicita aquí tu acompañamiento",
+        "descripcion":"capacidad de las organizaciones para intercambiar información y conocimiento en el marco de sus procesos de negocio para interactuar hacia objetivos mutuamente beneficiosos, con el propósito de facilitar la entrega de servicios digitales a ciudadanos, empresas y a otras entidades, mediante el intercambio de datos entre sus sistemas TIC",
+        "nombre_site":"Consulta mayor información aquí",
         "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"14",
-        "nombre":"Acompañamiento en el Marco de Interoperabilidad",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Solicita aquí tu acompañamiento",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "nombre_site2":"Portal de gobierno digital",
+        "site2": "https://mintic.gov.co/arquitecturati/630/w3-propertyvalue-8117.html"
     },
     {
         "id":"15",
