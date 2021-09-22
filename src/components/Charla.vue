@@ -9,166 +9,235 @@
     <br>
 
       <div class="Titulo">
-        <h4>CHARLA</h4>
+        <h4>SOLICITUD DE CHARLA</h4>
       </div>
-      <br>
-      <div class="Subtitulo">
-        <p>Proporciona mayor información sobre tu solicitud</p>
-      </div>
-    
-
-    <div class="dep_mun">
-        <label for="Tema" class="Tema">1. Por favor selecciona un Tema para visualizar el correo al que debes enviar tu solicitud:
-            <span class="obligatorio">*</span>
-        </label>
-        <br>
-        <select  v-model="selectedMunicipio" @change="selectMunicipio">
-            <option v-for="(municipio,index) in municipios" :value="index">{{ municipio.label }}</option>
-        </select>
-        <br>
-        <select id = "mun_ent" v-model="selectedOption" v-if="selectedMunicipio != -1">
-            <option id = "dep_ent" v-for="option in municipios[selectedMunicipio].options">{{ option }}</option>
-        </select>
-        <br>
-        <span v-if="selectedOption">
-            Para solicitudes relacionadas con el tema {{ municipios[selectedMunicipio].label }}, por favor escribe un correo a {{ selectedOption }}.
-        </span>
-
-        <!-- departamento{{ municipios[selectedMunicipio].label }} municipio{{ selectedOption }}-->
-    </div>
 
     <br>
+    <div class="Subtitulo">
+      <p>Proporciona mayor información sobre tu solicitud</p>
+    </div>
     
-    <div class="Textarea">
-      <p>2. Para ayudarnos a mejorar esta herramienta puedes enviarnos un resumen de tu solicitud aquí:</p>
-      <b-form-textarea
-        id="sol_charla"
-        v-model="text"
-        placeholder="Escribe algo..."
+  <div class="Textarea">
+      <p>1. Por favor escribe tu solicitud de manera detallada:</p>
+      <span>Caracteres restantes: {{limite - mensaje.length}}</span>
+      <textarea
+        id ="texto_charla"
+        cols="50"
         rows="3"
-        max-rows="6"
-      ></b-form-textarea>
-      <pre class="mt-3 mb-0">{{ text }}</pre>
+        class="form-control"
+        v-model="mensaje"
+        maxlenght="1000"
+        >
+      </textarea>
     </div>
 
-    <br>
+     <div class="num_personas"> 
+      <label>2. Registra el número de personas que asistirán a la charla: </label>
+      <br>
+      <input type="number" name="num_personas" id="personas_charla">
+     </div>
 
+      <div class="modalidad">
+      <label>3. Selecciona la modalidad de la charla:</label>
+      <br>
+      <select name="select" id="modalidad_charla">
+        <option hidden selected>Selecciona una opción</option>
+        <option value="value1">Virtual</option>
+        <option value="value2">Presencial</option>
+      </select>
+      </div>
+
+    <div class="temas">
+      <label for="tema" class="tema">4. Selecciona el tema relacionado con tu solicitud:
+            <span class="obligatorio">*</span>
+      </label>
+      <div v-for="n, i in 1" id="tema_charla">
+        <p><input type="radio" value="ipv6" v-model="choices[i]">Adopción de IPv6</p>
+        <p><input type="radio" value="innovacion" v-model="choices[i]">Innovación Pública Digital</p>
+        <p><input type="radio" value="ciudades" v-model="choices[i]">Ciudades y Territorios Inteligentes</p>
+        <p><input type="radio" value="datos" v-model="choices[i]">Datos Abiertos</p>
+        <p><input type="radio" value="sandbox" v-model="choices[i]">Espacio Colaborativo Data Sandbox</p>
+        <p><input type="radio" value="govco" v-model="choices[i]">Gov.co/Territorial</p>
+        <p><input type="radio" value="arquitectura" v-model="choices[i]">Marco de Arquitectura Empresarial</p>
+        <p><input type="radio" value="interoperabilidad" v-model="choices[i]">Marco de Interoperabilidad</p>
+        <p><input type="radio" value="transformacion" v-model="choices[i]">Marco de Transformación Digital</p>
+        <p><input type="radio" value="digital" v-model="choices[i]">Mi Colombia Digital</p>
+        <p><input type="radio" value="maxima" v-model="choices[i]">Máxima Velocidad</p>
+        <p><input type="radio" value="portal" v-model="choices[i]">Portal único del Estado Colombiano</p>
+        <p><input type="radio" value="seguridad" v-model="choices[i]">Seguridad y Privacidad de la Información</p>
+        <p><input type="radio" value="sello" v-model="choices[i]">Sello de Excelencia Gobierno Digital</p>
+        <p><input type="radio" value="scd" v-model="choices[i]">Servicios Ciudadanos Digitales</p>
+        <p><input type="radio" value="libre" v-model="choices[i]">Software Libre</p>
+        <p><input type="radio" value="emergentes" v-model="choices[i]">Tecnologías Emergentes</p>
+        <p><input type="radio" value="gobierno" v-model="choices[i]">Transfórmate con Gobierno Digital</p>
+        <p><input type="radio" value="transparencia" v-model="choices[i]">Transparencia y Accesibilidad Web</p>
+        <p><input type="radio" value="urna" v-model="choices[i]">Urna de Cristal</p>
+        <p><input type="radio" value="otro" v-model="choices[i]">Otro</p>
+        <div class="otra">
+          <b-form-group 
+              id="input-group" 
+              >
+              <b-form-input
+              id="otro_tema_charla"
+              placeholder="¿Cuál?"
+              ></b-form-input>
+          </b-form-group>
+        </div>
+      </div>
+    </div>
+
+    <div class="calendario">
+    <label for="Calendario" class="Calendario">5. Selecciona una fecha disponible en el calendario para la reunión:
+        <span class="obligatorio">*</span>
+        <br>
+        <p>
+          Ten en cuenta que únicamente podrás programar charlas a partir de siete días calendario desde la fecha de hoy.
+        </p> 
+      </label>
+      <br>
+  
+      <b-calendar 
+        v-model="value" 
+        :date-disabled-fn="dateDisabled" 
+        selected-variant="info"
+        today-variant="info"
+        nav-button-variant="primary" 
+        :min="min" 
+        :max="max" 
+        locale="es"
+        id = "fecha_charla">
+      </b-calendar>
+      <br>
+      </div>
+
+    <div class="correo">
+      <label for="correo" class="correo">6. Escribe tu correo electrónico:
+            <span class="obligatorio">*</span>
+      </label>
+      <div class="correotext">
+        <b-form-group 
+              id="input-group" 
+              label-for="input"
+              >
+              <b-form-input
+              id="correo_charla"
+              placeholder="Correo electrónico"
+              ></b-form-input>
+          </b-form-group>
+      </div>
+    </div>
+    <br>
+    <div class='termycond'>
+      <input type="checkbox" id="politica" value="Politica" v-model="checkedNames">
+      <label for="politica">
+        <a
+        href="/privacidad"
+        target="_blank"
+        >Autorizo el tratamiento de datos personales</a>
+      </label>
+      <br>
+      <input type="checkbox" id="terminos" value="Terminos" v-model="checkedNames1">
+      <label for="terminos">
+        <a
+        href="/terminos"
+        target="_blank"
+        >Acepto los términos y condiciones</a>
+      </label>
+      <br>
+    </div>
     <div class="boton">
-      <b-button type="submit" variant="primary" v-on:click="terminar">Terminar</b-button>
+      <b-button type="submit" variant="primary" :disabled="!(checkedNames&&checkedNames1)" v-on:click="crearCitaCharla()">Enviar</b-button>
+      <b-modal ref="my-modal" hide-footer title="Solicitud recibida">
+      <div class="d-block text-center">
+        <h3>
+          Tu solicitud ha sido recibida y pronto nos pondremos en contacto contigo.
+          Ya puedes cerrar esta ventana.
+        </h3>
+      </div>
+      <b-button class="mt-3" variant="outline-danger" block @click="hideModal">Cerrar</b-button>
+    </b-modal>  
     </div>
 
   </div>
 </template>
 
 <script>
-  import axios from "axios";
-
+import axios from "axios";
 export default {
-    name: "Personas",
-    data: function (){
-        return {
-            municipios: null,
-            selectedMunicipio: -1,
-            selectedOption: '',
-            
-            municipios:[{ label: 'Por favor selecciona una opción de la lista', value: null },
-                {
-                    label:"Adopción de IPv6",
-                    options:["pepito@mintic.gov.co"]
-                },
-                {
-                    label:"Centro de Innovación Pública Digital",
-                    options:["mvosorio@mintic.gov.co"]
-                },
-                {
-                    label:"Ciudades y Territorios Inteligentes",
-                    options:["mguerra@mintic.gov.co"]
-                },
-                {
-                    label:"Datos Abiertos",
-                    options:["lsantamaria@mintic.gov.co"]
-                },
-                {
-                    label:"Espacio Colaborativo Data Sandbox",
-                    options:["jxxx@mintic.gov.co"]
-                },
-                {
-                    label:"Gov.co/Territorial",
-                    options:["dclavijo@mintic.gov.co"]
-                },
-                {
-                    label:"Marco de Arquitectura Empresarial",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Marco de Interoperabilidad",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Marco de Transformación Digital",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Mi Colombia Digital",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Máxima Velocidad",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Portal único del Estado Colombiano",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Seguridad y Privacidad de la Información",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Sello de Excelencia Gobierno Digital",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Servicios Ciudadanos Digitales",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Software Libre",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Tecnologías Emergentes",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Transfórmate con Gobierno Digital",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Transparencia y Accesibilidad Web",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-                {
-                    label:"Urna de Cristal",
-                    options:["hbermudez@mintic.gov.co"]
-                },
-        ],
-        value: '',
-        
-      }
-    },
-    methods:{
+  name: "Charla",
+  data: function (){
+    const now = new Date()
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
+    const minDate = new Date(today)
+    //minDate.setMonth(minDate.getMonth())
+    minDate.setDate(now.getDate()+7)
+    // 15th in two months
+    //const maxDate = new Date(today)
+    //maxDate.setMonth(maxDate.getMonth() + 1)
+    //maxDate.setDate(15)
 
-        selectMunicipio:function() {
-        this.selectedOption = '';
-        },
-
-        terminar: function() {
-            window.location.href = '/home';
-        }
-    
-    }
+    return {
+      min: minDate,
+      choices:[],
+      municipios: null,
+      selectedMunicipio: -1,
+      selectedOption: '',  
+      value: '',
+      text: null,
+      limite: 1000,
+      mensaje: '',
+      checkedNames: null,
+      checkedNames1: null,       
   }
+},
+    methods:{
+      hideModal() {
+        this.$refs['my-modal'].hide(),
+        window.location.href = '/home'
+      },
+
+      crearCitaCharla: function() {
+      this.texto_reunion = document.getElementById("texto_reunion").value;
+      this.fecha_reunion = document.getElementById("fecha_reunion").value;
+      this.correo_reunion = document.getElementById("correo_reunion").value;
+      this.tema_reunion = document.getElementById("tema_reunion").value;
+      this.hora_reunion = document.getElementById("hora_reunion").value;
+      let self = this;
+      let id = sessionStorage.getItem('identificador');
+
+      if(this.texto_reunion!== '' && this.fecha_reunion !== '' && this.correo_reunion!==''
+        && this.tema_reunion!=='' && this.hora_reunion !=='')
+      {
+
+        this.newCitaReunion = {
+          "id_rol": id,
+          "texto_reunion": this.texto_reunion,
+          "tema_reunion": this.tema_reunion,
+          "fecha_reunion": this.fecha_reunion,
+          "hora_reunion": this.hora_reunion,
+          "correo_reunion": this.correo_reunion,
+        }
+      
+      
+      axios.post("http://127.0.0.1:8000/meeting/create/", this.newCitaReunion)
+        .then((result) => {
+          this.$refs['my-modal'].show(),
+          document.getElementById("texto_reunion").value = "",
+          document.getElementById("fecha_reunion").value = "",
+          document.getElementById("correo_reunion").value = "",
+          document.getElementById("tema_reunion").value = null,
+          document.getElementById("hora_reunion").value = null
+        })
+        .catch((error) => {
+          alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+        });  
+    }
+    else {
+          alert("Debes completar todos los campos antes de continuar");
+          }
+    }
+    }
+}
 </script>
 
 <style>
@@ -201,27 +270,50 @@ export default {
   font-size: 24px;
   font-weight: bold;
 }
-#Charla .dep_mun {
+#Charla .temas {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
 }
-#Charla .dep_mun label {
+#Charla .calendario {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Charla .temas label {
   font-family: Montserrat;
   color: #004884;
   font-size: 18px;
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
 }
-#Charla .dep_mun select {
-  margin: 10px 0 10px 0;
+#Charla .calendario label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
 }
-#Charla .dep_mun span {
+#Charla .calendario p {
+  color: #f42f63;
+  font-size: 15px;
+  font-weight:normal;
+}
+#Charla .temas p {
+  font-family: Montserrat;
+  color: #004884;
+  margin: 0px 0px 0px 0px;/*top-right-bottom-left*/
+}
+#Charla .temas span {
   margin-top: 30px;
   color: #f42f63;
   font-weight: bold;
   font-family: Montserrat;
 }
-#Charla .Textarea {
+#Charla .num_personas {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Charla .num_personas span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: bold;
+  font-family: Montserrat;
 }
 #Charla .Textarea p {
   font-family: Montserrat;
@@ -230,7 +322,72 @@ export default {
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
 }
+#Charla .termycond {
+  margin: 0px 0px 0 470px;/*top-right-bottom-left*/;
+}
+#Charla .num_personas label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Charla .modalidad {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Charla .modalidad span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+#Charla .modalidad label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Charla .otra {
+  margin: 0 700px 0 0;
+}
+#Charla .correotext {
+  margin: 0 500px 0 0;
+}
+#Charla .Textarea {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Charla .Textarea label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+}
+#Charla .Textarea span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: light;
+  font-family: Montserrat;
+}
+#Charla .correo{
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Charla .correo label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+}
+#Charla .correo span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: bold;
+  font-family: Montserrat;
+}
 #Charla .boton {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }

@@ -1,25 +1,20 @@
 <template>
   <div id="Proyecto">
-
     <div class="MigaPan">
         <a href= "/request">Regresar al menú de temas</a> 
         <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
     </div>
-
     <br>
-
-      <div class="Titulo">
-        <h4>ACOMPAÑAMIENTO PARA UN PROYECTO</h4>
-      </div>
-
+    <div class="Titulo">
+      <h4>ACOMPAÑAMIENTO PARA UN PROYECTO</h4>
+    </div>
     <br>
     <div class="Subtitulo">
       <p>Proporciona mayor información sobre tu solicitud</p>
     </div>
-    
     <div class="Textarea">
       <label for="Tema" class="Tema">1. Registra en este campo de texto tu solicitud de manera detallada:
-            <span class="obligatorio">*</span>
+        <span class="obligatorio">*</span>
       </label>
       <b-form-textarea
         id="sol_charla"
@@ -33,7 +28,7 @@
 
     <div class="temas">
       <label for="tema" class="tema">2. Selecciona el tema relacionado con tu solicitud:
-            <span class="obligatorio">*</span>
+        <span class="obligatorio">*</span>
       </label>
       <div v-for="n, i in 1">
         <p><input type="radio" value="ipv6" v-model="choices[i]">Adopción de IPv6</p>
@@ -59,12 +54,12 @@
         <p><input type="radio" value="otro" v-model="choices[i]">Otro</p>
         <div class="otra">
           <b-form-group 
-              id="input-group" 
-              >
-              <b-form-input
-              id="otra"
-              placeholder="¿Cuál?"
-              ></b-form-input>
+            id="input-group" 
+            >
+            <b-form-input
+            id="otra"
+            placeholder="¿Cuál?"
+            ></b-form-input>
           </b-form-group>
         </div>
       </div>
@@ -72,56 +67,50 @@
 
     <div class="correo">
       <label for="correo" class="correo">3. Escribe tu correo electrónico:
-            <span class="obligatorio">*</span>
+        <span class="obligatorio">*</span>
       </label>
       <div class="correotext">
         <b-form-group 
-              id="input-group" 
-              label-for="input"
-              >
-              <b-form-input
-              id="otra"
-              placeholder="Correo electrónico"
-              ></b-form-input>
-          </b-form-group>
+          id="input-group" 
+          label-for="input"
+          >
+          <b-form-input
+          id="otra"
+          placeholder="Correo electrónico"
+          ></b-form-input>
+        </b-form-group>
       </div>
     </div>
-
     <div class="boton">
       <b-button type="submit" variant="primary" v-on:click="terminar">Enviar</b-button>
     </div>
-
   </div>
 </template>
 
 <script>
   import axios from "axios";
-
 export default {
-    name: "Personas",
-    data: function (){
-        return {
-            choices:[],
-            municipios: null,
-            selectedMunicipio: -1,
-            selectedOption: '',
-            
-            
-        value: '',
-        
-      }
-    },
-    methods:{
-
-        selectMunicipio:function() {
-        this.selectedOption = '';
-        },
-        
-        terminar: function() {
-            window.location.href = '/home';
-        }
+  name: "Personas",
+  data: function (){
+    return {
+      choices:[],
+      municipios: null,
+      selectedMunicipio: -1,
+      selectedOption: '',
+    value: '',
     }
+  },
+  methods:{
+
+      selectMunicipio:function() {
+      this.selectedOption = '';
+      },
+      
+      terminar: function() {
+          window.location.href = '/home';
+      }
   }
+}
 </script>
 
 <style>

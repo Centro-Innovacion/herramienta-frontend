@@ -42,7 +42,7 @@
           </p>
           <br>
           <h2>
-          Términos y Condiciones
+          <a class="boton" href="/terminos" target="_blank">Términos y condiciones</a> 
           </h2>
       </div>
     </div>
@@ -216,9 +216,12 @@
     margin: 0 10px 6px 0;
   }
 }
+#App .footer a {
+  color: #FFFFFF;
+  font-size: 15px;
+}
 #App .footertext1 a {
   color: #ffffff;
-  text-decoration: none;
   cursor: pointer;
   margin-right: 20px;
 }

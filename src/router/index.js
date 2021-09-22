@@ -2,8 +2,8 @@ import vueRouter from 'vue-router'
 
 import App from '../App'
 import Home from '../components/Home'
-import Personas from '../components/Personas'
-import Request from '../components/Request'
+import Entidad from '../components/Entidad'
+import Menu from '../components/Menu'
 import Lineamientos from '../components/Lineamientos'
 import Socializacion from '../components/Socializacion'
 import Acompanamiento from '../components/Acompanamiento'
@@ -13,7 +13,9 @@ import Proyecto from '../components/Proyecto'
 import Charla from '../components/Charla'
 import Capacitacion from '../components/Capacitacion'
 import Reunion from '../components/Reunion'
-import Evaluacion from '../components/Evaluacion'
+import Integracion from '../components/Integracion'
+import Terminos from '../components/Terminos'
+import Privacidad from '../components/Privacidad'
 
 const router = new vueRouter({
     mode: 'history',
@@ -31,13 +33,13 @@ const router = new vueRouter({
         },
         {
             path: '/entidad',
-            name: "Personas",
-            component: Personas
+            name: "Entidad",
+            component: Entidad
         },
         {
-            path: '/request',
-            name: "Request",
-            component: Request
+            path: '/menu',
+            name: "Menu",
+            component: Menu
         },
         {
             path: '/lineamientos',
@@ -85,9 +87,19 @@ const router = new vueRouter({
             component: Reunion
         },
         {
-            path: '/evaluar',
-            name: "Evaluacion",
-            component: Evaluacion
+            path: '/integracion',
+            name: "Integracion",
+            component: Integracion
+        },
+        {
+            path: '/terminos',
+            name: "Terminos",
+            component: Terminos
+        },
+        {
+            path: '/privacidad',
+            name: "Privacidad",
+            component: Privacidad
         }
         ]
         })

@@ -4,7 +4,7 @@
       <img src="../assets/imagenhomematica.png">
       <div class= "texto">
         <h1>
-           ¡Te damos la bienvenida!
+          ¡Te damos la bienvenida!
         </h1>
         <br>
         <h2>
@@ -39,133 +39,127 @@ import axios from "axios";
 export default {
   name: "Home",
   data: function () {
-      return {
-          id_rol:"",
-          botonCiudadania:0,
-          botonPublicas:0,
-          botonPrivadas:0,
-          botonAcademia:0,
-          botonSociedadCivil:0,
-          botonOtro:0,
-      }
+    return {
+      id_rol:"",
+      botonCiudadania:0,
+      botonPublicas:0,
+      botonPrivadas:0,
+      botonAcademia:0,
+      botonSociedadCivil:0,
+      botonOtro:0,
+    }
   },
 
   methods: {
-        contarCiudadania: function() {
-            this.botonCiudadania = 1;
-            let self = this
-            this.newCiudadania = {
-                "rol": "ciudadania",
-                "contador":this.botonCiudadania,
-            }
-            axios.post("http://127.0.0.1:8000/rol/crear/", this.newCiudadania)
-                .then((result) => {
-                    console.log(result.data.id_rol);
-                    sessionStorage.setItem('identificador', result.data.id_rol)
-                    window.location.href = '/request';
-                })
-                .catch((error) => {
-                    //alert("Error, contacte al administrador del sitio");
-                    window.location.href = '/request';
-                });
-        },
+    contarCiudadania: function() {
+      this.botonCiudadania = 1;
+      let self = this
+      this.newCiudadania = {
+        "rol": "ciudadania",
+        "contador":this.botonCiudadania,
+      }
+      axios.post("http://127.0.0.1:8000/rol/crear/", this.newCiudadania)
+        .then((result) => {
+          console.log(result.data.id_rol);
+          sessionStorage.setItem('identificador', result.data.id_rol)
+          window.location.href = '/menu';
+        })
+        .catch((error) => {
+          alert("Error, contacte al administrador del sitio"); 
+        });
+    },
 
-        contarPublicas: function() {
-            this.botonPublicas = 1;
-            let self = this
-            this.newPublicas = {
-                "rol": "entidad publica",
-                "contador":this.botonPublicas,
-            }
-            axios.post("http://127.0.0.1:8000/rol/crear/", this.newPublicas)
-                .then((result) => {
-                    console.log(result.data.id_rol);
-                    sessionStorage.setItem('identificador', result.data.id_rol)
-                    window.location.href = '/entidad';
-                })
-                .catch((error) => {
-                    //alert("Error, contacte al administrador del sitio");
-                    window.location.href = '/entidad';
-                });
-        },
+    contarPublicas: function() {
+      this.botonPublicas = 1;
+      let self = this
+      this.newPublicas = {
+        "rol": "entidad publica",
+        "contador":this.botonPublicas,
+      }
+      axios.post("http://127.0.0.1:8000/rol/crear/", this.newPublicas)
+        .then((result) => {
+          console.log(result.data.id_rol);
+          sessionStorage.setItem('identificador', result.data.id_rol)
+          window.location.href = '/entidad';
+        })
+        .catch((error) => {
+          alert("Error, contacte al administrador del sitio");
+        });
+    },
 
-        contarPrivadas: function() {
-            this.botonPrivadas = 1;
-            let self = this
-            this.newPrivadas = {
-                "rol": "entidad privada",
-                "contador":this.botonPrivadas,
-            }
-            axios.post("http://127.0.0.1:8000/rol/crear/", this.newPrivadas)
-                .then((result) => {
-                    console.log(result.data.id_rol);
-                    sessionStorage.setItem('identificador', result.data.id_rol)
-                    window.location.href = '/request';
-                })
-                .catch((error) => {
-                    //alert("Error, contacte al administrador del sitio");
-                     window.location.href = '/request';
-                });
-        },
+    contarPrivadas: function() {
+      this.botonPrivadas = 1;
+      let self = this
+      this.newPrivadas = {
+        "rol": "entidad privada",
+        "contador":this.botonPrivadas,
+      }
+      axios.post("http://127.0.0.1:8000/rol/crear/", this.newPrivadas)
+        .then((result) => {
+          console.log(result.data.id_rol);
+          sessionStorage.setItem('identificador', result.data.id_rol)
+          window.location.href = '/menu';
+        })
+        .catch((error) => {
+          alert("Error, contacte al administrador del sitio");                   
+        });
+    },
 
-        contarAcademia: function() {
-            this.botonAcademia = 1;
-            let self = this
-            this.newAcademia = {
-                "rol": "academia",
-                "contador":this.botonAcademia,
-            }
-            axios.post("http://127.0.0.1:8000/rol/crear/", this.newAcademia)
-                .then((result) => {
-                    console.log(result.data.id_rol);
-                    sessionStorage.setItem('identificador', result.data.id_rol)
-                    window.location.href = '/request';
-                })
-                .catch((error) => {
-                    //alert("Error, contacte al administrador del sitio");
-                     window.location.href = '/request';
-                });
-        },
+    contarAcademia: function() {
+      this.botonAcademia = 1;
+      let self = this
+      this.newAcademia = {
+        "rol": "academia",
+        "contador":this.botonAcademia,
+      }
+      axios.post("http://127.0.0.1:8000/rol/crear/", this.newAcademia)
+        .then((result) => {
+          console.log(result.data.id_rol);
+          sessionStorage.setItem('identificador', result.data.id_rol)
+          window.location.href = '/menu';
+        })
+        .catch((error) => {
+          alert("Error, contacte al administrador del sitio");    
+        });
+    },
 
-        contarSociedadCivil: function() {
-            this.botonSociedadCivil = 1;
-            let self = this
-            this.newSociedadCivil = {
-                "rol": "sociedad civil",
-                "contador":this.botonSociedadCivil,
-            }
-            axios.post("http://127.0.0.1:8000/rol/crear/", this.newSociedadCivil)
-                .then((result) => {
-                    console.log(result.data.id_rol);
-                    sessionStorage.setItem('identificador', result.data.id_rol)
-                    window.location.href = '/request';
-                })
-                .catch((error) => {
-                    //alert("Error, contacte al administrador del sitio");
-                    window.location.href = '/request';
-                });
-        },
+    contarSociedadCivil: function() {
+      this.botonSociedadCivil = 1;
+      let self = this
+      this.newSociedadCivil = {
+        "rol": "sociedad civil",
+        "contador":this.botonSociedadCivil,
+      }
+      axios.post("http://127.0.0.1:8000/rol/crear/", this.newSociedadCivil)
+        .then((result) => {
+          console.log(result.data.id_rol);
+          sessionStorage.setItem('identificador', result.data.id_rol)
+          window.location.href = '/menu';
+        })
+        .catch((error) => {
+          alert("Error, contacte al administrador del sitio");  
+        });
+    },
 
-        contarOtro: function() {
-            this.botonOtro = 1;
-            let self = this
-            this.newOtro = {
-                "rol": "otro",
-                "contador":this.botonOtro,
-            }
-            axios.post("http://127.0.0.1:8000/rol/crear/", this.newOtro)
-                .then((result) => {
-                    console.log(result.data.id_rol);
-                    sessionStorage.setItem('identificador', result.data.id_rol)
-                    window.location.href = '/request';
-                })
-                .catch((error) => {
-                    //alert("Error, contacte al administrador del sitio");
-                    window.location.href = '/request';
-                });
-        },
+    contarOtro: function() {
+      this.botonOtro = 1;
+      let self = this
+      this.newOtro = {
+        "rol": "otro",
+        "contador":this.botonOtro,
+      }
+      axios.post("http://127.0.0.1:8000/rol/crear/", this.newOtro)
+        .then((result) => {
+          console.log(result.data.id_rol);
+          sessionStorage.setItem('identificador', result.data.id_rol)
+          window.location.href = '/menu';
+        })
+        .catch((error) => {
+          alert("Error, contacte al administrador del sitio");
+        });
+    },
 
-          }
+  }
 }
 </script>
 
@@ -193,7 +187,6 @@ export default {
     width: 35%;
     height: 35%;
     margin: 0 0 0 140px;
-   
   }
 }
 #Home .texto {
@@ -209,7 +202,6 @@ export default {
     justify-content: center;
   }
 }
-
 #Home .texto h1 {
   color: #004884;
   font-family: Montserrat;

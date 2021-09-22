@@ -2,262 +2,284 @@
   <div id="Reunion">
 
     <div class="MigaPan">
-        <a href= "/request">Regresar al menú de temas</a> 
-        <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+      <a href= "/request">Regresar al menú de temas</a> 
+      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
     </div>
-
     <br>
 
     <div class="Titulo">
-        <h4>SOLICITUD DE REUNIÓN</h4>
-      </div>
-   
-    <br>
-      <div class="Subtitulo">
-        <p>Proporciona mayor información sobre tu solicitud</p>
-      </div>
-
-    <div class="Textarea">
-      <p>1. Por favor escribe tu solicitud de manera detallada:</p>
-      <b-form-textarea
-        id="textarea"
-        v-model="text"
-        placeholder="Escribe algo..."
-        rows="3"
-        max-rows="6"
-      ></b-form-textarea>
+      <h4>SOLICITUD DE REUNIÓN</h4>
     </div>
 
-    <!--<div class="temas">
-      <label for="tema" class="tema">2. Selecciona el tema relacionado con tu solicitud:
-            <span class="obligatorio">*</span>
-      </label>
-      <div v-for="n, i in 1">
-        <p><input type="radio" value="ipv6" v-model="choices[i]">Adopción de IPv6</p>
-        <p><input type="radio" value="innovacion" v-model="choices[i]">Innovación Pública Digital</p>
-        <p><input type="radio" value="ciudades" v-model="choices[i]">Ciudades y Territorios Inteligentes</p>
-        <p><input type="radio" value="datos" v-model="choices[i]">Datos Abiertos</p>
-        <p><input type="radio" value="sandbox" v-model="choices[i]">Espacio Colaborativo Data Sandbox</p>
-        <p><input type="radio" value="govco" v-model="choices[i]">Gov.co/Territorial</p>
-        <p><input type="radio" value="arquitectura" v-model="choices[i]">Marco de Arquitectura Empresarial</p>
-        <p><input type="radio" value="interoperabilidad" v-model="choices[i]">Marco de Interoperabilidad</p>
-        <p><input type="radio" value="transformacion" v-model="choices[i]">Marco de Transformación Digital</p>
-        <p><input type="radio" value="digital" v-model="choices[i]">Mi Colombia Digital</p>
-        <p><input type="radio" value="maxima" v-model="choices[i]">Máxima Velocidad</p>
-        <p><input type="radio" value="portal" v-model="choices[i]">Portal único del Estado Colombiano</p>
-        <p><input type="radio" value="seguridad" v-model="choices[i]">Seguridad y Privacidad de la Información</p>
-        <p><input type="radio" value="sello" v-model="choices[i]">Sello de Excelencia Gobierno Digital</p>
-        <p><input type="radio" value="scd" v-model="choices[i]">Servicios Ciudadanos Digitales</p>
-        <p><input type="radio" value="libre" v-model="choices[i]">Software Libre</p>
-        <p><input type="radio" value="emergentes" v-model="choices[i]">Tecnologías Emergentes</p>
-        <p><input type="radio" value="gobierno" v-model="choices[i]">Transfórmate con Gobierno Digital</p>
-        <p><input type="radio" value="transparencia" v-model="choices[i]">Transparencia y Accesibilidad Web</p>
-        <p><input type="radio" value="urna" v-model="choices[i]">Urna de Cristal</p>
-        <p><input type="radio" value="otro" v-model="choices[i]">Otro</p>
-        <div class="otra">
-          <b-form-group 
-              id="input-group" 
-              >
-              <b-form-input
-              id="otra"
-              placeholder="¿Cuál?"
-              ></b-form-input>
-          </b-form-group>
-        </div>
-      </div>
-    </div>-->
-
     <br>
 
-    <div class="Calendario">
-      <p>2. Selecciona una fecha disponible en el calendario:
-      </p>
+    <div class="Subtitulo">
+      <p>Proporciona mayor información sobre tu solicitud</p>
+    </div>
+    <div class="Textarea">
+      <p>1. Por favor escribe tu solicitud de manera detallada:</p>
+      <span>Caracteres restantes: {{limite - mensaje.length}}</span>
+      <textarea
+        id ="texto_reunion"
+        cols="50"
+        rows="3"
+        class="form-control"
+        v-model="mensaje"
+        maxlenght="1000"
+        >
+      </textarea>
+    </div>
+
+    <div class="tema">
+      <label for="Tema" class="Tema">2. Selecciona el tema de la reunión:
+        <span class="obligatorio">*</span>
+      </label>
+      
+      <select v-model="selectedTema" @change="selectTema">
+        <option v-for="(tema,index) in temas" :key="tema.id" :value="index">{{ tema.label }}</option>
+      </select>
+      <br>
+
+    <label for="Calendario" class="Calendario">3. Selecciona una fecha disponible en el calendario para la reunión:
+        <span class="obligatorio">*</span>
+        <br>
+        <p>
+          Ten en cuenta que únicamente podrás programar reuniones para los días miércoles o viernes
+          y a partir de siete días calendario desde la fecha de hoy.
+        </p> 
+      </label>
+  
       <b-calendar 
         v-model="value" 
         :date-disabled-fn="dateDisabled" 
-        block locale="es-LA"
-        selected-variant="danger"
+        selected-variant="info"
         today-variant="info"
-        class="border rounded p-2"
-        >
+        nav-button-variant="primary" 
+        :min="min" 
+        :max="max" 
+        width: block
+        locale="es"
+        id = "fecha_reunion">
       </b-calendar>
-    </div>
-
-    <br>
-
-    <!--<div class="Hora">
-      <p>4. Selecciona la hora a la que quieres la reunión:
-      </p>
-      <b-form-select
-      v-model="selectedhour"
-      :options="optionshour"
-      class="mb-3"
-      value-field="item"
-      text-field="name"
-      disabled-field="notEnabled"
-      ></b-form-select>
-    </div>-->
-
-    <div class="dep_mun">
-      <label for="Ubicacion" class="Ubicacion">3. Selecciona el tema y la hora de la reunión:
-          <span class="obligatorio">*</span>
-      </label>
-      
-      <select :value="departamento.label" v-model="selectedDepartamento" @change="selectDepartamento">
-          <option v-for="(departamento,index) in departamentos" :value="index">{{ departamento.label }}</option>
-      </select>
       <br>
-      <select id = "mun_ent" v-model="selectedMunicipio" >
-          <option id="dep_ent" v-for="municipio in departamentos[selectedDepartamento].options">{{ municipio }}</option>
+      <label for="Hora" class="Hora">4. Selecciona la hora de la reunión:
+        <span class="obligatorio">*</span>
+      </label>
+      <select id = "hora_reunion" v-model="selectedHora" >
+        <option id = "tema_reunion" v-for="hora in temas[selectedTema].options" :key="hora.id">{{ hora }}</option>
       </select>
-
-      <!--Use v-bind or the colon shorthand instead. For example, instead of <div id="{{ val }}">, use <div :id="val">-->
-      <!-- departamento{{ municipios[selectedMunicipio].label }} municipio{{ selectedOption }}-->
-                    
     </div>
 
-    <br>
-    
     <div class="correo">
       <label for="correo" class="correo">4. Escribe tu correo electrónico:
-            <span class="obligatorio">*</span>
+        <span class="obligatorio">*</span>
       </label>
       <div class="correotext">
         <b-form-group 
-              id="input-group" 
-              label-for="input"
-              >
-              <b-form-input
-              id="otra"
-              placeholder="Correo electrónico"
-              ></b-form-input>
-          </b-form-group>
+          id="input-group" 
+          label-for="input"
+          >
+          <b-form-input
+          id="correo_reunion"
+          placeholder="Correo electrónico"
+          ></b-form-input>
+        </b-form-group>
       </div>
+      </div>
+    <br>
+    <div class='termycond'>
+      <input type="checkbox" id="politica" value="Politica" v-model="checkedNames">
+      <label for="politica">
+        <a
+        href="https://www.mintic.gov.co/portal/715/articles-62124_politica_tratamiento_datos_personales_u20200917.pdf"
+        target="_blank"
+        >Autorizo el tratamiento de datos personales</a>
+      </label>
+      <br>
+      <input type="checkbox" id="terminos" value="Terminos" v-model="checkedNames1">
+      <label for="terminos">
+        <a
+        href="/terminos"
+        target="_blank"
+        >Acepto los términos y condiciones</a>
+      </label>
+      <br>
     </div>
-
-    <div class=terminosycond>
-            <input type="checkbox" id="politica" value="Politica" v-model="checkedNames" onclick="Siguiente.disabled && terminos.disabled = !this.checked">
-            <label for="politica">
-                <a
-                href="https://www.mintic.gov.co/portal/715/articles-62124_politica_tratamiento_datos_personales_u20200917.pdf"
-                target="_blank"
-                >Autorizo el tratamiento de datos personales</a>
-            </label>
-            <br>
-            <input type="checkbox" id="terminos" value="Terminos" v-model="checkedNames" onclick="Siguiente.disabled = !this.checked">
-            <label for="terminos">
-                <a
-                href="https://www.mintic.gov.co/portal/715/articles-62124_politica_tratamiento_datos_personales_u20200917.pdf"
-                target="_blank"
-                >Acepto los términos y condiciones</a>
-            </label>
-        </div>
-
     <div class="boton">
-      <b-button type="submit" variant="primary" v-on:click="crearReunion" id="botonReunion">Enviar</b-button>
+      <b-button type="submit" variant="primary" :disabled="!(checkedNames&&checkedNames1)" v-on:click="crearCitaReunion()">Enviar</b-button>
+      <b-modal ref="my-modal" hide-footer title="Solicitud recibida">
+      <div class="d-block text-center">
+        <h3>
+          Tu solicitud ha sido recibida y pronto nos pondremos en contacto contigo.
+          Ya puedes cerrar esta ventana.
+        </h3>
+      </div>
+      <b-button class="mt-3" variant="outline-danger" block @click="hideModal">Cerrar</b-button>
+    </b-modal>  
     </div>
-
-
   </div>
 </template>
 
 <script>
-  import axios from "axios";
-
+import axios from "axios";
 export default {
-    name: "Personas",
-    data: function (){
-        return {
-            nombre_entidad: '',
-            departamento: '',
-            municipio: '',
-            departamentos: null,
-            selectedDepartamento: 0,
-            selectedOption: '',
-            
-            departamentos:[{ label: 'Selecciona una opción de la lista', value: null },
-                {
-                    label:"Ciudades y Territorios inteligentes",
-                    options:["7:00 - 7:30 am", "7:30 - 8:00 am","8:00 - 8:30 am"]
-                },
-                {
-                    label:"Datos abiertos",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Espacio colaborativo Data Sandbox",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Máxima velocidad",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Sello de excelencia Gobierno Digital",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Software Libre",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Transfórmate con Gobierno Digital",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Adopción de IPv6",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Marco de arquitectura empresarial",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Marco de interoperabilidad",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Seguridad y privacidad de la información",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Gov.co/Territorial",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Portal único del Estado colombiano",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Innovación pública digital",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Urna de cristal",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                {
-                    label:"Tecnologías emergentes",
-                    options:["9:00 - 9:30 am", "10:30 - 10:00 am","11:00 - 11:30 am"]
-                },
-                ]
-        }    
-    },                
-    methods: {
-      dateDisabled(ymd, date) {
-        // Disable weekends (Sunday = `0`, Saturday = `6`) and
-        // disable days that fall on the 13th of the month
-        const weekday = date.getDay()
-        const day = date.getDate()
-        // Return `true` if the date should be disabled
-        return weekday === 0 || weekday === 6 || day === 10
+  name: "Reunion",
+  data: function (){
+    const now = new Date()
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
+    const minDate = new Date(today)
+    //minDate.setMonth(minDate.getMonth())
+    minDate.setDate(now.getDate() + 7)
+    // 15th in two months
+    //const maxDate = new Date(today)
+    //maxDate.setMonth(maxDate.getMonth() + 1)
+    //maxDate.setDate(15)
+    return {
+      mensaje:'',
+      limite: 1000,
+      value: '',
+      min: minDate,
+      //max: maxDate,
+      tema: '',
+      fecha: '',
+      hora: '',
+      temas: null,
+      selectedTema: 0,
+      selectedHora: '',
+      checkedNames: null,
+      checkedNames1: null,
+      text: '',
+      
+      temas:[{ label: 'Selecciona una opción de la lista', value: null },
+          {
+              label:"Ciudades y Territorios inteligentes",
+              options:["Ciudades y Territorios inteligentes", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Datos abiertos",
+              options:["Datos abiertos", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Espacio colaborativo Data Sandbox",
+              options:["Espacio colaborativo Data Sandbox", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Máxima velocidad",
+              options:["Máxima velocidad", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Sello de excelencia Gobierno Digital",
+              options:["Sello de excelencia Gobierno Digital", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Software Libre",
+              options:["Software Libre", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Transfórmate con Gobierno Digital",
+              options:["Transfórmate con Gobierno Digital", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Adopción de IPv6",
+              options:["Adopción de IPv6", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Marco de arquitectura empresarial",
+              options:["Marco de arquitectura empresarial", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Marco de interoperabilidad",
+              options:["Marco de interoperabilidad", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Seguridad y privacidad de la información",
+              options:["Seguridad y privacidad de la información", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Gov.co/Territorial",
+              options:["Gov.co/Territorial", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Portal único del Estado colombiano",
+              options:["Portal único del Estado colombiano", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Innovación pública digital",
+              options:["Innovación pública digital", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Urna de cristal",
+              options:["Urna de cristal", "7:30 - 8:00 am"]
+          },
+          {
+              label:"Tecnologías emergentes",
+              options:["Tecnologías emergentes", "7:30 - 8:00 am"]
+          },
+      ]
+    }    
+  },                
+  methods: {
+
+    dateDisabled(ymd, date) {
+      // Disable weekends (Sunday = `0`, Saturday = `6`) and
+      // disable days that fall on the 13th of the month
+      const weekday = date.getDay()
+      const day = date.getDate()
+      // Return `true` if the date should be disabled
+      return weekday === 0 || weekday === 1 || weekday === 2 || weekday === 4 || weekday === 6 
+
+      //if ((document.getElementById("tema_reunion").value) === "Datos abiertos"){
+      //return weekday === 5
+      //}
+    },
+
+    hideModal() {
+        this.$refs['my-modal'].hide(),
+        window.location.href = '/home'
       },
-      envio: function() {
-            alert("Tu solicitud ha sido recibida, la analizaremos y pronto nos pondremos en contacto contigo");
-            window.location.href = '/evaluar';
-     }
+        
+    crearCitaReunion: function() {
+      this.texto_reunion = document.getElementById("texto_reunion").value;
+      this.fecha_reunion = document.getElementById("fecha_reunion").value;
+      this.correo_reunion = document.getElementById("correo_reunion").value;
+      this.tema_reunion = document.getElementById("tema_reunion").value;
+      this.hora_reunion = document.getElementById("hora_reunion").value;
+      let self = this;
+      let id = sessionStorage.getItem('identificador');
+
+      if(this.texto_reunion!== '' && this.fecha_reunion !== '' && this.correo_reunion!==''
+        && this.tema_reunion!=='' && this.hora_reunion !=='')
+      {
+
+        this.newCitaReunion = {
+          "id_rol": id,
+          "texto_reunion": this.texto_reunion,
+          "tema_reunion": this.tema_reunion,
+          "fecha_reunion": this.fecha_reunion,
+          "hora_reunion": this.hora_reunion,
+          "correo_reunion": this.correo_reunion,
+        }
+      
+      
+      axios.post("http://127.0.0.1:8000/meeting/create/", this.newCitaReunion)
+        .then((result) => {
+          this.$refs['my-modal'].show(),
+          document.getElementById("texto_reunion").value = "",
+          document.getElementById("fecha_reunion").value = "",
+          document.getElementById("correo_reunion").value = "",
+          document.getElementById("tema_reunion").value = null,
+          document.getElementById("hora_reunion").value = null
+        })
+        .catch((error) => {
+          alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+        });  
+    }
+    else {
+          alert("Debes completar todos los campos antes de continuar");
+          }
     }
   }
+}
 </script>
 
 <style>
@@ -290,29 +312,34 @@ export default {
   font-size: 24px;
   font-weight: bold;
 }
-#Reunion .dep_mun {
+
+#Reunion .tema p {
+  font-size: 12px;
+  color: #f42f63;
+}
+#Reunion .tema {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
   display: flex;
   flex-direction: column;
 }
-#Reunion .dep_mun select {
+#Reunion .tema select {
   margin-right: 500px;
 }
 #Reunion .Calendario {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
 }
-#Reunion .Calendario p {
-  font-family: Montserrat;
-  color: #004884;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
-}
 #Reunion .Hora {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
 }
-#Reunion .terminosycond {
-  margin: 50px 0 0 0;
+#Reunion .termycond {
+  margin: 0px 0px 0 470px;/*top-right-bottom-left*/;
+}
+#Reunion .terminos{
+  display: flex;
+  justify-content: center;
+}
+#Reunion .tratamiento{
+  margin: 20px 0 0 0;
   display: flex;
   justify-content: center;
 }
@@ -323,19 +350,34 @@ export default {
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
 }
-#Reunion .dep_mun label {
+#Reunion .Calendario label {
   font-family: Montserrat;
   color: #004884;
   font-size: 18px;
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
 }
-#Reunion .temas p {
+#Reunion .Textarea span {
+  margin-top: 30px;
+  color: #f42f63;
+  font-weight: light;
+  font-family: Montserrat;
+}
+#Reunion .tema label {
   font-family: Montserrat;
   color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Reunion .tema p {
+  font-family: Montserrat;
+  color: #f42f53;
+  font-weight: normal;
+  font-size: 15px;
   margin: 0px 0px 0px 0px;/*top-right-bottom-left*/
 }
-#Reunion .temas span {
+#Reunion .tema span {
   margin-top: 30px;
   color: #f42f63;
   font-weight: bold;
