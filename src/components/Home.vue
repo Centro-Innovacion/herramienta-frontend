@@ -65,7 +65,8 @@ export default {
           window.location.href = '/menu';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio"); 
+          //alert("Error, contacte al administrador del sitio"); 
+          window.location.href = '/menu';
         });
     },
 
@@ -83,7 +84,8 @@ export default {
           window.location.href = '/entidad';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");
+          //alert("Error, contacte al administrador del sitio");
+          window.location.href = '/entidad';
         });
     },
 
@@ -101,7 +103,8 @@ export default {
           window.location.href = '/menu';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");                   
+          //alert("Error, contacte al administrador del sitio");   
+          window.location.href = '/menu';                
         });
     },
 
@@ -119,7 +122,8 @@ export default {
           window.location.href = '/menu';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");    
+          //alert("Error, contacte al administrador del sitio");
+          window.location.href = '/menu';    
         });
     },
 
@@ -137,7 +141,8 @@ export default {
           window.location.href = '/menu';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");  
+          //alert("Error, contacte al administrador del sitio");  
+          window.location.href = '/menu';
         });
     },
 
@@ -152,10 +157,11 @@ export default {
         .then((result) => {
           console.log(result.data.id_rol);
           sessionStorage.setItem('identificador', result.data.id_rol)
-          window.location.href = '/menu';
+          window.location.href = '/otro';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");
+          //alert("Error, contacte al administrador del sitio");
+          window.location.href = '/otro';
         });
     },
 

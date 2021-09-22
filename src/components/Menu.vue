@@ -231,7 +231,8 @@ export default {
           window.location.href = '/lineamientos';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");
+          //alert("Error, contacte al administrador del sitio");
+          window.location.href = '/lineamientos';
         });
     },
 
@@ -261,7 +262,8 @@ export default {
           window.location.href = '/socializacion';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");   
+          //alert("Error, contacte al administrador del sitio");  
+          window.location.href = '/socializacion'; 
         });
     },
 
@@ -291,7 +293,8 @@ export default {
           window.location.href = '/acompanamiento';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");
+          //alert("Error, contacte al administrador del sitio");
+          window.location.href = '/acompanamiento';
         });
     },
 
@@ -321,7 +324,8 @@ export default {
           window.location.href = '/fortalecimiento';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");
+          //alert("Error, contacte al administrador del sitio");
+          window.location.href = '/fortalecimiento';
         });
     },
 
@@ -351,7 +355,8 @@ export default {
               window.location.href = '/medicion';
           })
           .catch((error) => {
-              alert("Error, contacte al administrador del sitio");
+              //alert("Error, contacte al administrador del sitio");
+              window.location.href = '/medicion';
           });
     },
 
@@ -381,7 +386,8 @@ export default {
           window.location.href = '/proyecto';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");    
+          //alert("Error, contacte al administrador del sitio");   
+          window.location.href = '/proyecto'; 
       });
     },
 
@@ -411,7 +417,8 @@ export default {
             window.location.href = '/charla';
           })
           .catch((error) => {
-            alert("Error, contacte al administrador del sitio");    
+            //alert("Error, contacte al administrador del sitio");  
+            window.location.href = '/charla';  
       });
     },
 
@@ -441,7 +448,8 @@ export default {
           window.location.href = '/capacitacion';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");
+          //alert("Error, contacte al administrador del sitio");
+          window.location.href = '/capacitacion';
         });
     },
 
@@ -471,7 +479,9 @@ export default {
           window.location.href = '/reunion';
         })
         .catch((error) => {
-          alert("Error, contacte al administrador del sitio");
+          //alert("Error, contacte al administrador del sitio");
+          window.location.href = '/reunion';
+
         });
     },
   }

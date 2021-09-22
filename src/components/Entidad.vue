@@ -3281,22 +3281,30 @@ export default {
             let self = this;
             let id = sessionStorage.getItem('identificador');
 
-            this.newEntidad = {
-                "id_rol": id,
-                "nombre_entidad": this.nombre_entidad,
-                "departamento": this.departamento,
-                "municipio": this.municipio,  
-            }
+            if(this.nombre_entidad!== null && this.departamento !== null && this.municipio!=='')
+            {
 
-            axios.post("http://127.0.0.1:8000/entidad/crear/", this.newEntidad)
-                .then((result) => {
-                    console.log(this.id);
-                    window.location.href = '/request';
-                })
-                .catch((error) => {
-                    alert("Error, contacte al administrador del sitio");
-                });
-        },
+                this.newEntidad = {
+                    "id_rol": id,
+                    "nombre_entidad": this.nombre_entidad,
+                    "departamento": this.departamento,
+                    "municipio": this.municipio,  
+                }
+
+                axios.post("http://127.0.0.1:8000/entidad/crear/", this.newEntidad)
+                    .then((result) => {
+                        console.log(this.id);
+                        window.location.href = '/menu';
+                    })
+                    .catch((error) => {
+                        //alert("Error, contacte al administrador del sitio");
+                        window.location.href = '/menu';
+                    });
+                }
+                else {
+                    alert("Debes completar todos los campos antes de continuar");
+                }
+            },
     }
 }
 </script>

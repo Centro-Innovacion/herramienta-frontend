@@ -7,17 +7,8 @@
         "nombre_site":"Consulta más información aquí",
         "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Conectate-con-Gobierno-Digital/"
     },
-    
     {
       "id":"2",
-      "nombre":"Súmate a la plataforma CIEN",
-      "categoria":"Socialización",
-      "descripcion":"xxxx",
-      "nombre_site":"Plataforma CIEN",
-      "site": "https://gobiernodigital.mintic.gov.co/portal/"
-    },
-    {
-      "id":"3",
       "nombre":"Transfórmate con Gobierno Digital",
       "categoria":"Socialización",
       "descripcion":"Los líderes de TI de las entidades públicas fortalecen sus capacidades de TI, mejoran la prestación de los servicios digitales e implementan los elementos y productos tipo de la política de Gobierno Digital a través de la participación en talleres virtuales y el uso de la caja de herramientas de autoformación y autogestión.",

@@ -16,6 +16,7 @@ import Reunion from '../components/Reunion'
 import Integracion from '../components/Integracion'
 import Terminos from '../components/Terminos'
 import Privacidad from '../components/Privacidad'
+import Otro from '../components/Otro'
 
 const router = new vueRouter({
     mode: 'history',
@@ -100,6 +101,11 @@ const router = new vueRouter({
             path: '/privacidad',
             name: "Privacidad",
             component: Privacidad
+        },
+        {
+            path: '/otro',
+            name: "Otro",
+            component: Otro
         }
         ]
         })

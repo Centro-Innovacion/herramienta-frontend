@@ -11,11 +11,9 @@
         "id":"2",
         "nombre":"Catalizadores de la innovación",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Es el programa de formación que desarrolla las habilidades y competencias de innovación apalancada en Tecnologías de la Información y las Comunicaciones. Está dirigido a servidores públicos de los que se selecciona una dupla por entidad.",
+        "nombre_site":"Consulta mayor información aqui",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Centro-de-Innovacion-Publica-Digital/"
     },
     {
         "id":"3",
@@ -45,123 +43,55 @@
     },
     {
         "id":"6",
-        "nombre":"Cursos Virtuales",
+        "nombre":"Curso Virtual: Administrador de sitios web",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Administrador de sitios web",
-        "site": "http://104.45.133.12/cursovirtual/login/index.php",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"7",
-        "nombre":"Comunicación Digital",
-        "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"8",
-        "nombre":"Evolutivos para GOV.CO 3.0",
-        "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"9",
-        "nombre":"Evolutivos para GOV.CO 3.0",
-        "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Curso virtual administrador de sitios web",
+        "nombre_site":"Ir al curso",
+        "site": "http://104.45.133.12/cursovirtual/login/index.php"
     },
     {
         "id":"10",
         "nombre":"Generación de capacidades de TI",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"11",
-        "nombre":"Hacker Girls",
-        "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"La Dirección de Gobierno Digital, entre uno de sus objetivos tiene la finalidad de capacitar a los servidores públicos del país en temas relacionados a la transformación digital, seguridad y gestión TI y temas transversales técnicos de la Política de Gobierno Digital.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Generacion-de-capacidad/#:~:text=%C2%BFQu%C3%A9%20es%20Generaci%C3%B3n%20de%20Capacidad,la%20Pol%C3%ADtica%20de%20Gobierno%20Digital."
     },
     {
         "id":"12",
         "nombre":"Máxima Velocidad",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"13",
-        "nombre":"Mentorías sobre innovación",
-        "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Máxima Velocidad es una estrategia de gamificación que busca fortalecer las capacidades de TI de las entidades públicas mediante el desarrollo de retos enfocados a cada uno de los elementos que conforman la política de Gobierno Digital.",
+        "nombre_site":"Página oficial de la estrategia",
+        "site": "https://maximavelocidad.gov.co/774/w3-article-172147.html",
+        "nombre_site2":"Consulta mayor información aquí",
+        "site2": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Maxima-Velocidad/"
     },
     {
         "id":"14",
         "nombre":"Piloto Blockchain",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Esta tecnología da la posibilidad de reforzar el acceso a la información pública y el uso de datos abiertos al contar con bases de datos distribuidos, además genera una trazabilidad de la gestión y de los documentos desde el origen, impide la manipulación, garantiza la transparencia en los procesos y evita la fuga de información y el manejo inadecuado de los datos",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/177830:Gobierno-y-BID-le-apuestan-a-la-implementacion-de-tecnologia-blockchain-en-el-sector-publico-colombiano",
+        "nombre_site2":"Centro de Innovación Pública Digital",
+        "site2": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Centro-de-Innovacion-Publica-Digital/"
     },
     {
         "id":"15",
         "nombre":"Recursos de Seguridad",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Es un elemento que apoya a las entidades de manera trasversal, habilitando el desarrollo de los componentes de la política de Gobierno Digital. ",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/seguridadyprivacidad/portal/"
     },
     {
         "id":"16",
         "nombre":"Sello de Excelencia",
         "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"17",
-        "nombre":"Tecnologías Emergentes de la 4ta Revolución Industrial",
-        "categoria":"Fortalecimiento",
-        "descripcion":"xxxx",
-        "nombre_site":"socialización",
-        "site": "https://gobiernodigital.mintic.gov.co/portal/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Es una distinción que certifica la calidad de trámites, servicios, iniciativas y productos digitales de las entidades públicas en 5 categorías, a través de: Evaluación por parte de la comunidad virtual (3 categorías) y Evaluación por parte de expertos (2 categorías).",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Sello-de-Excelencia-Gobierno-Digital/"
     },
     {
         "id":"18",
