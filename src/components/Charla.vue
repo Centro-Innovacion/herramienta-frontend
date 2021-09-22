@@ -87,7 +87,7 @@
     </div>
 
     <div class="calendario">
-    <label for="Calendario" class="Calendario">5. Selecciona una fecha disponible en el calendario para la reunión:
+    <label for="Calendario" class="Calendario">5. Selecciona una fecha disponible en el calendario para la charla:
         <span class="obligatorio">*</span>
         <br>
         <p>
@@ -198,7 +198,7 @@ export default {
   }
 },
     methods:{
-      
+
       hideModal() {
         this.$refs['my-modal'].hide(),
         window.location.href = '/home'
