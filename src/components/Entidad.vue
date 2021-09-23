@@ -2942,6 +2942,18 @@
                             <option value= "VILLAVIVIENDA EMPRESA INDUSTRIAL Y COMERCIAL DEL MUNICIPIO DE VILLAVICENCIO META"></option>
                         </datalist>
                     </p>
+               
+                <div class="otra">
+                    <label for="tema" class="tema">Si tu entidad no está en la lista, escribe su nombre
+                         aquí:</label>
+                    <b-form-group 
+                            id="input-group" 
+                        >
+                        <b-form-input
+                            id="otra_ent"
+                        ></b-form-input>
+                    </b-form-group>
+                </div>
                 <div class="dep_mun">
                     <label for="Ubicacion" class="Ubicacion">Departamento de la entidad:
                         <span class="obligatorio">*</span>
@@ -2950,9 +2962,11 @@
                         <option v-for="(departamento,index) in departamentos" :key=departamento.id :value="index">{{ departamento.label }}</option>
                     </select>
                     <br>
-                    <br>
+                    
                     <label for="Municipio" class="Municipio">Municipio de la entidad:
                         <span class="obligatorio">*</span>
+                        <br>
+                        <span class="obligatorio">Debes seleccionar un departamento para poder seleccionar un municipio</span>
                     </label>
                     <select id = "mun_ent" v-model="selectedMunicipio" >
                         <option id="dep_ent" v-for="municipio in departamentos[selectedDepartamento].options" :key=municipio.id>{{ municipio }}</option>
@@ -2981,6 +2995,7 @@ export default {
     data: function (){
         return {
             nombre_entidad: '',
+            otra_entidad: '',
             departamento: '',
             municipio: '',
             departamentos: null,
@@ -3276,10 +3291,12 @@ export default {
 
         crearEntidad: function() {
             this.nombre_entidad = document.getElementById("nombre_ent").value;
+            this.otra_entidad = document.getElementById("otra_ent").value;
             this.departamento = document.getElementById("dep_ent").value;
             this.municipio = document.getElementById("mun_ent").value;
             let self = this;
             let id = sessionStorage.getItem('identificador');
+
 
             if(this.nombre_entidad!== null && this.departamento !== null && this.municipio!=='')
             {
@@ -3287,6 +3304,7 @@ export default {
                 this.newEntidad = {
                     "id_rol": id,
                     "nombre_entidad": this.nombre_entidad,
+                    "otra_entidad": this.otra_entidad,
                     "departamento": this.departamento,
                     "municipio": this.municipio,  
                 }
@@ -3297,8 +3315,8 @@ export default {
                         window.location.href = '/menu';
                     })
                     .catch((error) => {
-                        //alert("Error, contacte al administrador del sitio");
-                        window.location.href = '/menu';
+                        alert("Por favor actualiza la página. Error 1");
+                        window.location.href = '/Home';
                     });
                 }
                 else {
@@ -3332,6 +3350,9 @@ export default {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+}
+#Entidad .Municipio span {
+    font-size: 13px;
 }
 #Entidad input{
     background-color: #fbfbfb; 
@@ -3382,6 +3403,9 @@ export default {
 #Entidad .aviso{
     font-size: 13px;  
     color: #3366cc;  
+}
+#Entidad .otra {
+    margin-top:-20px;
 }
 #Entidad h1{
     font-size: 23px;  
