@@ -65,8 +65,7 @@ export default {
           window.location.href = '/menu';
         })
         .catch((error) => {
-          //alert("Error, contacte al administrador del sitio"); 
-          window.location.href = '/menu';
+          alert("Por favor actualice la página. Error 1");
         });
     },
 
@@ -84,8 +83,7 @@ export default {
           window.location.href = '/entidad';
         })
         .catch((error) => {
-          //alert("Error, contacte al administrador del sitio");
-          window.location.href = '/entidad';
+          alert("Por favor actualice la página. Error 1");
         });
     },
 
@@ -103,8 +101,7 @@ export default {
           window.location.href = '/menu';
         })
         .catch((error) => {
-          //alert("Error, contacte al administrador del sitio");   
-          window.location.href = '/menu';                
+          alert("Por favor actualice la página. Error 1");                   
         });
     },
 
@@ -122,8 +119,7 @@ export default {
           window.location.href = '/menu';
         })
         .catch((error) => {
-          //alert("Error, contacte al administrador del sitio");
-          window.location.href = '/menu';    
+          alert("Por favor actualice la página. Error 1");   
         });
     },
 
@@ -141,8 +137,7 @@ export default {
           window.location.href = '/menu';
         })
         .catch((error) => {
-          //alert("Error, contacte al administrador del sitio");  
-          window.location.href = '/menu';
+          alert("Por favor actualice la página. Error 1");  
         });
     },
 
@@ -160,8 +155,7 @@ export default {
           window.location.href = '/otro';
         })
         .catch((error) => {
-          //alert("Error, contacte al administrador del sitio");
-          window.location.href = '/otro';
+          alert("Por favor actualice la página. Error 1");
         });
     },
 

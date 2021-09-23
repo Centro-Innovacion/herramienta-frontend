@@ -5,7 +5,8 @@
       <a class="boton" href="https://www.gov.co/home/" target="_blank">Ir a gov.co</a>
     </div>
     <div class="headergodi">
-      <img src="./assets/LOGO-GOBIERNO-DIGITAL.jpg">
+      <a href="/home"><img src="./assets/LOGO-GOBIERNO-DIGITAL.jpg"></a>
+      
       <span class="tituloherramienta">
       Herramienta De Acompañamiento para la gestión de solicitudes</span>
       <span>
@@ -38,9 +39,13 @@
         Contacto
         </h1>
           <p>
-          Conmutador: +57(1)3443460
-          </p>
+          Líneas de atención:
           <br>
+          <br>
+            Nacional: 018000952525
+          <br>
+            Bogotá: +57 6013907950
+          </p>
           <h2>
           <a class="boton" href="/terminos" target="_blank">Términos y condiciones</a> 
           </h2>
