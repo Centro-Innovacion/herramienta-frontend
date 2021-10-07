@@ -1,8 +1,7 @@
 <template>
   <div id="Medicion">
     <div class="Encabezado">
-      <a href= "/Request">Regresar al menú de temas</a> 
-      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+      <a href= "/menu">Regresar al menú de temas</a> 
     </div>
     <br>
     <br>
@@ -31,10 +30,14 @@
               <p class="card-text">
                 <strong>Información asociada:</strong>
                 <br>
+                <br>
                 <!--For example, instead of <div id="{{ val }}">, use <div :id="val">.-->
                 <a :href= "item.site" >{{ item.nombre_site }} </a>
                 <br>
+                <br>
                 <a :href= "item.site2" target="\_blank">{{ item.nombre_site2 }}</a>
+                <br>
+                <br>
                 <a :href= "item.site3" target="\_blank">{{ item.nombre_site3 }}</a>
               </p>
             </div>
@@ -74,10 +77,7 @@ export default {
 
 <style>
 #Medicion .Encabezado {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin:0 88px 0 88px ;/*top-right-bottom-left*/
+  text-align: center;
 }
 #Medicion h1 {
   color: #004884;

@@ -159,7 +159,9 @@
       "categoria":"Lineamientos",
       "descripcion":"Este modelo conduce a la preservación de la confidencialidad, integridad, disponibilidad de la información, permitiendo garantizar la privacidad de los datos, mediante la aplicación de un proceso de gestión del riesgo, brindando confianza a las partes interesadas acerca de la adecuada gestión de riesgos.",
       "nombre_site":"Visualiza el documento aquí",
-      "site": "https://www.mintic.gov.co/gestionti/615/articles-5482_Modelo_de_Seguridad_Privacidad.pdf"
+      "site": "https://www.mintic.gov.co/gestionti/615/articles-5482_Modelo_de_Seguridad_Privacidad.pdf",
+      "nombre_site2":"Consulta las guías sobre seguridad y privacidad de la información",
+      "site2": "https://gobiernodigital.mintic.gov.co/portal/Categor-as/Seguridad-y-Privacidad-de-la-Informacion/150525:Guia-14-Plan-de-comunicacion-sensibilizacion-capacitacion"
    },
    {
       "id":"20",
@@ -212,7 +214,7 @@
       "nombre":"Política de seguridad digital",
       "categoria":"Fortalecimiento",
       "descripcion":"Hoja de ruta para que el Gobierno, las organizaciones públicas y privadas, la fuerza pública, la academia y los ciudadanos en general, cuenten con un entorno digital confiable y seguro.",
-      "nombre_site":"Lineamientos",
+      "nombre_site":"Consulta mayor información aquí",
       "site": "https://www.mintic.gov.co/portal/inicio/Sala-de-Prensa/Noticias/15410:Lo-que-usted-debe-saber-del-Conpes-de-Seguridad-Digital"
   }
 ] 

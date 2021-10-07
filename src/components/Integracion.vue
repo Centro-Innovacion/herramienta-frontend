@@ -1,6 +1,10 @@
 <template>
   <div id="Integracion">
 
+    <div class="MigaPan">
+      <a href= "/home">Regresar al inicio</a> 
+    </div>
+
     <div class="Titulo">
         <h4>INTEGRACIÓN CON SEDE ELECTRÓNICA</h4>
     </div>
@@ -13,23 +17,6 @@
         </label>
     </div>
     <br>
-      
-    <div class="Textarea">
-      <p>Para ayudarnos a mejorar esta herramienta puedes enviarnos un resumen de tu solicitud aquí:</p>
-      <b-form-textarea
-        id="eval"
-        v-model="text"
-        placeholder="Escribe algo..."
-        rows="3"
-        max-rows="6"
-      ></b-form-textarea>
-
-      <pre class="mt-3 mb-0">{{ text }}</pre>
-    </div>
-
-    <div class="boton">
-      <b-button type="submit" variant="primary" v-on:click="final">Finalizar</b-button>
-    </div>
   </div>
 </template>
 
@@ -51,6 +38,15 @@
 </script>
 
 <style>
+#Integracion .MigaPan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 100px 30px 100px ;/*top-right-bottom-left*/
+}
+#Integracion .MigaPan a {
+  color: #004884;
+}
 #Integracion .Titulo {
   display: flex;
   justify-content: center;

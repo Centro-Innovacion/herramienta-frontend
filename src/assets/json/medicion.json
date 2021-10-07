@@ -3,150 +3,116 @@
         "id":"1",
         "nombre":"Autodiagnóstico de Gobierno Digital",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"2",
-        "nombre":"Autodiagnóstico de Seguridad y Privacidad de la Información",
-        "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"El seguimiento y evaluación del avance de la Política de Gobierno Digital se realizará con un enfoque de mejoramiento continuo en donde la Dirección de Gobierno Digital del Ministerio TIC, verificará que cada sujeto obligado presente resultados anuales mejores que la vigencia anterior. ",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Manual-de-Gobierno-Digital/MEDIR/"
     },
     {
         "id":"3",
         "nombre":"Diagnóstico de Calidad de Datos Abiertos",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"La iniciativa Datos abiertos se enmarca en la Política de Gobierno Digital y contribuye al logro del propósito de “toma de decisiones basadas en datos a partir del aumento en el uso y aprovechamiento de la información que aporten a la optimización y desarrollo de servicios, políticas, normas, planes, programas, proyectos de interés público o privado, adelantado por ciudadanos, empresas y el mismo Estado",
+        "nombre_site":"Hoja de ruta",
+        "site": "https://herramientas.datos.gov.co/sites/default/files/2021-07/Hoja%20de%20Ruta%20Datos%20Abiertos%20Estrat%C3%A9gicos%202021_1.pdf",
+        "nombre_site2":"Herramientas",
+        "site2": "https://herramientas.datos.gov.co/"
     },
     {
         "id":"4",
         "nombre":"Estado de trámites - Servicios Ciudadanos Digitales",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Aquí encontrará un espacio con contenidos claros y oportunos que permitirán comprender las guías y lineamientos establecidos por MinTIC, con el propósito de apoyar los planes de transformación digital y el proceso de vinculación a Servicios Ciudadanos Digitales (SCD) e integración al portal www.gov.co",
+        "nombre_site":"Caja de herramientas",
+        "site": "https://www.gov.co/home/caja-de-herramientas"
     },
     {
         "id":"5",
         "nombre":"Formulario Único de Reporte de Avances en la Gestión: FURAG",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Información sobre el reporte anual de información a través del Formulario Único de Reporte y Avance de Gestión FURAG.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://www.funcionpublica.gov.co/web/mipg/medicion_desempeno"
     },
     {
         "id":"6",
         "nombre":"Herramienta de medición de la Transformación Digital del Estado",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Las entidades del orden nacional deberán incluir en su plan de acción el componente de transformación digital, siguiendo los estándares que para tal efecto defina el Ministerio de Tecnologías de la Información y las Comunicaciones (MinTIC).",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/149186:MinTIC-publica-el-Marco-de-Transformacion-Digital-para-mejorar-la-relacion-Estado-ciudadano"
     },
     {
         "id":"7",
         "nombre":"Herramienta de seguimiento de IPv6",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Para hacer uso de la herramienta debes solicitar tu usuario y contraseña con el equipo de IPv6",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/692/articles-126135_recurso_1.pdf",
+        "nombre_site2": "Ir a la herramienta",
+        "site2": "https://micrositios.mintic.gov.co/ipv6/control/app/login.php",  
+        "nombre_site3": "Portal de Gobierno Digital",
+        "site3": "https://mintic.gov.co/portal/inicio/Micrositios/IPv6/"
     },
     {
         "id":"8",
         "nombre":"Índice de Gobierno Digital",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"El Índice de Gobierno Digital es la medida utilizada para conocer el nivel de desempeño de las entidades públicas en materia de Gobierno Digital.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Mediciones/"
     },
     {
         "id":"9",
-        "nombre":"Índices interancionales de Datos Abiertos",
+        "nombre":"Índices internacionales de Datos Abiertos",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Conjunto de indicadores que tanto agregados como desagregados buscan medir la gobernanza.",
+        "nombre_site":"Consulta mayor información aquí: pestaña índices internacionales",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Mediciones/"
     },
     {
         "id":"10",
         "nombre":"Informe de gestión 2020",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Informe de gestión para el año 2020 de GOV.CO/Territorial",
+        "nombre_site":"Visualiza el informe aquí",
+        "site": "https://app.powerbi.com/view?r=eyJrIjoiY2JlNjEwOTktNjQ4ZC00NjQzLTlhYmYtYTY5Y2EyYTNiOWQzIiwidCI6IjFhMDY3M2M2LTI0ZTEtNDc2ZC1iYjRkLWJhNmE5MWEzYzU4OCIsImMiOjR9"
     },
     {
         "id":"11",
         "nombre":"Informe de gestión 2021",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Informe de gestión para el año 2021 de GOV.CO/Territorial",
+        "nombre_site":"Visualiza el informe aquí",
+        "site": "https://app.powerbi.com/view?r=eyJrIjoiYjdhY2JlYWYtOWVjZC00YmRjLWIxYjAtYjA1ZjA0MWNkM2U5IiwidCI6IjFhMDY3M2M2LTI0ZTEtNDc2ZC1iYjRkLWJhNmE5MWEzYzU4OCIsImMiOjR9"
     },
     {
         "id":"12",
         "nombre":"Instrumento evaluación Modelo de Seguridad y Privacidad de la Información -MSPI",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Herramienta que fue creada con el fin de identificar el nivel de madurez en la implementación del Modelo de seguridad y Privacidad de la Información, permitiendo establecer el estado de la gestión y adopción de controles técnicos y administrativos al interior de las Entidades Públicas",
+        "nombre_site":"Instrumento evaluación MSPI",
+        "site": "https://www.mintic.gov.co/gestionti/615/articles-5482_Instrumento_Evaluacion_MSPI.xlsx",
+        "nombre_site2":"Instructivo para el instrumento de evaluación",
+        "site2": "https://mintic.gov.co/gestionti/615/articles-5482_Instructivo_instrumento_Evaluacion_MSPI.pdf",
+        "nombre_site3": "Consulta mayor información aquí",
+        "site3": "https://mintic.gov.co/gestion-ti/Seguridad-TI/Modelo-de-Seguridad/"
     },
     {
         "id":"13",
         "nombre":"Mapa Interactivo",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Mapa interactivo con información sobre GOV.CO/Territorial",
+        "nombre_site":"Ver el mapa",
+        "site": "https://app.powerbi.com/view?r=eyJrIjoiYjUxZjEyNTMtODA1Yi00N2I0LWE5MDAtYjFlNmI3NTA4Y2YxIiwidCI6IjFhMDY3M2M2LTI0ZTEtNDc2ZC1iYjRkLWJhNmE5MWEzYzU4OCIsImMiOjR9"
     },
     {
         "id":"14",
         "nombre":"Modelo de madurez de ciudades y territorios inteligentes",
         "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"15",
-        "nombre":"GOV.CO",
-        "categoria":"Medición",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Un modelo de madurez es una herramienta que permite identificar los niveles a través de los cuales una persona, organización o ciudad avanza hacia la realización de un objetivo final, permitiendo medir ese proceso continuamente y estableciendo desde el inicio una hoja de ruta para llegar al estado o etapa deseada",
+        "nombre_site":"Consulta el documento aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/692/articles-179102_recurso_2.pdf",
+        "nombre_site2":"Consulta mayor información aquí",
+        "site2": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Ciudades-y-Territorios-Inteligentes/"
     }
 ]

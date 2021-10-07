@@ -1,6 +1,6 @@
 [
     {
-        "id":"2",
+        "id":"1",
         "nombre":"Acompañamiento a las entidades en la adopción de IPv6",
         "categoria":"Acompañamiento",
         "descripcion":"IPv6 es el nuevo protocolo de acceso a internet en el mundo, que reemplazará paulatinamente al actual IPv4 en virtud de su agotamiento, por lo tanto la iniciativa del Ministerio TIC es establecer los lineamientos y políticas con ayuda de guías de buenas prácticas a fin de que las entidades del gobierno adopten IPv6 de manera exitosa.",
@@ -8,7 +8,7 @@
         "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Adopcion-de-IPv6/"
     },
     {
-        "id":"4",
+        "id":"2",
         "nombre":"Acompañamiento en Carpeta Ciudadana Digital",
         "categoria":"Acompañamiento",
         "descripcion":"Plataforma donde los ciudadanos encuentran en un solo sitio los documentos que necesitan para hacer trámites con las entidades públicas",
@@ -16,7 +16,7 @@
         "site": "https://www.gov.co/biblioteca/recurso/integro/carpeta-ciudadana-digital/dos/20"
     },
     {
-        "id":"5",
+        "id":"3",
         "nombre":"Acompañamiento en el Marco de Referencia para la Arquitectura Empresarial",
         "categoria":"Acompañamiento",
         "descripcion":"La Arquitectura Empresarial es una práctica estratégica, que permite identificar oportunidades de mejora, abordar y solucionar problemas complejos de las organizaciones. ",
@@ -24,7 +24,7 @@
         "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Marco-de-Arquitectura-Empresarial/"
     },
     {
-        "id":"6",
+        "id":"4",
         "nombre":"Acompañamiento en el Modelo de Gestión y Gobierno TI",
         "categoria":"Acompañamiento",
         "descripcion":"El modelo de Gestión y Gobierno de las Tecnologías de la Información MGGTI es un complemento del Plan Estratégico de las Tecnologías de la Información PETI, el cual contribuye a ampliar diversos componentes de las políticas de Gobierno Digital y Seguridad Digital",
@@ -32,7 +32,7 @@
         "site": "https://mintic.gov.co/arquitecturati/630/w3-propertyvalue-8118.html"
     },
     {
-        "id":"8",
+        "id":"5",
         "nombre":"Acompañamiento al Plan Estratégico de las Tecnologías de la Información y Comunicaciones -PETI",
         "categoria":"Acompañamiento",
         "descripcion":"El Plan Estratégico de Tecnología y Sistemas de Información (PETI) parte del diagnóstico, análisis, definición y planeación de los proyectos de tecnología.",
@@ -40,7 +40,7 @@
         "site": "https://mintic.gov.co/arquitecturati/630/w3-article-15031.html"
     },
     {
-        "id":"9",
+        "id":"6",
         "nombre":"Acompañamiento y Estructuración de Acuerdos Marco de Precios en Tecnología",
         "categoria":"Acompañamiento",
         "descripcion":"Los Acuerdos Marco de TI son la nueva forma de comprar tecnología para lo público. Son el mecanismo para garantizar el mejor uso del dinero de los ciudadanos. Con ellos, el Estado negocia como un solo comprador logrando generar economías de escala, eficiencias administrativas en contratación, incrementando la gobernabilidad de las decisiones de TI en el Estado para beneficio de la ciudadanía.",
@@ -48,7 +48,7 @@
         "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Acuerdo-Marco-de-Precios/"
     },
     {
-        "id":"13",
+        "id":"7",
         "nombre":"Acompañamiento en el Marco de Interoperabilidad",
         "categoria":"Acompañamiento",
         "descripcion":"capacidad de las organizaciones para intercambiar información y conocimiento en el marco de sus procesos de negocio para interactuar hacia objetivos mutuamente beneficiosos, con el propósito de facilitar la entrega de servicios digitales a ciudadanos, empresas y a otras entidades, mediante el intercambio de datos entre sus sistemas TIC",
@@ -58,215 +58,77 @@
         "site2": "https://mintic.gov.co/arquitecturati/630/w3-propertyvalue-8117.html"
     },
     {
-        "id":"15",
+        "id":"8",
         "nombre":"Equipo de Respuesta a Incidentes de Seguridad -CSIRT Gobierno",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Solicita aquí tu acompañamiento",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Decreto xxx",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"El CSIRT de Gobierno brinda acompañamiento y apoyo a las entidades del estado, a través de su portafolio de servicios, con el fin de mejorar los procesos de seguridad de la infraestructura tecnológica, la gestión de los incidentes cibernéticos y generación de conciencia en seguridad digital",
+        "nombre_site":"Consulta aquí mayor información",
+        "site": "https://gobiernodigital.mintic.gov.co/seguridadyprivacidad/portal/Estrategias/CSIRT-Gobierno/"
+    },
+    {
+        "id":"9",
+        "nombre":"Acompañamiento en Datos Abiertos",
+        "categoria":"Acompañamiento",
+        "descripcion":"¿Tú primera vez con Datos Abiertos? Aquí te contamos por dónde empezar",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://www.datos.gov.co/stories/s/-T-primera-vez-con-Datos-Abiertos-Aqu-te-contamos-/smn2-7atz"
+    },
+    {
+        "id":"10",
+        "nombre":"Acompañamiento en Acuerdos Marco de Precios",
+        "categoria":"Acompañamiento",
+        "descripcion":"Los Acuerdos Marco de TI son la nueva forma de comprar tecnología para lo público. Son el mecanismo para garantizar el mejor uso del dinero de los ciudadanos. Con ellos, el Estado negocia como un solo comprador logrando generar economías de escala, eficiencias administrativas en contratación, incrementando la gobernabilidad de las decisiones de TI en el Estado para beneficio de la ciudadanía.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Eventos/182974:Acuerdos-marco-de-precios-Nube-Publica",
+        "nombre_site2":"Contacto portal de gobierno digital",
+        "site2": "https://gobiernodigital.mintic.gov.co/portal/77685:"
+    },
+    {
+        "id":"11",
+        "nombre":"Acompañamiento en Servicios Ciudadanos Digitales",
+        "categoria":"Acompañamiento",
+        "descripcion":"Los Servicios Ciudadanos Digitales facilitan a los ciudadanos su interacción con las entidades públicas y optimizan la labor del Estado.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Servicios-Ciudadanos-Digitales/"
+    },
+    {
+        "id":"12",
+        "nombre":"Acompañamiento en la implementación del Modelo de Seguridad y Privacidad de la Información",
+        "categoria":"Acompañamiento",
+        "descripcion":"El acompañamiento a la implementación del Modelo de Seguridad y Privacidad de la Información, tiene por objetivo facilitar los procesos de adopción por parte de las diferentes Entidades de nivel nacional y territorial del modelo",
+        "nombre_site":"Consulta sobre el acompañamiento aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/seguridadyprivacidad/portal/Estrategias/Acompanamiento/"
+    },
+    {
+        "id":"13",
+        "nombre":"Laboratorio de Innovación",
+        "categoria":"Acompañamiento",
+        "descripcion":"Busca acercar a los servidores públicos al uso y aprovechamiento de las tecnologías emergentes como inteligencia artificial y blockchain, a través de soluciones digitales que permiten hacer experimentación y resolver necesidades de la administración pública.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Centro-de-Innovacion-Publica-Digital/"
+    },
+    {
+        "id":"14",
+        "nombre":"Acompañamiento en el Marco de Referencia de Arquitectura Empresarial",
+        "categoria":"Acompañamiento",
+        "descripcion":"El acompañamiento a las entidades nacionales y territoriales para la implementación de la Estrategia de Gobierno en línea, la Arquitectura TI y el Marco de Referencia consta de cuatro etapas: Informar, Entender, Ubicar y Actuar. ",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://mintic.gov.co/arquitecturati/630/w3-article-9453.html"
+    },
+    {
+        "id":"15",
+        "nombre":"Talleres de Ideación y Co-creación",
+        "categoria":"Acompañamiento",
+        "descripcion":"Acompañamiento en sesiones de co-creación",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Centro-de-Innovacion-Publica-Digital/"
     },
     {
         "id":"16",
-        "nombre":"Acompañamiento en Datos Abiertos",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Inducción",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Publicar datos abiertos",
-        "site3": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/",
-        "nombre_site3":"Material de ayuda Datos Abiertos",
-        "site2": "https://herramientas.datos.gov.co/"
-    },
-    {
-        "id":"17",
-        "nombre":"Acompañamiento en Acuerdos Marco de Precios",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Inducción",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Publicar datos abiertos",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"18",
-        "nombre":"Acompañamiento en Manejo de redes sociales y comunicación digital",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Inducción",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Publicar datos abiertos",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"19",
-        "nombre":"Acompañamiento en Servicios Ciudadanos Digitales",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"20",
-        "nombre":"Acompañamiento en la implementación de la política de Seguridad Digital",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"21",
-        "nombre":"Acompañamiento en la implementación de la política de Seguridad Digital",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"22",
-        "nombre":"Acompañamiento en la implementación del Modelo de Seguridad y Privacidad de la Información",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"23",
-        "nombre":"Laboratorio de Innovación",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"24",
-        "nombre":"Laboratorio de Innovación",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"25",
-        "nombre":"Acompañamiento técnico en Tecnología e Innovación",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"26",
-        "nombre":"Acompañamiento para el desarollo de campañas de comunicación digital",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"27",
-        "nombre":"Acompañamiento en el Marco de Referencia de Arquitectura Empresarial",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"28",
-        "nombre":"Semilleros de investigación",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"29",
-        "nombre":"Servicios de acompañamiento a las entidades nacionales y territoriales con Urna de Cristal",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"30",
-        "nombre":"Talleres: Aprende de tu sitio web",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"31",
-        "nombre":"Talleres: Aprende de tu sitio web",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"32",
-        "nombre":"Talleres: Formación y conocimiento de la Política de Gobierno Digital",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"33",
-        "nombre":"Talleres de Ideación y Co-creación",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"34",
-        "nombre":"Talleres: Funcionalidades de sitios web",
-        "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
-    },
-    {
-        "id":"35",
         "nombre":"Transfórmate con Gobierno Digital",
         "categoria":"Acompañamiento",
-        "descripcion":"xxxx",
-        "nombre_site":"Integración a Gov.co",
-        "site": "http://lenguaje.mintic.gov.co/",
-        "nombre_site2":"Caja de Herramientas",
-        "site2": "https://parzibyte.me/blog/2019/08/15/filtros-vue-js-tutorial-ejemplos/"
+        "descripcion":"Los líderes de TI de las entidades públicas fortalecen sus capacidades de TI, mejoran la prestación de los servicios digitales e implementan los elementos y productos tipo de la política de Gobierno Digital a través de la participación en talleres virtuales y el uso de la caja de herramientas de autoformación y autogestión.",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Transformate-con-Gobierno-Digital/#data=%7B%22filter%22:%2247314%22,%22page%22:1%7D"
     }
 ]

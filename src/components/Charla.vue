@@ -2,8 +2,7 @@
   <div id="Charla">
 
     <div class="MigaPan">
-        <a href= "/request">Regresar al menú de temas</a> 
-        <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+        <a href= "/menu">Regresar al menú de temas</a>
     </div>
 
     <br>
@@ -42,48 +41,44 @@
       <br>
       <select name="select" id="modalidad_charla">
         <option hidden selected>Selecciona una opción</option>
-        <option value="value1">Virtual</option>
-        <option value="value2">Presencial</option>
+        <option value="virtual">Virtual</option>
+        <option value="presencial">Presencial</option>
       </select>
       </div>
 
-    <div class="temas">
-      <label for="tema" class="tema">4. Selecciona el tema relacionado con tu solicitud:
-            <span class="obligatorio">*</span>
+    <div class="tema">
+      <label for="Tema" class="Tema">4. Selecciona el tema de la charla:
+        <span class="obligatorio">*</span>
       </label>
-      <div v-for="n, i in 1" id="tema_charla">
-        <p><input type="radio" value="ipv6" v-model="choices[i]">Adopción de IPv6</p>
-        <p><input type="radio" value="innovacion" v-model="choices[i]">Innovación Pública Digital</p>
-        <p><input type="radio" value="ciudades" v-model="choices[i]">Ciudades y Territorios Inteligentes</p>
-        <p><input type="radio" value="datos" v-model="choices[i]">Datos Abiertos</p>
-        <p><input type="radio" value="sandbox" v-model="choices[i]">Espacio Colaborativo Data Sandbox</p>
-        <p><input type="radio" value="govco" v-model="choices[i]">Gov.co/Territorial</p>
-        <p><input type="radio" value="arquitectura" v-model="choices[i]">Marco de Arquitectura Empresarial</p>
-        <p><input type="radio" value="interoperabilidad" v-model="choices[i]">Marco de Interoperabilidad</p>
-        <p><input type="radio" value="transformacion" v-model="choices[i]">Marco de Transformación Digital</p>
-        <p><input type="radio" value="digital" v-model="choices[i]">Mi Colombia Digital</p>
-        <p><input type="radio" value="maxima" v-model="choices[i]">Máxima Velocidad</p>
-        <p><input type="radio" value="portal" v-model="choices[i]">Portal único del Estado Colombiano</p>
-        <p><input type="radio" value="seguridad" v-model="choices[i]">Seguridad y Privacidad de la Información</p>
-        <p><input type="radio" value="sello" v-model="choices[i]">Sello de Excelencia Gobierno Digital</p>
-        <p><input type="radio" value="scd" v-model="choices[i]">Servicios Ciudadanos Digitales</p>
-        <p><input type="radio" value="libre" v-model="choices[i]">Software Libre</p>
-        <p><input type="radio" value="emergentes" v-model="choices[i]">Tecnologías Emergentes</p>
-        <p><input type="radio" value="gobierno" v-model="choices[i]">Transfórmate con Gobierno Digital</p>
-        <p><input type="radio" value="transparencia" v-model="choices[i]">Transparencia y Accesibilidad Web</p>
-        <p><input type="radio" value="urna" v-model="choices[i]">Urna de Cristal</p>
-        <p><input type="radio" value="otro" v-model="choices[i]">Otro</p>
-        <div class="otra">
-          <b-form-group 
-              id="input-group" 
-              >
-              <b-form-input
-              id="otro_tema_charla"
-              placeholder="¿Cuál?"
-              ></b-form-input>
-          </b-form-group>
-        </div>
-      </div>
+      <select name="select" id="tema_charla">
+        <option value="" selected>Selecciona una opción</option>
+        <option value="adopcion de IPv6">Adopción de IPv6</option>
+        <option value="innovacion publica digital">Innovación pública digital</option>
+        <option value="ciudades y territorios inteligentes">Ciudades y territorios inteligentes</option>
+        <option value="datos abiertos">Datos abiertos</option>
+        <option value="espacio colaborativo data sandbox">Espacio colaborativo Data Sandbox</option>
+        <option value="gov.co/territorial">GOV.CO/Territorial</option>
+        <option value="infraestructura de datos">Infraestructura de datos</option>
+        <option value="marco de arquitectura empresarial">Marco de arquitectura empresarial</option>
+        <option value="marco de interoperabilidad">Marco de interoperabilidad</option>
+        <option value="marco de transformacion digital">Marco de transformación digital</option>
+        <option value="mi colombia digital">Mi Colombia digital</option>
+        <option value="maxima velocidad">Máxima velocidad</option>
+        <option value="portal unico del estado colombiano">Portal único del Estado colombiano</option>
+        <option value="seguridad y privacidad de la información">Seguridad y privacidad de la información</option>
+        <option value="sello de excelencia gobierno digital">Sello de excelencia de Gobierno Digital</option>
+        <option value="servicios ciudadanos digitales">Servicios ciudadanos digitales</option>
+        <option value="software libre">Software libre</option>
+        <option value="tecnologias emergentes">Tecnologías emergentes</option>
+        <option value="transformate con gobierno digital">Transfórmate con Gobierno Digital</option>
+        <option value="transparencia y accesibilidad web">Transparencia y accesibilidad web</option>
+        <option value="urna de cristal">Urna de cristal</option>
+      </select>
+    </div>
+
+    <div class="otro">
+        <label for="tema" class="tema">Otro: </label>
+        <input type="text" name="otro_tema" id="otro_tema_charla">
     </div>
 
     <div class="calendario">
@@ -205,62 +200,51 @@ export default {
       },
 
       crearCitaCharla: function() {
-      this.texto_charla = document.getElementById("texto_charla").value;
-      this.personas_charla = document.getElementById("personas_charla").value;
-      this.modalidad_charla = document.getElementById("modalidad_charla").value;
-      this.tema_charla = document.getElementById("tema_charla").value;
-      this.otro_tema_charla = document.getElementById("otro_tema_charla").value;
-      this.fecha_charla = document.getElementById("fecha_charla").value;
-      this.correo_charla = document.getElementById("correo_charla").value;
-      let self = this;
-      let id = sessionStorage.getItem('identificador');
+        this.texto_charla = document.getElementById("texto_charla").value;
+        this.personas_charla = document.getElementById("personas_charla").value;
+        this.modalidad_charla = document.getElementById("modalidad_charla").value;
+        this.tema_charla = document.getElementById("tema_charla").value;
+        this.otro_tema_charla = document.getElementById("otro_tema_charla").value;
+        this.fecha_charla = document.getElementById("fecha_charla").value;
+        this.correo_charla = document.getElementById("correo_charla").value;
+        let self = this;
+        let id = sessionStorage.getItem('identificador');
 
-      if(this.texto_capacitacion!== '' && this.personas_capacitacion !== '' && this.modalidad_capacitacion!==''
-        && this.tema_capacitacion!=='' && this.fecha_capacitacion !=='' && this.correo_capacitacion !=='')
-      {
+        if(this.texto_charla!== '' && this.personas_charla !== '' && this.modalidad_charla!==''
+          && this.fecha_charla !=='' && this.correo_charla !=='')
+        {
 
-        this.newCitaCharla = {
-          "id_rol": id,
-          "texto_charla": this.texto_charla,
-          "personas_charla": this.personas_charla,
-          "modalidad_charla": this.modalidad_charla,
-          "tema_charla": this.tema_charla,
-          "otro_tema_charla": this.otro_tema_charla,
-          "fecha_charla": this.fecha_charla,
-          "correo_charla": this.correo_charla,
-        }
-      
-      
-      axios.post("http://127.0.0.1:8000/charla/create/", this.newCitaCharla)
-        .then((result) => {
-          this.$refs['my-modal'].show(),
-          document.getElementById("texto_charla").value = "",
-          document.getElementById("personas_charla").value = "",
-          document.getElementById("modalidad_charla").value = "",
-          document.getElementById("tema_charla").value = null,
-          document.getElementById("otro_tema_charla").value = null,
-          document.getElementById("fecha_charla").value = null
-          document.getElementById("correo_charla").value = null
-        })
-        .catch((error) => {
-          //alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
-          this.$refs['my-modal'].show()
-        });  
-    }
-    else {
-          alert("Debes completar todos los campos antes de continuar");
+          this.newCitaCharla = {
+            "id_rol": id,
+            "texto_charla": this.texto_charla,
+            "personas_charla": this.personas_charla,
+            "modalidad_charla": this.modalidad_charla,
+            "tema_charla": this.tema_charla,
+            "otro_tema_charla": this.otro_tema_charla,
+            "fecha_charla": this.fecha_charla,
+            "correo_charla": this.correo_charla,
           }
-    }
-    }
+        
+        
+        axios.post("http://127.0.0.1:8000/charla/crear/", this.newCitaCharla)
+          .then((result) => {
+            this.$refs['my-modal'].show()
+          })
+          .catch((error) => {
+            alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          });  
+      }
+      else {
+            alert("Debes completar todos los campos antes de continuar");
+            }
+      }
+      }
 }
 </script>
 
 <style>
 #Charla .MigaPan {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin:0 100px 30px 100px ;/*top-right-bottom-left*/
+  text-align: center;
 }
 #Charla .MigaPan a {
   color: #004884;
@@ -405,5 +389,33 @@ export default {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+}
+#Charla .tema p {
+  font-size: 12px;
+  color: #f42f63;
+}
+#Charla .tema {
+  margin: 20px 700px 0 100px;/*top-right-bottom-left*/
+  display: flex;
+  flex-direction: column;
+}
+#Charla .tema label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Charla .otro label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Charla .otro {
+  margin: 20px 700px 0 100px;/*top-right-bottom-left*/
+  display: flex;
+  flex-direction: column;
 }
 </style>

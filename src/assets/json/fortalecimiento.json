@@ -100,5 +100,14 @@
         "descripcion":"Son un conjunto de soluciones tecnológicas y procedimientos que brindan al Estado la capacidad para su transformación digital y lograr una adecuada interacción con el ciudadano, garantizando el derecho a la utilización de medios electrónicos ante la administración pública. Se clasifican en SCD base y especiales.",
         "nombre_site":"Consulta mayor información aquí",
         "site": "https://gobiernodigital.mintic.gov.co/portal/Iniciativas/Servicios-Ciudadanos-Digitales/"
+    },
+    {
+        "id":"13",
+        "nombre":"Cursos virtuales",
+        "categoria":"Fortalecimiento",
+        "descripcion":"Cursos virtuales en diferentes temas",
+        "nombre_site":"Consulta mayor información aquí",
+        "site": "https://gobiernodigital.mintic.gov.co/portal/Biblioteca/#data=%7B%22filter%22:%22227699%22,%22page%22:1%7D"
     }
+
 ]

@@ -2,8 +2,7 @@
   <div id="Reunion">
 
     <div class="MigaPan">
-      <a href= "/request">Regresar al menú de temas</a> 
-      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+      <a href= "/menu">Regresar al menú de temas</a>
     </div>
     <br>
 
@@ -273,8 +272,7 @@ export default {
           document.getElementById("hora_reunion").value = null
         })
         .catch((error) => {
-          //alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
-          this.$refs['my-modal'].show()
+          alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
         });  
     }
     else {
@@ -287,10 +285,7 @@ export default {
 
 <style>
 #Reunion .MigaPan {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin:0 100px 30px 100px ;/*top-right-bottom-left*/
+  text-align: center;
 }
 #Reunion .MigaPan a {
   color: #004884;

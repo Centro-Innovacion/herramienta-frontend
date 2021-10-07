@@ -2,8 +2,8 @@
   <div id="Menu">
 
     <div class="MigaPan">
-      <a href= "/Request">Regresar al menú de temas</a> 
-      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+      <a href= "/home">Regresar al inicio</a> 
+      <a href= "/integracion">Si deseas radicar una solicitud haz click aquí</a>
     </div>
 
     <div class="Encabezado">
@@ -41,7 +41,7 @@
         <div class="Lnea-5"></div>
         <div class="texto">
           <h1>
-            Conéctate y transfórmate con Gobierno Digital, plataforma CIEN.
+            Conéctate y transfórmate con Gobierno Digital.
           </h1>
         </div>
       </div>

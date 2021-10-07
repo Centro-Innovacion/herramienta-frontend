@@ -1,14 +1,17 @@
 <template>
   <div id="Proyecto">
+
     <div class="MigaPan">
-        <a href= "/request">Regresar al menú de temas</a> 
-        <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+      <a href= "/menu">Regresar al menú de temas</a> 
     </div>
     <br>
+
     <div class="Titulo">
       <h4>ACOMPAÑAMIENTO PARA UN PROYECTO</h4>
     </div>
+
     <br>
+
     <div class="Subtitulo">
       <p>Proporciona mayor información sobre tu solicitud</p>
     </div>
@@ -26,47 +29,43 @@
       </textarea>
     </div>
 
-    <div class="temas">
-      <label for="tema" class="tema">2. Selecciona el tema relacionado con tu solicitud:
+    <div class="tema">
+      <label for="Tema" class="Tema">2. Selecciona el tema del proyecto:
         <span class="obligatorio">*</span>
       </label>
-      <div v-for="n, i in 1" id="tema_proyecto">
-        <p><input type="radio" value="ipv6" v-model="choices[i]">Adopción de IPv6</p>
-        <p><input type="radio" value="innovacion" v-model="choices[i]">Innovación Pública Digital</p>
-        <p><input type="radio" value="ciudades" v-model="choices[i]">Ciudades y Territorios Inteligentes</p>
-        <p><input type="radio" value="datos" v-model="choices[i]">Datos Abiertos</p>
-        <p><input type="radio" value="sandbox" v-model="choices[i]">Espacio Colaborativo Data Sandbox</p>
-        <p><input type="radio" value="govco" v-model="choices[i]">Gov.co/Territorial</p>
-        <p><input type="radio" value="arquitectura" v-model="choices[i]">Marco de Arquitectura Empresarial</p>
-        <p><input type="radio" value="interoperabilidad" v-model="choices[i]">Marco de Interoperabilidad</p>
-        <p><input type="radio" value="transformacion" v-model="choices[i]">Marco de Transformación Digital</p>
-        <p><input type="radio" value="digital" v-model="choices[i]">Mi Colombia Digital</p>
-        <p><input type="radio" value="maxima" v-model="choices[i]">Máxima Velocidad</p>
-        <p><input type="radio" value="portal" v-model="choices[i]">Portal único del Estado Colombiano</p>
-        <p><input type="radio" value="seguridad" v-model="choices[i]">Seguridad y Privacidad de la Información</p>
-        <p><input type="radio" value="sello" v-model="choices[i]">Sello de Excelencia Gobierno Digital</p>
-        <p><input type="radio" value="scd" v-model="choices[i]">Servicios Ciudadanos Digitales</p>
-        <p><input type="radio" value="libre" v-model="choices[i]">Software Libre</p>
-        <p><input type="radio" value="emergentes" v-model="choices[i]">Tecnologías Emergentes</p>
-        <p><input type="radio" value="gobierno" v-model="choices[i]">Transfórmate con Gobierno Digital</p>
-        <p><input type="radio" value="transparencia" v-model="choices[i]">Transparencia y Accesibilidad Web</p>
-        <p><input type="radio" value="urna" v-model="choices[i]">Urna de Cristal</p>
-        <p><input type="radio" value="otro" v-model="choices[i]">Otro</p>
-        <div class="otra">
-          <b-form-group 
-            id="input-group" 
-            >
-            <b-form-input
-            id="otro_tema_proyecto"
-            placeholder="¿Cuál?"
-            ></b-form-input>
-          </b-form-group>
-        </div>
-      </div>
+      <select name="select" id="tema_proyecto">
+        <option value="" selected>Selecciona una opción</option>
+        <option value="adopcion de IPv6">Adopción de IPv6</option>
+        <option value="innovacion publica digital">Innovación pública digital</option>
+        <option value="ciudades y territorios inteligentes">Ciudades y territorios inteligentes</option>
+        <option value="datos abiertos">Datos abiertos</option>
+        <option value="espacio colaborativo data sandbox">Espacio colaborativo Data Sandbox</option>
+        <option value="gov.co/territorial">GOV.CO/Territorial</option>
+        <option value="infraestructura de datos">Infraestructura de datos</option>
+        <option value="marco de arquitectura empresarial">Marco de arquitectura empresarial</option>
+        <option value="marco de interoperabilidad">Marco de interoperabilidad</option>
+        <option value="marco de transformacion digital">Marco de transformación digital</option>
+        <option value="mi colombia digital">Mi Colombia digital</option>
+        <option value="maxima velocidad">Máxima velocidad</option>
+        <option value="portal unico del estado colombiano">Portal único del Estado colombiano</option>
+        <option value="seguridad y privacidad de la información">Seguridad y privacidad de la información</option>
+        <option value="sello de excelencia gobierno digital">Sello de excelencia de Gobierno Digital</option>
+        <option value="servicios ciudadanos digitales">Servicios ciudadanos digitales</option>
+        <option value="software libre">Software libre</option>
+        <option value="tecnologias emergentes">Tecnologías emergentes</option>
+        <option value="transformate con gobierno digital">Transfórmate con Gobierno Digital</option>
+        <option value="transparencia y accesibilidad web">Transparencia y accesibilidad web</option>
+        <option value="urna de cristal">Urna de cristal</option>
+      </select>
+    </div>
+
+    <div class="otro">
+        <label for="tema" class="tema">Otro: </label>
+        <input type="text" name="otro_tema" id="otro_tema_proyecto">
     </div>
 
     <div class="correo">
-      <label for="correo" class="correo">3. Escribe tu correo electrónico:
+      <label for="correo" class="correo">4. Escribe tu correo electrónico:
         <span class="obligatorio">*</span>
       </label>
       <div class="correotext">
@@ -80,13 +79,13 @@
           ></b-form-input>
         </b-form-group>
       </div>
-    </div>
+      </div>
     <br>
     <div class='termycond'>
       <input type="checkbox" id="politica" value="Politica" v-model="checkedNames">
       <label for="politica">
         <a
-        href="/privacidad"
+        href="https://www.mintic.gov.co/portal/715/articles-62124_politica_tratamiento_datos_personales_u20200917.pdf"
         target="_blank"
         >Autorizo el tratamiento de datos personales</a>
       </label>
@@ -106,6 +105,7 @@
       <div class="d-block text-center">
         <h3>
           Tu solicitud ha sido recibida y pronto nos pondremos en contacto contigo.
+          <br>
           Ya puedes cerrar esta ventana.
         </h3>
       </div>
@@ -116,42 +116,41 @@
 </template>
 
 <script>
-  import axios from "axios";
+import axios from "axios";
 export default {
-  name: "Personas",
+  name: "Proyecto",
   data: function (){
     return {
-      choices:[],
-      municipios: null,
-      selectedMunicipio: -1,
-      selectedOption: '',
-      value: '',
-      texto_proyecto: '',
-      tema_proyecto:'',
-      otro_tema_proyecto:'',
-      correo_proyecto:'',
+      mensaje:'',
       limite: 1000,
-      mensaje: '',
+      value: '',
+      temas: null,
       checkedNames: null,
       checkedNames1: null,
-    }
-  },
-  methods:{
+      text: '',
+      texto_proyecto: '',
+      tema_proyecto: '',
+      otro_tema_proyecto: '',
+      correo_proyecto: '',
+    }    
+  },                
+  methods: {
 
-      hideModal() {
+    hideModal() {
         this.$refs['my-modal'].hide(),
         window.location.href = '/home'
       },
-      
-      crearCitaProyecto: function() {
+        
+    crearCitaProyecto: function() {
       this.texto_proyecto = document.getElementById("texto_proyecto").value;
       this.tema_proyecto = document.getElementById("tema_proyecto").value;
       this.otro_tema_proyecto = document.getElementById("otro_tema_proyecto").value;
       this.correo_proyecto = document.getElementById("correo_proyecto").value;
+      
       let self = this;
       let id = sessionStorage.getItem('identificador');
-
-      if(this.texto_proyecto!== '' && this.tema_proyecto !== '' && this.correo_proyecto!=='')
+      
+      if(this.texto_proyecto!== '' && this.correo_proyecto!=='')
       {
         this.newCitaProyecto = {
           "id_rol": id,
@@ -161,17 +160,14 @@ export default {
           "correo_proyecto": this.correo_proyecto,
         }
       
-      axios.post("http://127.0.0.1:8000/proyecto/create/", this.newCitaProyecto)
+      
+      axios.post("http://127.0.0.1:8000/proyecto/crear/", this.newCitaProyecto)
         .then((result) => {
-          this.$refs['my-modal'].show(),
-          document.getElementById("texto_proyecto").value = "",
-          document.getElementById("tema_proyecto").value = "",
-          document.getElementById("otro_tema_proyecto").value = "",
-          document.getElementById("correo_proyecto").value = ""
+          this.$refs['my-modal'].show()
         })
         .catch((error) => {
-          //alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
-          this.$refs['my-modal'].show()
+          alert("Actualiza la página. Error 1");
+          window.location.href = '/home'
         });  
     }
     else {
@@ -184,10 +180,7 @@ export default {
 
 <style>
 #Proyecto .MigaPan {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin:0 100px 30px 100px ;/*top-right-bottom-left*/
+  text-align: center;
 }
 #Proyecto .MigaPan a {
   color: #004884;
@@ -212,15 +205,58 @@ export default {
   font-size: 24px;
   font-weight: bold;
 }
-#Proyecto .Textarea {
+
+#Proyecto .tema p {
+  font-size: 12px;
+  color: #f42f63;
+}
+#Proyecto .tema {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+  display: flex;
+  flex-direction: column;
+}
+#Proyecto .otro {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+  display: flex;
+  flex-direction: column;
+}
+#Proyecto .tema select {
+  margin-right: 500px;
+}
+#Proyecto .Calendario {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
 }
-#Proyecto .Textarea label {
+#Proyecto .Hora {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Proyecto .termycond {
+  margin: 0px 0px 0 470px;/*top-right-bottom-left*/;
+}
+#Proyecto .terminos{
+  display: flex;
+  justify-content: center;
+}
+#Proyecto .tratamiento{
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+#Proyecto .Hora p {
   font-family: Montserrat;
   color: #004884;
   font-size: 18px;
   font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Proyecto .otro input {
+  margin: 0px 500px 20px 0px;/*top-right-bottom-left*/
+}
+#Proyecto .Calendario label {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
 }
 #Proyecto .Textarea span {
   margin-top: 30px;
@@ -228,57 +264,31 @@ export default {
   font-weight: light;
   font-family: Montserrat;
 }
-#Proyecto .termycond {
-  margin: 0px 0px 0 470px;/*top-right-bottom-left*/;
-}
-#Proyecto .temas {
-  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
-}
-#Proyecto .temas label {
+#Proyecto .tema label {
   font-family: Montserrat;
   color: #004884;
   font-size: 18px;
   font-weight: bold;
   margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
 }
-#Proyecto .temas p {
+#Proyecto .otro label {
   font-family: Montserrat;
   color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/
+}
+#Proyecto .tema p {
+  font-family: Montserrat;
+  color: #f42f53;
+  font-weight: normal;
+  font-size: 15px;
   margin: 0px 0px 0px 0px;/*top-right-bottom-left*/
 }
-#Proyecto .temas span {
+#Proyecto .tema span {
   margin-top: 30px;
   color: #f42f63;
   font-weight: bold;
-  font-family: Montserrat;
-}
-#Proyecto .otra {
-  margin: 0 700px 0 0;
-}
-#Proyecto .correotext {
-  margin: 0 500px 0 0;
-}
-#Proyecto .Textarea {
-  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
-}
-#Proyecto .Textarea label {
-  font-family: Montserrat;
-  color: #004884;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
-}
-#Proyecto .Textarea p {
-  font-family: Montserrat;
-  color: #004884;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
-}
-#Proyecto .Textarea span {
-  margin-top: 30px;
-  color: #f42f63;
-  font-weight: normal;
   font-family: Montserrat;
 }
 #Proyecto .correo{
@@ -297,8 +307,21 @@ export default {
   font-weight: bold;
   font-family: Montserrat;
 }
+#Proyecto .correotext {
+  margin: 0 500px 0 0;
+}
+#Proyecto .Textarea {
+  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
+}
+#Proyecto .Textarea p {
+  font-family: Montserrat;
+  color: #004884;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;/*top-right-bottom-left*/ 
+}
 #Proyecto .boton {
-  margin-top: 30px;
+  margin: 40px 0 0 0;
   display: flex;
   justify-content: center;
 }

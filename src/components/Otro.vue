@@ -5,15 +5,15 @@
                 <h1>Otro rol</h1>
                 <div class="wrap">
                     <p>
-                        <label for="Otro" class="otro_rol">Escribe tu rol:
+                        <label for="Otro">Escribe tu rol:
                             <span class="obligatorio">*</span>
                         </label>
-                        <input type="text" name="otro" id="otro_rol">
+                        <input type="text" id="otro_rol">
                     </p>
                     
                 </div>
                 <div class="boton">
-                    <a class="boton" v-on:click="crearEntidad" id="botonEntidad">Siguiente</a>
+                    <a class="boton" v-on:click="crearRol()">Siguiente</a>
                 </div>
                 <br>
                 <p class="aviso">
@@ -27,7 +27,7 @@
 <script>
 import axios from "axios";
 export default {
-    name: "Personas",
+    name: "Otro",
     data: function (){
         return {
             otro_rol: '',
@@ -36,32 +36,30 @@ export default {
 
     methods:{
 
-        crearEntidad: function() {
+        crearRol: function() {
             this.otro_rol = document.getElementById("otro_rol").value;
-            let self = this;
+           
             let id = sessionStorage.getItem('identificador');
             
-            if(this.otro_rol!== '')
+            if(this.otro_rol !== '')
             {
 
-            this.newRol = {
-                "id_rol": id,
-                "otro_rol": this.otro_rol, 
-            }
+                this.newRol = {
+                    "id_rol": id,
+                    "otro_rol": this.otro_rol, 
+                }
 
-            axios.post("http://127.0.0.1:8000/rol/crear/", this.newRol)
-                .then((result) => {
-                    console.log(this.id);
-                    window.location.href = '/menu';
-                })
-                .catch((error) => {
-                    //alert("Error, contacte al administrador del sitio");
-                    window.location.href = '/menu';
-                });
+                axios.post("http://127.0.0.1:8000/otro_rol/crear/", this.newRol)
+                    .then((result) => {
+                        window.location.href = '/menu';
+                    })
+                    .catch((error) => {
+                        alert("Error, contacte al administrador del sitio");
+                    });
+                }
+                else {
+            alert("Debes completar todos los campos antes de continuar");
             }
-            else {
-          alert("Debes completar todos los campos antes de continuar");
-          }
         },
     }
 }

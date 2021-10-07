@@ -1,8 +1,7 @@
 <template>
   <div id="Lineamientos">
     <div class="Encabezado">
-      <a href= "/Request">Regresar al menú de temas</a> 
-      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+      <a href= "/menu">Regresar al menú de temas</a> 
     </div>
     <br>
     <br>
@@ -75,10 +74,7 @@ export default {
 
 <style>
 #Lineamientos .Encabezado {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin:0 88px 0 88px ;/*top-right-bottom-left*/
+  text-align: center;
 }
 #Lineamientos .Encabezado a {
   color: #004884;

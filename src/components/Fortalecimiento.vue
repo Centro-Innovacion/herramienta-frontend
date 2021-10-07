@@ -1,8 +1,7 @@
 <template>
   <div id="Fortalecimiento">
     <div class="Encabezado">
-      <a href= "/Request">Regresar al menú de temas</a> 
-      <a href= "/evaluar">Si no encontraste lo que buscabas y deseas radicar una solicitud haz click aquí</a>
+      <a href= "/menu">Regresar al menú de temas</a> 
     </div>
     <br><br>
     <div class="container cont">
@@ -72,10 +71,7 @@ export default {
 
 <style>
 #Fortalecimiento .Encabezado {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin:0 78px 0 78px ;/*top-right-bottom-left*/
+  text-align: center;
 }
 #Fortalecimiento .Encabezado a {
   color: #004884;
