@@ -2981,7 +2981,7 @@
                     </div>
                     <br>
                     <p class="aviso">
-                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                    <span class="obligatorio"> * los campos son obligatorios.</span>
                     </p>          
                 </div>
         </div>  
@@ -3398,7 +3398,7 @@ export default {
     color: #ffff;
 }
 #Entidad span{
-    color: #ab4493; 
+    color: #f42f63; 
 }
 #Entidad .aviso{
     font-size: 13px;  
