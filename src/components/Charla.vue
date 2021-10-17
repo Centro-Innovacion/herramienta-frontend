@@ -86,7 +86,7 @@
         <span class="obligatorio">*</span>
         <br>
         <p>
-          Ten en cuenta que únicamente podrás programar charlas a partir de siete días calendario desde la fecha de hoy.
+          Ten en cuenta que únicamente podrás programar charlas a partir de catorce días calendario desde la fecha de hoy.
         </p> 
       </label>
       <br>
@@ -165,7 +165,7 @@ export default {
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
     const minDate = new Date(today)
     //minDate.setMonth(minDate.getMonth())
-    minDate.setDate(now.getDate()+7)
+    minDate.setDate(now.getDate()+14)
     // 15th in two months
     //const maxDate = new Date(today)
     //maxDate.setMonth(maxDate.getMonth() + 1)
@@ -194,6 +194,19 @@ export default {
 },
     methods:{
 
+      dateDisabled(ymd, date) {
+      // Disable weekends (Sunday = `0`, Saturday = `6`) and
+      // disable days that fall on the 13th of the month
+      const weekday = date.getDay()
+      const day = date.getDate()
+      // Return `true` if the date should be disabled
+      return weekday === 0 || weekday === 6 
+
+      //if ((document.getElementById("tema_reunion").value) === "Datos abiertos"){
+      //return weekday === 5
+      //}
+    },
+    
       hideModal() {
         this.$refs['my-modal'].hide(),
         window.location.href = '/home'
@@ -417,5 +430,9 @@ export default {
   margin: 20px 700px 0 100px;/*top-right-bottom-left*/
   display: flex;
   flex-direction: column;
+}
+#Charla .d-block, .text-center {
+  color: #004884;
+  font-family: Montserrat;
 }
 </style>

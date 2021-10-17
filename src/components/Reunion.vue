@@ -33,7 +33,9 @@
       <label for="Tema" class="Tema">2. Selecciona el tema de la reunión:
         <span class="obligatorio">*</span>
       </label>
-      
+      <p>
+        Debes seleccionar un tema para poder seleccionar la hora de la reunión
+      </p> 
       <select v-model="selectedTema" @change="selectTema">
         <option v-for="(tema,index) in temas" :key="tema.id" :value="index">{{ tema.label }}</option>
       </select>
@@ -56,8 +58,8 @@
         nav-button-variant="primary" 
         :min="min" 
         :max="max" 
-        width: block
         locale="es"
+        width="570px"
         id = "fecha_reunion">
       </b-calendar>
       <br>
@@ -80,7 +82,8 @@
           >
           <b-form-input
           id="correo_reunion"
-          placeholder="Correo electrónico"
+          placeholder="tucorreo@mail.com"
+          type="email"
           ></b-form-input>
         </b-form-group>
       </div>
@@ -217,6 +220,10 @@ export default {
               label:"Tecnologías emergentes",
               options:["Tecnologías emergentes", "7:30 - 8:00 am"]
           },
+          {
+              label:"Otro",
+              options:["Otro", "7:30 - 8:00 am"]
+          },
       ]
     }    
   },                
@@ -236,8 +243,8 @@ export default {
     },
 
     hideModal() {
-        this.$refs['my-modal'].hide(),
-        window.location.href = '/home'
+        this.$refs['my-modal'].hide()
+        //window.location.href = '/home'
       },
         
     crearCitaReunion: function() {
@@ -272,7 +279,7 @@ export default {
           document.getElementById("hora_reunion").value = null
         })
         .catch((error) => {
-          alert("Recuerde que el texto de la solicitud no puede superar los 1000 caracteres");
+          alert("Revisa que todos los campos estén correctos antes de enviar");
         });  
     }
     else {
@@ -323,9 +330,7 @@ export default {
 #Reunion .tema select {
   margin-right: 500px;
 }
-#Reunion .Calendario {
-  margin: 20px 100px 0 100px;/*top-right-bottom-left*/
-}
+
 #Reunion .Hora {
   margin: 20px 100px 0 100px;/*top-right-bottom-left*/
 }
