@@ -11,7 +11,7 @@
     </div>
 
     <br>
-
+    
     <div class="Subtitulo">
       <p>Proporciona mayor información sobre tu solicitud</p>
     </div>
@@ -25,6 +25,7 @@
         class="form-control"
         v-model="mensaje"
         maxlenght="1000"
+        required
         >
       </textarea>
     </div>
@@ -84,6 +85,7 @@
           id="correo_reunion"
           placeholder="tucorreo@mail.com"
           type="email"
+          required
           ></b-form-input>
         </b-form-group>
       </div>
@@ -244,7 +246,7 @@ export default {
 
     hideModal() {
         this.$refs['my-modal'].hide()
-        //window.location.href = '/home'
+        window.location.href = '/home'
       },
         
     crearCitaReunion: function() {
