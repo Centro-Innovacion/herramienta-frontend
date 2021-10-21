@@ -72,6 +72,7 @@
         <option value="transformate con gobierno digital">Transfórmate con Gobierno Digital</option>
         <option value="transparencia y accesibilidad web">Transparencia y accesibilidad web</option>
         <option value="urna de cristal">Urna de cristal</option>
+        <option value="otro">Urna de cristal</option>
       </select>
     </div>
 
